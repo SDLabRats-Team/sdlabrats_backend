@@ -1,7 +1,8 @@
 """ Rules for LabRats accounts that admins create and manage.
 
 LabRats families and staff sign in with a username chosen by an admin, so these accounts skip
-the GitHub-account check that the general /api/user signup applies.
+the GitHub-account check that the general /api/user signup applies. An admin creating an account
+is the verification step upstream Flask requires, so new LabRats accounts start active.
 """
 import re
 
@@ -13,7 +14,8 @@ MIN_PASSWORD_LENGTH = 8
 
 def public_user(user):
     """The fields the admin console shows; never includes the password hash."""
-    return {"id": user.id, "uid": user.uid, "name": user.name, "email": user.email, "role": user.role}
+    return {"id": user.id, "uid": user.uid, "name": user.name, "email": user.email, "role": user.role,
+            "active": user.active}
 
 
 def validate_account(data, creating):
@@ -51,5 +53,10 @@ def validate_account(data, creating):
         if role not in ROLES:
             errors["role"] = f"Role must be one of: {', '.join(ROLES)}."
         cleaned["role"] = role
+
+    if "active" in data:
+        if not isinstance(data["active"], bool):
+            errors["active"] = "Active must be true or false."
+        cleaned["active"] = data["active"]
 
     return cleaned, errors

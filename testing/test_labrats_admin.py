@@ -37,6 +37,10 @@ class AccountRuleTests(unittest.TestCase):
         _, errors = validate_account({"password": "short"}, creating=False)
         self.assertIn("password", errors)
 
+    def test_active_must_be_true_or_false(self):
+        self.assertIn("active", validate_account({"active": "yes"}, creating=False)[1])
+        self.assertEqual(validate_account({"active": False}, creating=False), ({"active": False}, {}))
+
 
 class AssignmentRuleTests(unittest.TestCase):
     def test_assignment_needs_title_and_instructions(self):
@@ -124,6 +128,21 @@ class AdminApiTests(unittest.TestCase):
         with app.app_context():
             self.assertIsNone(User.query.filter_by(_uid=uid).first())
 
+    def test_accounts_admins_create_can_sign_in(self):
+        uid, student = self.make_student()
+        self.assertTrue(self.admin.get(f"/api/labrats/users?q={uid}").get_json()[0]["active"])
+        self.assertEqual(student.get("/api/id").get_json()["uid"], uid)
+
+    def test_inactive_accounts_wait_until_an_admin_activates_them(self):
+        uid, student = self.make_student()
+        self.assertFalse(self.admin.put(f"/api/labrats/users/{uid}", json={"active": False}).get_json()["active"])
+        # Upstream Flask still issues the cookie, then refuses the inactive account.
+        self.assertEqual(student.get("/api/id").status_code, 403)
+        self.assertEqual(student.get("/api/labrats/assignments").status_code, 403)
+
+        self.assertTrue(self.admin.put(f"/api/labrats/users/{uid}", json={"active": True}).get_json()["active"])
+        self.assertEqual(student.get("/api/id").status_code, 200)
+
     def test_duplicate_username_is_rejected(self):
         uid, _ = self.make_student()
         response = self.admin.post("/api/labrats/users", json={"name": "Again", "uid": uid, "password": "labrats-test-1"})
@@ -132,6 +151,7 @@ class AdminApiTests(unittest.TestCase):
     def test_admin_cannot_lock_themselves_out(self):
         me = app.config["ADMIN_UID"]
         self.assertEqual(self.admin.put(f"/api/labrats/users/{me}", json={"role": "User"}).status_code, 400)
+        self.assertEqual(self.admin.put(f"/api/labrats/users/{me}", json={"active": False}).status_code, 400)
         self.assertEqual(self.admin.delete(f"/api/labrats/users/{me}").status_code, 400)
 
     def test_students_cannot_use_admin_endpoints(self):

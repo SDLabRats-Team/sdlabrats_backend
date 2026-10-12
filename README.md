@@ -326,8 +326,8 @@ The sdlabrats.org frontend (`sdlabrats_frontend`, project `_projects/nonprofits/
 | GET | `/api/labrats/inquiries?form=&status=` | Admin | Lists submissions, newest first. |
 | PUT | `/api/labrats/inquiries/<id>` | Admin | Sets `status` to `new` or `handled`. |
 | GET | `/api/labrats/users?q=` | Admin | Lists accounts (no password hashes). |
-| POST | `/api/labrats/users` | Admin | Creates an account: `name`, `uid`, `password`, `role` (`User`, `Teacher`, `Admin`), optional `email`. No GitHub account needed. |
-| PUT / DELETE | `/api/labrats/users/<uid>` | Admin | Changes name, email, role, or password; deletes an account and its turn-ins. Admins can't demote or delete themselves. |
+| POST | `/api/labrats/users` | Admin | Creates an account: `name`, `uid`, `password`, `role` (`User`, `Teacher`, `Admin`), optional `email`. No GitHub account needed. The account starts active. |
+| PUT / DELETE | `/api/labrats/users/<uid>` | Admin | Changes name, email, role, `active`, or password; deletes an account and its turn-ins. Admins can't demote, deactivate, or delete themselves. |
 | GET / POST | `/api/labrats/assignments` | signed in / Admin | Students see open assignments with their own turn-in; Admins see all and post new ones. |
 | PUT / DELETE | `/api/labrats/assignments/<id>` | Admin | Edits, opens or closes, or deletes an assignment. |
 | PUT | `/api/labrats/assignments/<id>/turnin` | signed in | Turns in (or replaces) the student's work: `response`, optional `link`. Closed assignments return 409. |
@@ -340,4 +340,7 @@ The sdlabrats.org frontend (`sdlabrats_frontend`, project `_projects/nonprofits/
 - Email alerts: set `LABRATS_NOTIFY_TO` (comma-separated), `SMTP_HOST`, and optionally `SMTP_PORT` (587), `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_FROM` in `.env`. Each submission is emailed with Reply-To set to the family. Without these settings submissions are only stored; a failed send is logged and never loses the submission (`model/labrats_notify.py`).
 - The tables `labrats_inquiries`, `labrats_assignments`, and `labrats_turnins` are created by `initLabRatsInquiries()` and `initLabRatsAssignments()`, which run in `flask custom generate_data`; they only create missing tables.
 - Validation mirrors the frontend rules in `js/labrats-form-data.js`; keep them in step.
+- Sign-in follows upstream Flask's account activation: `POST /api/authenticate` sets the cookie, and `GET /api/id` (and every `token_required` endpoint) returns 403 for an inactive account. An admin creating a LabRats account is the verification step, so those accounts start active; admins switch other accounts on or off with `active`.
+- Syncing with upstream: this repo started as a copy of `Open-Coding-Society/flask` at `74a55a5`. Pull later upstream changes with `git remote add upstream https://github.com/Open-Coding-Society/flask.git`, `git fetch upstream`, then cherry-pick the new upstream commits.
+- A database created before account activation is missing two `users` columns, and sign-in fails until they exist. Either run `python scripts/db_init.py` (rebuilds the development database), or keep its data by running the three SQL statements documented above `active` in `model/user.py` (for SQLite: `sqlite3 instance/volumes/user_management.db`).
 - Tests: `python -m unittest testing/test_labrats_inquiry.py testing/test_labrats_admin.py` (use the development database, remove what they create; the admin tests sign in as the default admin, so run `scripts/db_init.py` first).

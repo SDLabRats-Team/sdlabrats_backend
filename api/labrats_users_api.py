@@ -2,11 +2,13 @@
 
 GET    /api/labrats/users          Admin: list accounts (?q= filters by name or username)
 POST   /api/labrats/users          Admin: create an account (name, uid, password, role, email)
-PUT    /api/labrats/users/<uid>    Admin: change name, email, role, or set a new password
+PUT    /api/labrats/users/<uid>    Admin: change name, email, role, active, or set a new password
 DELETE /api/labrats/users/<uid>    Admin: delete an account and its assignment turn-ins
 
-Admins cannot remove their own Admin role or delete their own account, so the console can never
-lock out the person using it.
+Accounts an admin creates are active at once (the admin is the verifier). Upstream Flask refuses
+inactive accounts at sign-in, so admins can also activate accounts made elsewhere, or deactivate one.
+Admins cannot remove their own Admin role, deactivate, or delete their own account, so the console
+can never lock out the person using it.
 """
 from flask import Blueprint, request, g, current_app
 from flask_restful import Api, Resource
@@ -52,6 +54,7 @@ class UsersAPI:
             user = User(name=cleaned["name"], uid=cleaned["uid"], password=cleaned["password"], role=cleaned["role"])
             if user.create({"email": cleaned["email"]} if cleaned.get("email") else None) is None:
                 return {"message": "The account could not be saved."}, 409
+            user.activate()
             current_app.logger.info("Admin %s created LabRats account %s (%s)", g.current_user.uid, user.uid, user.role)
             return public_user(user), 201
 
@@ -67,17 +70,25 @@ class UsersAPI:
             cleaned, errors = validate_account(data, creating=False)
             if cleaned.get("role") and user.id == g.current_user.id and cleaned["role"] != "Admin":
                 errors["role"] = "You can't remove your own Admin role."
+            if cleaned.get("active") is False and user.id == g.current_user.id:
+                errors["active"] = "You can't deactivate your own account."
             if errors:
                 return {"message": "Some fields need attention.", "errors": errors}, 400
 
             role = cleaned.pop("role", None)
+            active = cleaned.pop("active", None)
             if cleaned:
                 user.update(cleaned)
             if role:
                 user.role = role
                 db.session.commit()
-            current_app.logger.info("Admin %s updated LabRats account %s: %s", g.current_user.uid, uid,
-                                    sorted(set(cleaned) | ({"role"} if role else set())))
+            if active:
+                user.activate()
+            elif active is False:
+                user.active = False
+                db.session.commit()
+            changed = set(cleaned) | ({"role"} if role else set()) | ({"active"} if active is not None else set())
+            current_app.logger.info("Admin %s updated LabRats account %s: %s", g.current_user.uid, uid, sorted(changed))
             return public_user(user), 200
 
         @token_required("Admin")
