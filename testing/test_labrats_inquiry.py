@@ -16,6 +16,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from main import app, db  # noqa: E402  (path setup must run first)
 from model.labrats_inquiry import LabRatsInquiry, validate_inquiry, initLabRatsInquiries  # noqa: E402
 from model.labrats_notify import build_notification, notify_staff  # noqa: E402
+from model.labrats_site import initLabRatsSite  # noqa: E402
 
 CONTACT = {
     "form": "contact", "first_name": "Ana", "last_name": "Lopez",
@@ -31,6 +32,17 @@ SCHOLARSHIP = {
 
 
 class ValidateInquiryTests(unittest.TestCase):
+    # Program and scholarship choices come from the website tables, so validation needs the app.
+    @classmethod
+    def setUpClass(cls):
+        with app.app_context():
+            initLabRatsSite()
+
+    def setUp(self):
+        context = app.app_context()
+        context.push()
+        self.addCleanup(context.pop)
+
     def test_complete_contact_form_is_valid(self):
         cleaned, errors = validate_inquiry(dict(CONTACT))
         self.assertEqual(errors, {})

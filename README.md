@@ -317,11 +317,15 @@ first migration; this section is the summary.
 
 ## San Diego LabRats website API
 
-The sdlabrats.org frontend (`sdlabrats_frontend`, project `_projects/nonprofits/sdlabrats`) uses two endpoints:
+The sdlabrats.org frontend (`sdlabrats_frontend`, project `_projects/nonprofits/sdlabrats`) stores no data. Every page is an empty shell that loads its content from this backend:
 
 | Method | Endpoint | Access | Purpose |
 |--------|----------|--------|---------|
-| GET | `/api/programs/` | public | Program catalog. Slugs match `programs[].slug` in the frontend's `_data/sdlabrats.yml`. |
+| GET | `/api/labrats/page?path=/camps/` | public | One page's bundle: `site` (org facts, social links, announcement, navigation sections, camp day plans, shared HTML blocks, scholarship choices), `page` (template, title, fields, HTML body), its `session`, all `programs`, and all `sessions`. `404` for unknown paths. |
+| GET | `/api/labrats/sessions` | Admin | Every registration session, with its page title. |
+| PUT | `/api/labrats/sessions/<id>` | Admin | Opens or closes a session (`status`), or changes `term`, `grades`, `summary`, `times`, `donorbox_campaign`, `schedule_order`. |
+| GET / PUT | `/api/labrats/announcement` | Admin | The notice above every page: `show`, `text`, `link_text`, `url` (a page on the site). New wording gets a new `id`. |
+| GET | `/api/programs/` | public | Program catalog (the `labrats_programs` table). Contact forms send these slugs as `interest`. |
 | POST | `/api/labrats/inquiries` | public | Stores a contact, scholarship, partnership, video-topic, or newsletter form. Returns `201`, or `400` with `errors` keyed by field name. |
 | GET | `/api/labrats/inquiries?form=&status=` | Admin | Lists submissions, newest first. |
 | PUT | `/api/labrats/inquiries/<id>` | Admin | Sets `status` to `new` or `handled`. |
@@ -334,13 +338,15 @@ The sdlabrats.org frontend (`sdlabrats_frontend`, project `_projects/nonprofits/
 | GET | `/api/labrats/assignments/<id>/turnins` | Admin | All turn-ins for an assignment. |
 | PUT | `/api/labrats/turnins/<id>` | Admin | Leaves `feedback` and/or sets `status` (`submitted`, `reviewed`). |
 
+- Website content: `model/labrats_site.py` (tables `labrats_settings`, `labrats_pages`, `labrats_sessions`; validation; the page bundle) and `model/labrats_programs.py` (`labrats_programs`). `initLabRatsSite()` creates them and loads `model/labrats_seed/*.json` into any that are empty; it runs in `scripts/db_init.py` (fresh database). For an existing database, run `python scripts/init_labrats_site.py`; it only adds what is missing.
+- Page bodies are staff-written HTML with placeholders the frontend fills from the same bundle: `data-labrats-org="phone"` (text) and `data-labrats-org-href="{phone_href}"` (attributes) from the `org` setting, `data-labrats-block="key"` from the `blocks` setting, `data-labrats-widget="session-list"` and similar lists, and `data-labrats-form-slot="contact"` for the frontend's forms. Write facts once in a setting and place them with a placeholder instead of copying them into page HTML.
 - Code: `model/labrats_programs.py`, `model/labrats_inquiry.py` (model and validation), `model/labrats_accounts.py`, `model/labrats_assignment.py`, and the `api/labrats_*_api.py` blueprints plus `api/programs_api.py`.
 - Sign-in uses the existing `POST /api/authenticate` cookie; the frontend's `/sign-in/`, `/account/`, and `/admin/` pages call these endpoints.
 - Staff view: log in as an Admin and open `/labrats/inquiries/` (also under Data in the navbar).
 - Email alerts: set `LABRATS_NOTIFY_TO` (comma-separated), `SMTP_HOST`, and optionally `SMTP_PORT` (587), `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_FROM` in `.env`. Each submission is emailed with Reply-To set to the family. Without these settings submissions are only stored; a failed send is logged and never loses the submission (`model/labrats_notify.py`).
-- The tables `labrats_inquiries`, `labrats_assignments`, and `labrats_turnins` are created by `initLabRatsInquiries()` and `initLabRatsAssignments()`, which run in `flask custom generate_data`; they only create missing tables.
+- The tables `labrats_inquiries`, `labrats_assignments`, and `labrats_turnins` are created by `initLabRatsInquiries()` and `initLabRatsAssignments()`, which run in `scripts/db_init.py` and `scripts/init_labrats_site.py`; they only create missing tables.
 - Validation mirrors the frontend rules in `js/labrats-form-data.js`; keep them in step.
 - Sign-in follows upstream Flask's account activation: `POST /api/authenticate` sets the cookie, and `GET /api/id` (and every `token_required` endpoint) returns 403 for an inactive account. An admin creating a LabRats account is the verification step, so those accounts start active; admins switch other accounts on or off with `active`.
 - Syncing with upstream: this repo started as a copy of `Open-Coding-Society/flask` at `74a55a5`. Pull later upstream changes with `git remote add upstream https://github.com/Open-Coding-Society/flask.git`, `git fetch upstream`, then cherry-pick the new upstream commits.
 - A database created before account activation is missing two `users` columns, and sign-in fails until they exist. Either run `python scripts/db_init.py` (rebuilds the development database), or keep its data by running the three SQL statements documented above `active` in `model/user.py` (for SQLite: `sqlite3 instance/volumes/user_management.db`).
-- Tests: `python -m unittest testing/test_labrats_inquiry.py testing/test_labrats_admin.py` (use the development database, remove what they create; the admin tests sign in as the default admin, so run `scripts/db_init.py` first).
+- Tests: `python -m unittest testing/test_labrats_site.py testing/test_labrats_inquiry.py testing/test_labrats_admin.py` (use the development database, remove what they create; the admin tests sign in as the default admin, so run `scripts/db_init.py` first).

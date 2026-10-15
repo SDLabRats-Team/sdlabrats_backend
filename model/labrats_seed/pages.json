@@ -1,0 +1,1454 @@
+[
+  {
+    "path": "/4-8-stem-center-registration-2/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: January 2026",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: January 2026",
+      "description": "Register for January 2026 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/4-8-stem-center-registration-3-2/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: February 2026",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: February 2026",
+      "description": "Register for February 2026 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/4-8-stem-center-registration-3/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: March 2026",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: March 2026",
+      "description": "Register for March 2026 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>\n\n<p>The previous site listed February dates on this March page; they are shown here as published.</p>"
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2-2-2-2-2/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: December 2025",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: December 2025",
+      "description": "Register for December 2025 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2-2-2-2/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: November 2025",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: November 2025",
+      "description": "Register for November 2025 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2-2-2/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: October 2026",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: October 2026",
+      "description": "Register for October 2026 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2-2/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: September 2026",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: September 2026",
+      "description": "Register for September 2026 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: August 2026",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: August 2026",
+      "description": "Register for August 2026 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/4-8-stem-center-registration-4/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: May 2026",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: May 2026",
+      "description": "Register for May 2026 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/4-8-stem-center-registration/",
+    "template": "registration",
+    "title": "Afterschool, grades 4-8: April 2025",
+    "fields": {
+      "heading": "Afterschool for grades 4-8: April 2025",
+      "description": "Register for April 2025 afterschool STEM classes for grades 4-8 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/about-us/",
+    "template": "default",
+    "title": "About and support",
+    "fields": {
+      "heading": "About LabRats",
+      "lead": "Who we are, how we teach, and the help available so every family can afford real science.",
+      "description": "About San Diego LabRats, a 501(c)(3) nonprofit in Carlsbad - our mission, impact, team, teaching philosophy, scholarships, charter school funding, press, and flyers.",
+      "section": "about",
+      "contents": [
+        {
+          "id": "who",
+          "title": "Who we are"
+        },
+        {
+          "id": "impact",
+          "title": "Impact"
+        },
+        {
+          "id": "team",
+          "title": "Team"
+        },
+        {
+          "id": "philosophy",
+          "title": "How we teach"
+        },
+        {
+          "id": "help-paying",
+          "title": "Help paying"
+        },
+        {
+          "id": "charter",
+          "title": "Charter schools"
+        },
+        {
+          "id": "press",
+          "title": "Press"
+        },
+        {
+          "id": "flyers",
+          "title": "Flyers"
+        }
+      ],
+      "clippings": [
+        {
+          "file": "innovationineducation07.17.20",
+          "outlet": "Innovation in Education",
+          "date": "July 17, 2020"
+        },
+        {
+          "file": "unionTribune312018",
+          "outlet": "San Diego Union-Tribune",
+          "date": "March 1, 2018"
+        },
+        {
+          "file": "uniontribunenov30onlinerelease",
+          "outlet": "San Diego Union-Tribune (online)",
+          "date": "November 30"
+        },
+        {
+          "file": "uniontribunestemworkshop",
+          "outlet": "San Diego Union-Tribune",
+          "date": "STEM workshop"
+        },
+        {
+          "file": "coastnews9.13.19",
+          "outlet": "The Coast News",
+          "date": "September 13, 2019"
+        },
+        {
+          "file": "coastnews92217",
+          "outlet": "The Coast News",
+          "date": "September 22, 2017"
+        },
+        {
+          "file": "coastnewsnov172017",
+          "outlet": "The Coast News",
+          "date": "November 17, 2017"
+        },
+        {
+          "file": "coastnewsdec29",
+          "outlet": "The Coast News",
+          "date": "December 29"
+        },
+        {
+          "file": "coastnewsaug25",
+          "outlet": "The Coast News",
+          "date": "August 25"
+        },
+        {
+          "file": "coastnewsjohnweil",
+          "outlet": "The Coast News",
+          "date": "John Weil"
+        },
+        {
+          "file": "coastnewsadvertorial",
+          "outlet": "The Coast News",
+          "date": "Advertorial"
+        },
+        {
+          "file": "advocatemarch9th2018",
+          "outlet": "Encinitas Advocate",
+          "date": "March 9, 2018"
+        },
+        {
+          "file": "advocatenewsmarch22018",
+          "outlet": "Encinitas Advocate",
+          "date": "March 2, 2018"
+        },
+        {
+          "file": "advocatepressreleasev2",
+          "outlet": "Encinitas Advocate",
+          "date": "Press release"
+        },
+        {
+          "file": "advocatenewsadd",
+          "outlet": "Encinitas Advocate",
+          "date": "Advertisement"
+        },
+        {
+          "file": "delmartimesfeb26-2018",
+          "outlet": "Del Mar Times",
+          "date": "February 26, 2018"
+        },
+        {
+          "file": "92024jan-feb",
+          "outlet": "92024 magazine",
+          "date": "January/February issue"
+        }
+      ],
+      "flyers": [
+        "14qzpKDshMaRhSdxzHLBuQQk44g93iVOe",
+        "1weOyQUSycHeP4d0d3_uFgaZQl_rxY4mH",
+        "1mQdnTeSVxliAhYZp4afKaUUGzAEQqCB2",
+        "1NS0Qy2iVl0NrP_tWlDDEBnd33QMysJVC"
+      ]
+    },
+    "body": "<section class=\"labrats__section\" id=\"who\" aria-labelledby=\"who-title\">\n  <h2 id=\"who-title\">Who we are</h2>\n  <p class=\"labrats__motto\">To make advanced STEM learning accessible, engaging, and exciting for all kids, no matter their zip code.</p>\n  <div class=\"labrats__split\">\n    <div>\n      <p>San Diego LabRats is a <span data-labrats-org=\"nonprofit\"></span> where working scientists teach hands-on science to kids in grades K-8. Our teachers love their fields and love teaching the next generation; we use hands-on lab curriculum and current techniques, and we bring the fun back to learning science.</p>\n      <p>Our goal is to offer the program to underserved kids throughout San Diego County, which is only possible with our community's support.</p>\n      <p>Our home is the STEM Discovery Center at <span data-labrats-org=\"address.street\"></span>, <span data-labrats-org=\"address.city\"></span>, <span data-labrats-org=\"address.region\"></span> <span data-labrats-org=\"address.postal\"></span>, and our Mobile STEAM Lab visits schools and events across the county. <a data-labrats-org-href=\"{address.map_url}\" rel=\"noopener\">Get directions</a></p>\n    </div>\n    <figure class=\"labrats__figure\">\n      <img src=\"/images/projects/sdlabrats/classroom-group.jpg\" alt=\"A group of students smile and pose around a classroom lab table\" width=\"1200\" height=\"800\" loading=\"lazy\">\n    </figure>\n  </div>\n</section>\n\n<section class=\"labrats__section labrats__band\" id=\"impact\" aria-labelledby=\"impact-title\">\n  <h2 id=\"impact-title\">2023-24 in numbers</h2>\n  <p>From our annual impact report, across our three programs: the STEM Discovery Center, the Mobile Lab, and STEM at Home online lessons.</p>\n  <div class=\"ocs__stats\">\n    <div class=\"ocs__stat\"><span class=\"ocs__stat-value\">3,000+</span><span class=\"ocs__stat-label\">Children and families served</span></div>\n    <div class=\"ocs__stat\"><span class=\"ocs__stat-value\">$450,000</span><span class=\"ocs__stat-label\">Subsidized across all classes</span></div>\n    <div class=\"ocs__stat\"><span class=\"ocs__stat-value\">1,350</span><span class=\"ocs__stat-label\">Students in afterschool programs</span></div>\n    <div class=\"ocs__stat\"><span class=\"ocs__stat-value\">900</span><span class=\"ocs__stat-label\">Students in camps</span></div>\n    <div class=\"ocs__stat\"><span class=\"ocs__stat-value\">2,250</span><span class=\"ocs__stat-label\">Students served by the Mobile Lab</span></div>\n    <div class=\"ocs__stat\"><span class=\"ocs__stat-value\">1 to 5</span><span class=\"ocs__stat-label\">Days a week the Discovery Center is open</span></div>\n  </div>\n  <p>We also added 9 charter school partners and 2 San Diego school district partners, mentored 8 high school interns, and were finalists for two community awards: Social Impact Nonprofit Charity of the Year and Nonprofit Social Impact Changemakers of the Year. <a data-labrats-org-href=\"{impact_report}\">Read the full report (PDF)</a></p>\n  <div class=\"labrats__quotes\">\n    <blockquote>\n      <p>The staff is very attuned to the children's interests. They treat them like young scientists, they're very respectful, and the environment is set up so that children are naturally drawn to wanting to tinker, ask questions, and explore.</p>\n      <footer>Pilar Bewley, retired teacher and homeschool parent</footer>\n    </blockquote>\n    <blockquote>\n      <p>Working with LabRats has doubled in developing my skills as a person and scientist. I've been able to learn how to teach and contribute in a professional environment (and learn how to do my taxes). Between revisiting labs from my childhood, making an impact in every student I meet, and connecting with fellow teachers, I've been able to pass down a love for STEM in ways I never thought possible.</p>\n      <footer>Adora, high school intern</footer>\n    </blockquote>\n  </div>\n  <p class=\"labrats__hint\">Quotes from the 2023-24 impact report, with spelling and punctuation corrected.</p>\n</section>\n\n<section class=\"labrats__section\" id=\"team\" aria-labelledby=\"team-title\">\n  <h2 id=\"team-title\">Team: scientists teaching science</h2>\n  <ul class=\"labrats__people\">\n    <li class=\"labrats__person labrats__person--text\">\n      <div>\n        <h3>Jason Merrill</h3>\n        <p class=\"labrats__role\">Executive Director</p>\n      </div>\n    </li>\n    <li class=\"labrats__person\">\n      <img src=\"/images/projects/sdlabrats/team-shawn-carlson.jpg\" alt=\"Portrait of Dr. Shawn Carlson\" width=\"500\" height=\"507\" loading=\"lazy\">\n      <div>\n        <h3>Dr. Shawn Carlson</h3>\n        <p class=\"labrats__role\">Chief Science Officer</p>\n        <p>\"Dr. Shawn\" earned bachelor's degrees in physics and applied mathematics at UC Berkeley (1981), then a master's in physics (1983) and a Ph.D. in nuclear physics (1989) at UCLA. He left academic research in 1993 to find new ways to inspire young people to love STEM, work that earned him a MacArthur Fellowship in 1999. He is a nationally known science writer and the creative mind behind LabRats.</p>\n        <p>In 2008 he codified his approach as Engagement Education, which works in three spheres: students commit to their own education, learning communities form where students support each other, and students and teachers build strong bonds through character as well as academics. LabRats teaches STEM this way.</p>\n      </div>\n    </li>\n    <li class=\"labrats__person\">\n      <img src=\"/images/projects/sdlabrats/team-ryan-merrill.jpg\" alt=\"Portrait of J. Ryan Merrill\" width=\"500\" height=\"500\" loading=\"lazy\">\n      <div>\n        <h3>J. Ryan Merrill</h3>\n        <p class=\"labrats__role\">Vice President and Director of Education</p>\n        <p>Ryan earned a master's in chemistry at the University of Colorado Boulder (2015), researching organic polymers under Professor Christopher Bowman, and a bachelor's in chemistry at UC Santa Barbara (2013), with more than three years of research on mass spectrometry and the proteins involved in type 2 diabetes under Professor Michael Bowers.</p>\n        <p>He taught general chemistry classes and labs at the University of Colorado for two years and has tutored STEM classes for more than six years. He grew up in Encinitas, attended LCCHS, and gives back to the community he loves by developing curriculum, teaching labs, and running demonstrations for local kids.</p>\n      </div>\n    </li>\n  </ul>\n</section>\n\n<section class=\"labrats__section\" id=\"philosophy\" aria-labelledby=\"philosophy-title\">\n  <h2 id=\"philosophy-title\">How we teach</h2>\n  <div class=\"labrats__split\">\n    <div>\n      <p>Kids learn best by doing, especially when they chase their own ideas with someone more knowledgeable nearby. Project-based learning builds critical thinking, problem solving, teamwork, and self-management.</p>\n      <p>Our teachers are scientists who have done their own research. They turn textbook ideas into hands-on labs tied to the real world, showing students that science built the modern marvels around them. Everything we do builds a growth mindset: labs push kids to think problems through rather than follow directions, and when a student asks \"what if,\" we say \"let's try it.\" Kids learn that not understanding something at first doesn't mean they never will, and they gain the confidence to keep going instead of shutting down. Like sports teams and scouting, classes build community through teamwork and friendly competition: dynamic and fun, not \"sit and listen.\"</p>\n      <p>An education in science and technology is nothing less than the power to transform the world with a single idea. The modern world was built by hundreds of thousands of people who understood how nature works and solved practical problems; a few made incredible contributions, most made modest ones, and every one of them knew they had made a difference.</p>\n      <p>Read more: <a href=\"/why-learn-science/\">Why learn science?</a> and <a href=\"/our-teaching-methods/\">Our teaching methods</a></p>\n    </div>\n    <figure class=\"labrats__figure\">\n      <img src=\"/images/projects/sdlabrats/static-hair.jpg\" alt=\"A grinning student's hair stands on end from static electricity\" width=\"750\" height=\"500\" loading=\"lazy\">\n    </figure>\n  </div>\n  <div class=\"labrats__split\">\n    <div>\n      <h3>The LabRats Code of Honor</h3>\n      <ol class=\"labrats__honor\">\n        <li>Be fair, kind, and generous to all</li>\n        <li>Respect yourself and all others</li>\n        <li>Never cheat or accept the cheating of others</li>\n        <li>Think like a scientist</li>\n        <li>Always do the smart thing</li>\n        <li>Always follow through</li>\n        <li>Work for a higher purpose</li>\n      </ol>\n    </div>\n    <div>\n      <h3>The LabRats motto</h3>\n      <p class=\"labrats__motto\">Investigate. Do the experiment!</p>\n      <p>Students don't have to rely on what someone else tells them is true. They have the power to discover the truth for themselves, and we encourage them to use it every day.</p>\n    </div>\n  </div>\n</section>\n\n<section class=\"labrats__section labrats__band\" id=\"help-paying\" aria-labelledby=\"help-paying-title\">\n  <h2 id=\"help-paying-title\">Help paying for programs</h2>\n  <div class=\"ocs__table-wrap\">\n    <table class=\"ocs__table\">\n      <thead><tr><th scope=\"col\">If you are</th><th scope=\"col\">You can get</th><th scope=\"col\">How</th></tr></thead>\n      <tbody>\n        <tr>\n          <td>A family earning under $89,000 a year, or a military family</td>\n          <td>A scholarship: up to 75% off afterschool classes, up to 50% off camps</td>\n          <td><a href=\"/scholarships/\">Apply for a scholarship</a></td>\n        </tr>\n        <tr>\n          <td>A homeschool or independent-study family enrolled in a California charter school</td>\n          <td>Use your charter school's educational funds at the STEM Discovery Center</td>\n          <td><a href=\"#charter\">Check the vendor list</a></td>\n        </tr>\n        <tr>\n          <td>A school or group serving underserved kids</td>\n          <td>Grants from county and foundation programs for STEM visits</td>\n          <td><a href=\"/scholarships/#grants\">See grant programs</a></td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <p>Scholarships are funded by our community, and our goal is one scholarship for every paid student. After you apply, we'll email you about using it for upcoming classes and camps; if you don't hear back within 2 days, call <a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a> and we'll talk it through. Want to fund a scholarship for another family? <a href=\"/contact/#donate\">Donate</a>.</p>\n</section>\n\n<section class=\"labrats__section\" id=\"charter\" aria-labelledby=\"charter-title\">\n  <h2 id=\"charter-title\">Charter school funding</h2>\n  <div class=\"labrats__split\">\n    <div>\n      <p>LabRats is an approved vendor for many California charter schools and accepts educational funds at the STEM Discovery Center. If you're enrolled with a charter school that lists us, you may qualify for financial support.</p>\n      <h3>Our charter school partners</h3>\n      <ul class=\"labrats__list labrats__columns\">\n        <li>BEST Academy Charter</li>\n        <li>JCS Mountain Oaks Charter</li>\n        <li>Pacific Coast Academy Charter</li>\n        <li>Sage Oak Charter</li>\n        <li>LFCS Freedom Academy</li>\n        <li>SoCal Scholars Academy</li>\n        <li>Epic California Academy</li>\n        <li>Suncoast Preparatory Academy</li>\n        <li>Element Education</li>\n        <li>Elite Academic Academy</li>\n        <li>Sky Mountain Charter</li>\n      </ul>\n      <p>Don't see your school? Email <a data-labrats-org-href=\"mailto:{charter_email}\"><span data-labrats-org=\"charter_email\"></span></a> or ask your school administration to add LabRats San Diego as a vendor.</p>\n      <div class=\"ocs__links\">\n        <a class=\"ocs__btn signal fill\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSd1WzfP4XaOEYqoY2mh7XPHYNhP5czrdFrTFyWaKVdMevwa8A/viewform?usp=sf_link\" rel=\"noopener\">Request charter funding</a>\n      </div>\n    </div>\n    <div>\n      <h3>Built for homeschool and independent study</h3>\n      <p>We build our curriculum and services around what homeschool and independent-study students need. Real scientists teach, students are encouraged to ask questions, and hands-on experiments show scientific principles in action instead of only on the page. In our collaborative labs, your child will:</p>\n      <ul class=\"labrats__list\">\n        <li>Work in teams to reach lab goals</li>\n        <li>Learn fundamental STEM topics</li>\n        <li>Explore science tools, games, and puzzles</li>\n        <li>Meet other young scientists at the Discovery Center</li>\n      </ul>\n      <figure class=\"labrats__figure\">\n        <img src=\"/images/projects/sdlabrats/lab-bench.jpg\" alt=\"Students grin at a lab bench covered with plastic bottles and cups\" width=\"1000\" height=\"666\" loading=\"lazy\">\n      </figure>\n    </div>\n  </div>\n  <details>\n    <summary>Fill out the charter school form here</summary>\n    <div class=\"labrats__widget\">\n      <iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLSd1WzfP4XaOEYqoY2mh7XPHYNhP5czrdFrTFyWaKVdMevwa8A/viewform?embedded=true\" title=\"Charter school funding form\" loading=\"lazy\"></iframe>\n    </div>\n  </details>\n</section>\n\n<section class=\"labrats__section\" id=\"press\" aria-labelledby=\"press-title\">\n  <h2 id=\"press-title\">LabRats in the news</h2>\n  <p>Coverage in the San Diego Union-Tribune, The Coast News, the Encinitas Advocate, the Del Mar Times, and 92024 magazine. Select a clipping to open the full image.</p>\n  <div data-labrats-widget=\"press-clippings\"></div>\n  <h3 id=\"video\">LabRats video</h3>\n  <div class=\"labrats__split\">\n    <div class=\"labrats__embed\">\n      <iframe src=\"https://player.vimeo.com/video/655471116?h=002887c765\" title=\"San Diego LabRats video\" loading=\"lazy\" allow=\"fullscreen; picture-in-picture\" allowfullscreen></iframe>\n    </div>\n    <p><a href=\"https://vimeo.com/655471116/002887c765\" rel=\"noopener\">Watch on Vimeo</a></p>\n  </div>\n</section>\n\n<section class=\"labrats__section\" id=\"flyers\" aria-labelledby=\"flyers-title\">\n  <h2 id=\"flyers-title\">Flyers to share</h2>\n  <p>Printable flyers for your school office, newsletter, or neighborhood board. Thanks for spreading the word.</p>\n  <div data-labrats-widget=\"flyers\"></div>\n</section>"
+  },
+  {
+    "path": "/account/",
+    "template": "default",
+    "title": "My assignments",
+    "fields": {
+      "heading": "My assignments",
+      "lead": "Assignments from LabRats, and the work you've turned in.",
+      "description": "See and turn in your San Diego LabRats assignments.",
+      "noindex": true
+    },
+    "body": ""
+  },
+  {
+    "path": "/admin/",
+    "template": "default",
+    "title": "Admin console",
+    "fields": {
+      "heading": "Admin console",
+      "lead": "Manage LabRats accounts, read form submissions, and review assignment turn-ins.",
+      "description": "San Diego LabRats staff console for accounts, form submissions, and assignments.",
+      "noindex": true
+    },
+    "body": ""
+  },
+  {
+    "path": "/assemblies-demo-lab-stations/",
+    "template": "program",
+    "title": "Assemblies and demo lab stations",
+    "fields": {
+      "program": "assemblies",
+      "lead": "Science shows that show students what a STEM education makes possible. 30 or 60 minutes, at your school or event.",
+      "description": "Book a LabRats science assembly for your school or event. Choose The Power of Science or Mysteries of Science, in 30- or 60-minute formats.",
+      "section": "programs",
+      "facts": [
+        {
+          "label": "Grades",
+          "value": "K-8"
+        },
+        {
+          "label": "Where",
+          "value": "Your school, classroom, or event"
+        },
+        {
+          "label": "When",
+          "value": "30-minute or 60-minute shows, booked with you"
+        },
+        {
+          "label": "Cost",
+          "value": "Contact us for pricing"
+        },
+        {
+          "label": "How to sign up",
+          "value": "Contact us with your date and audience"
+        }
+      ],
+      "signup": {
+        "heading": "Book a show",
+        "text": "Tell us your school or event, the date, and roughly how many students will attend. We'll get back to you about availability and pricing.",
+        "link_text": "Ask about an assembly",
+        "url": "/contact/"
+      },
+      "help": "schools"
+    },
+    "body": "<section class=\"labrats__section labrats__split\" aria-labelledby=\"assembly-shows\">\n  <div>\n    <h2 id=\"assembly-shows\">Two shows to choose from</h2>\n    <p>We do more than teach. Our assemblies are built to inspire students to reach their potential by showing them what science can do.</p>\n    <h3>The Power of Science</h3>\n    <p>The name says it all: a demonstration of the power that an education in science gives you.</p>\n    <h3>Mysteries of Science</h3>\n    <p>We dazzle and amaze while showing the difference between magic and science, and the foundation of the scientific process: not fooling yourself.</p>\n    <h3>Demo lab stations</h3>\n    <p>Hands-on demonstration stations for school events. Contact us to plan stations for your event.</p>\n  </div>\n  <div class=\"labrats__embed\">\n    <iframe src=\"https://www.youtube-nocookie.com/embed/SciQHiwE9Dc\" title=\"Mobile STEM Lab assembly\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n  </div>\n</section>"
+  },
+  {
+    "path": "/brainstemtv/",
+    "template": "redirect",
+    "title": "BrainSTEMtv",
+    "fields": {
+      "redirect_to": "/stemathome/#brainstemtv",
+      "redirect_title": "BrainSTEMtv, on STEM at Home"
+    },
+    "body": ""
+  },
+  {
+    "path": "/build-your-own-crystal/",
+    "template": "redirect",
+    "title": "Build your own crystal",
+    "fields": {
+      "redirect_to": "/stemathome/#procedures",
+      "redirect_title": "Printable procedures, on STEM at Home"
+    },
+    "body": ""
+  },
+  {
+    "path": "/calendar/",
+    "template": "archive",
+    "title": "Summer 2022 partner camps",
+    "fields": {
+      "heading": "Summer 2022 camps with partner schools",
+      "lead": "Before the STEM Discovery Center opened, our classes ran through the Mobile STEM Lab at partner schools and districts.",
+      "description": "San Diego LabRats summer 2022 camps at partner schools, run through the Mobile STEM Lab before the STEM Discovery Center opened.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "archive_note": "This was the summer 2022 calendar. These camps are over and their sign-up pages were run by our partners.",
+      "current_url": "/schedule/",
+      "current_title": "See current classes and camps"
+    },
+    "body": "<p>Some partnerships were limited to students of a specific school or district; others were open to everyone. Sign-ups were handled by each partner, not by LabRats.</p>\n<div class=\"ocs__table-wrap\">\n  <table class=\"ocs__table\">\n    <thead><tr><th scope=\"col\">Location</th><th scope=\"col\">Grades</th><th scope=\"col\">Dates</th><th scope=\"col\">Open to</th></tr></thead>\n    <tbody>\n      <tr><td>Bonsall West Elementary</td><td>4-6</td><td>June 21–24</td><td>Bonsall students only</td></tr>\n      <tr><td>Bonsall Elementary</td><td>K-3</td><td>June 27–July 1 (full)</td><td>Bonsall students only</td></tr>\n      <tr><td>San Elijo Middle, week 1</td><td>6-8</td><td>July 11–15</td><td>Everyone</td></tr>\n      <tr><td>San Elijo Middle, week 2</td><td>6-8</td><td>July 18–22</td><td>Everyone</td></tr>\n      <tr><td>Level Up San Diego Unified</td><td>6-8</td><td>Four different weeks</td><td>San Diego Unified students only</td></tr>\n    </tbody>\n  </table>\n</div>\n<figure class=\"labrats__figure\">\n  <img src=\"/images/projects/sdlabrats/summer-2022-partner-schedule.jpg\" alt=\"Summer 2022 LabRats partner camp schedule\" loading=\"lazy\">\n</figure>"
+  },
+  {
+    "path": "/camps/",
+    "template": "program",
+    "title": "Break and summer camps",
+    "fields": {
+      "program": "camps",
+      "heading": "STEM camps over school breaks",
+      "lead": "Half-day camps with hands-on labs taught by real scientists, plus maker space time. Thanksgiving, winter, spring, and summer.",
+      "description": "Hands-on STEM camps for grades K-3 and 3-6 in Carlsbad over Thanksgiving, winter, spring, and summer breaks. Half-day morning or afternoon groups.",
+      "section": "programs",
+      "facts": [
+        {
+          "label": "Grades",
+          "value": "K-3 and 3-6, in separate groups"
+        },
+        {
+          "label": "Where",
+          "value": "STEM Discovery Center, 6351 Corte Del Abeto, Suite A112, Carlsbad"
+        },
+        {
+          "label": "When",
+          "value": "Half days: 8:00 am–12:00 pm or 1:00–5:00 pm"
+        },
+        {
+          "label": "Cost",
+          "value": "Camp price shown at registration. Scholarships up to 50% off."
+        },
+        {
+          "label": "How to sign up",
+          "value": "Register online for each camp"
+        }
+      ],
+      "sessions": true,
+      "compact_sessions": true,
+      "signup": {
+        "heading": "Holiday break camps",
+        "text": "Thanksgiving break: 3-day camps, Nov 23–25. Winter break: 3-day camps, Dec 21–23 and Dec 28–30. Each is a half-day, 4-hour camp.",
+        "link_text": "See the full schedule and pricing",
+        "url": "/schedule/"
+      }
+    },
+    "body": "<section class=\"labrats__section\" aria-labelledby=\"camps-day\">\n  <h2 id=\"camps-day\">A day at camp</h2>\n  <p>Every camp day has hands-on labs taught by real scientists. Campers can also use all the supplies in the STEM Discovery Center to create, build, and explore what interests them most during open maker space time.</p>\n  <p>Morning and afternoon groups run the same camp, so choose the time that fits your family. We only offer half-day camps.</p>\n  <div data-labrats-widget=\"camp-days\" data-plans=\"morning-maker,afternoon-engineering\"></div>\n</section>\n\n<section class=\"labrats__section\" aria-labelledby=\"camps-seasons\">\n  <h2 id=\"camps-seasons\">Camps through the year</h2>\n  <div class=\"ocs__table-wrap\">\n    <table class=\"ocs__table\">\n      <thead><tr><th scope=\"col\">Season</th><th scope=\"col\">What to expect</th><th scope=\"col\">Details</th></tr></thead>\n      <tbody>\n        <tr><td>Thanksgiving break</td><td>3-day half-day camps</td><td><a href=\"/fall-camp-k-3/\">Grades K-3</a>, <a href=\"/fall-camps-3-6/\">grades 3-6</a></td></tr>\n        <tr><td>Winter break</td><td>Future Engineers camp, two 3-day weeks</td><td><a href=\"/winter-camps-k3/\">Grades K-3</a>, <a href=\"/winter-camps-3-6/\">grades 3-6</a></td></tr>\n        <tr><td>Spring break</td><td>Three weeks, timed for different districts' spring breaks</td><td><a href=\"/spring-break-camps/\">Spring break camps</a></td></tr>\n        <tr><td>Summer</td><td>Eight weeks, sold by the week or in 4-week bundles</td><td><a href=\"/summer-stem-camps/\">Summer camps</a></td></tr>\n      </tbody>\n    </table>\n  </div>\n</section>\n\n<div data-labrats-block=\"camp_why\"></div>"
+  },
+  {
+    "path": "/cart/",
+    "template": "archive",
+    "title": "Cart",
+    "fields": {
+      "lead": "The cart for the former LabRats online store.",
+      "description": "Cart - San Diego LabRats. Class and camp registration now happens on each program's registration page.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "noindex": true,
+      "archive_note": "Class registration no longer uses this online store. Register and pay on each class or camp's registration page.",
+      "current_url": "/schedule/",
+      "current_title": "See what's open and register"
+    },
+    "body": ""
+  },
+  {
+    "path": "/checkout/",
+    "template": "archive",
+    "title": "Checkout",
+    "fields": {
+      "lead": "Checkout for the former LabRats online store.",
+      "description": "Checkout - San Diego LabRats. Class and camp registration now happens on each program's registration page.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "noindex": true,
+      "archive_note": "Class registration no longer uses this online store. Register and pay on each class or camp's registration page.",
+      "current_url": "/schedule/",
+      "current_title": "See what's open and register"
+    },
+    "body": ""
+  },
+  {
+    "path": "/contact/",
+    "template": "default",
+    "title": "Donate and contact",
+    "fields": {
+      "heading": "Donate and contact",
+      "lead": "Get in touch, give to STEM education, or sponsor LabRats as a company.",
+      "description": "Contact San Diego LabRats or support hands-on STEM education. Call (760) 450-4717, send a message, donate online (EIN 82-0839046), or become a corporate sponsor.",
+      "section": "give",
+      "contents": [
+        {
+          "id": "contact",
+          "title": "Contact"
+        },
+        {
+          "id": "donate",
+          "title": "Donate"
+        },
+        {
+          "id": "partnerships",
+          "title": "Corporate partnerships"
+        },
+        {
+          "id": "campaigns",
+          "title": "Campaigns and events"
+        }
+      ]
+    },
+    "body": "<section class=\"labrats__section labrats__split labrats__split--narrow-aside\" id=\"contact\" aria-labelledby=\"contact-title\">\n  <div>\n    <h2 id=\"contact-title\">Send a message</h2>\n    <p>We'd love to hear from you. Asking about a different class day or time? Say so in your message.</p>\n    <div data-labrats-form-slot=\"contact\"></div>\n  </div>\n  <aside aria-labelledby=\"reach-title\">\n    <h2 id=\"reach-title\">Other ways to reach us</h2>\n    <dl class=\"labrats__day\">\n      <dt>Phone</dt><dd><a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a></dd>\n      <dt>Visit</dt><dd><address><span data-labrats-org=\"address.name\"></span><br><span data-labrats-org=\"address.street\"></span><br><span data-labrats-org=\"address.city\"></span>, <span data-labrats-org=\"address.region\"></span> <span data-labrats-org=\"address.postal\"></span></address><a data-labrats-org-href=\"{address.map_url}\" rel=\"noopener\">Directions</a></dd>\n      <dt>Charter schools</dt><dd><a data-labrats-org-href=\"mailto:{charter_email}\"><span data-labrats-org=\"charter_email\"></span></a></dd>\n      <dt>Social</dt><dd><span data-labrats-widget=\"social-links\"></span></dd>\n    </dl>\n  </aside>\n</section>\n\n<section class=\"labrats__section labrats__band\" id=\"donate\" aria-labelledby=\"donate-title\">\n  <h2 id=\"donate-title\">Donate to STEM education</h2>\n  <div class=\"labrats__split labrats__split--narrow-aside\">\n    <div>\n      <p>In 2025 LabRats grew its opportunities for students across all of our programs. In 2026 we aim to grow again, with more classes, camps, and times at the STEM Discovery Center. Help make that permanent.</p>\n      <div data-labrats-widget=\"donorbox\" data-embed=\"donate-to-education-1\" data-title=\"Donate to San Diego LabRats\"></div>\n    </div>\n    <div>\n      <h3>Three ways to give</h3>\n      <dl class=\"labrats__day\">\n        <dt>Money</dt><dd>Use the donation form.</dd>\n        <dt>Materials</dt><dd><a href=\"#contact\">Send us a message</a> about lab supplies.</dd>\n        <dt>Time</dt><dd><a href=\"#contact\">Send us a message</a> to volunteer.</dd>\n      </dl>\n      <h3>Tax information</h3>\n      <p>SD LabRats is a designated 501(c)(3) public charity on the State of California Attorney General's Registry of Charitable Trusts. The IRS has determined that contributions to our organization are tax deductible. Federal Employer Identification Number: <strong><span data-labrats-org=\"ein\"></span></strong>.</p>\n      <p><a data-labrats-org-href=\"{impact_report}\">Read the 2023-24 impact report (PDF)</a> &middot; <a href=\"/images/projects/sdlabrats/donation-letter.jpg\">Our letter to supporters (image)</a></p>\n    </div>\n  </div>\n</section>\n\n<section class=\"labrats__section\" id=\"partnerships\" aria-labelledby=\"partnerships-title\">\n  <h2 id=\"partnerships-title\">Corporate partnerships</h2>\n  <p class=\"ocs__lead\">Sponsorship with LabRats goes well beyond a logo on a 5K shirt. It's varied and creative, and it brings real benefits to sponsors.</p>\n  <div class=\"labrats__split\">\n    <div>\n      <h3>Financial incentives</h3>\n      <p>Sponsorship can bring tax incentives; many companies sponsor and donate partly for the corporate tax breaks available. A sponsorship relationship with LabRats can also lead to other incentives and eligibility for grants and awards.</p>\n      <h3>Brand awareness</h3>\n      <p>Sponsorship raises your company's profile locally, regionally, and nationally. Customers connect your name with a specific cause, STEAM education for kids, and your brand reaches audiences outside your usual market while furthering your corporate social responsibility.</p>\n      <h3>Corporate reputation</h3>\n      <p>Sponsorship shapes how employees, customers, and other organizations see a company: people associate your brand with social good and with the cause itself. The previous site cited a figure that more than 75% of millennial employees prefer to work for companies active in charitable giving.</p>\n      <p>See the <a href=\"/images/projects/sdlabrats/flyer-corporate-sponsorship.jpg\">sponsorship overview flyer</a> and <a href=\"/images/projects/sdlabrats/flyer-sponsorship-levels.jpg\">sponsorship levels</a>.</p>\n    </div>\n    <div>\n      <h3>Request more information</h3>\n      <p>Tell us about your company and we'll send sponsorship details.</p>\n      <div data-labrats-form-slot=\"partnership\"></div>\n    </div>\n  </div>\n</section>\n\n<section class=\"labrats__section\" id=\"campaigns\" aria-labelledby=\"campaigns-title\">\n  <h2 id=\"campaigns-title\">Campaigns and events</h2>\n  <ul class=\"labrats__downloads\">\n    <li><a href=\"/giving-tuesday/\">Giving Tuesday</a> <small>Our Giving Tuesday campaign</small></li>\n    <li><a href=\"/pac-bio-5k-fundraiser/\">PacBio 5K fun run</a> <small>March 22, 2025</small></li>\n    <li><a href=\"/wine-festival-fundraiser/\">Encinitas Wine and Food Festival</a> <small>June 8, 2024</small></li>\n    <li><a href=\"/free-bike-give-away/\">Free bike giveaway</a> <small>Bikes donated by Viasat for LabRats families</small></li>\n  </ul>\n</section>"
+  },
+  {
+    "path": "/corporate-partnerships/",
+    "template": "redirect",
+    "title": "Corporate partnerships",
+    "fields": {
+      "redirect_to": "/contact/#partnerships",
+      "redirect_title": "Corporate partnerships, on Donate and contact"
+    },
+    "body": ""
+  },
+  {
+    "path": "/courses-workshops/",
+    "template": "program",
+    "title": "Courses and workshops",
+    "fields": {
+      "program": "courses-workshops",
+      "lead": "Our Mobile Lab brings hands-on STEM courses and workshops to classrooms, scout troops, and events anywhere in San Diego County.",
+      "description": "LabRats enrichment courses and one-time workshops for grades K-8, delivered by our Mobile Lab anywhere in San Diego County. NGSS topics, coding, robotics, and forensics.",
+      "section": "programs",
+      "facts": [
+        {
+          "label": "Grades",
+          "value": "Three age bands: K-2, 3-5, and 6-8"
+        },
+        {
+          "label": "Where",
+          "value": "Your school, troop, or event, anywhere in San Diego County"
+        },
+        {
+          "label": "When",
+          "value": "Labs of an hour or more, scheduled around your day"
+        },
+        {
+          "label": "Cost",
+          "value": "Contact us for pricing"
+        },
+        {
+          "label": "How to sign up",
+          "value": "Contact us to plan a course or workshop"
+        }
+      ],
+      "signup": {
+        "heading": "Plan a course or workshop",
+        "text": "Tell us your grade levels, topics, and schedule, and we'll shape the curriculum around your school's needs.",
+        "link_text": "Contact us about courses",
+        "url": "/contact/"
+      },
+      "help": "schools"
+    },
+    "body": "<section class=\"labrats__section\" aria-labelledby=\"courses-approach\">\n  <h2 id=\"courses-approach\">Engagement Education</h2>\n  <p>Our approach is called Engagement Education: scientists teaching science in ways that are fun and engaging. It helps students build character, self-confidence, and a real passion for what they learn. The goal is an encouraging STEAM education that helps every kid find their passion and do their best.</p>\n</section>\n\n<section class=\"labrats__section labrats__split\" aria-labelledby=\"courses-types\">\n  <div>\n    <h2 id=\"courses-types\">Enrichment courses</h2>\n    <p>Multi-week courses for three age bands: K-2, 3-5, and 6-8. We fit the curriculum to each school, with hands-on labs of an hour or more to suit your students' schedule.</p>\n    <p>Topics range from NGSS physical and life science, like electricity, magnetism, DNA, and digestion, to subjects kids will need for the future: coding, robotics, and forensics.</p>\n  </div>\n  <div>\n    <h2>Workshops</h2>\n    <p>One-time sessions using our Mobile Lab, which can deliver any of our 100+ hands-on lessons to your classroom or event. We can also help scout troops earn the STEM merit badge.</p>\n    <p>Every lab gets students running experiments with their own hands, with simple demonstrations of advanced ideas.</p>\n  </div>\n</section>\n\n<section class=\"labrats__section\" aria-labelledby=\"courses-educators\">\n  <h2 id=\"courses-educators\">Who teaches</h2>\n  <p>Courses are taught by working scientists, including Dr. Shawn Carlson, a nuclear physicist and nationally known science writer, and J. Ryan Merrill, a chemist who taught chemistry classes and labs at the University of Colorado Boulder.</p>\n  <p><a class=\"labrats__lede-link\" href=\"/about-us/#team\">Meet the team</a></p>\n</section>"
+  },
+  {
+    "path": "/education/",
+    "template": "redirect",
+    "title": "Education",
+    "fields": {
+      "redirect_to": "/programs/",
+      "redirect_title": "Programs"
+    },
+    "body": ""
+  },
+  {
+    "path": "/fall-camp-k-3/",
+    "template": "registration",
+    "title": "Thanksgiving break camp, grades K-3",
+    "fields": {
+      "heading": "Thanksgiving break STEM camp, grades K-3",
+      "description": "Thanksgiving break STEM camp, grades K-3 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "morning-maker",
+        "afternoon-engineering"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>\n<p>Please register for either the morning or the afternoon group. Both run the same camp, so pick the time that fits your schedule. These are half-day camps only; we don't offer full-day camps.</p>"
+  },
+  {
+    "path": "/fall-camps-3-6/",
+    "template": "registration",
+    "title": "Thanksgiving break camp, grades 3-6",
+    "fields": {
+      "heading": "Thanksgiving break STEM camp, grades 3-6",
+      "description": "Thanksgiving break STEM camp, grades 3-6 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "morning-maker",
+        "afternoon-engineering"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>\n<p>Please register for either the morning or the afternoon group. Both run the same camp, so pick the time that fits your schedule. These are half-day camps only; we don't offer full-day camps.</p>"
+  },
+  {
+    "path": "/flyers-to-share/",
+    "template": "redirect",
+    "title": "Flyers to share",
+    "fields": {
+      "redirect_to": "/about-us/#flyers",
+      "redirect_title": "Flyers to share, on About and support"
+    },
+    "body": ""
+  },
+  {
+    "path": "/free-bike-give-away/",
+    "template": "archive",
+    "title": "Free bike giveaway",
+    "fields": {
+      "heading": "Free bike giveaway",
+      "lead": "Thanks to Viasat for donating bikes, LabRats gave four bikes away to LabRats families over the holidays.",
+      "description": "The LabRats holiday bike giveaway - four bikes donated by Viasat, given to families who attended LabRats camps and afterschool classes.",
+      "section": "give",
+      "parent": "/contact/",
+      "archive_note": "This giveaway was announced in November 2025, with drawings on December 1 and January 1.",
+      "current_url": "/schedule/",
+      "current_title": "See current classes and camps"
+    },
+    "body": "<p>Families who attended any LabRats camp (fall or winter) or any afterschool class at the STEM Discovery Center in November or December were entered in an opportunity drawing.</p>\n<p>Every class attended counted as an entry, and each day of a 3-day camp counted once. A family attending all three weeks of November and December afterschool classes plus both fall and winter camps could be entered up to 12 times. Two bikes were given away on December 1 and two on January 1.</p>\n<ul class=\"labrats__list\">\n  <li><a href=\"/fall-camp-k-3/\">Fall camp registration</a></li>\n  <li><a href=\"/stem-discovery-center-2-3-2/\">Afterschool classes</a></li>\n  <li><a href=\"/winter-camps-k3/\">Winter camp registration</a></li>\n</ul>"
+  },
+  {
+    "path": "/free-open-house-register-today/",
+    "template": "registration",
+    "title": "Free open house",
+    "fields": {
+      "heading": "Step into the lab: free STEM Discovery Center open house",
+      "lead": "A free, three-day family open house with one-hour timed tours. Registration is required and spots are limited.",
+      "description": "Register for a free one-hour family tour of the San Diego LabRats STEM Discovery Center in Carlsbad, with makerspace demos and hands-on STEM activities.",
+      "section": "schedule",
+      "register_heading": "Reserve a free family pass",
+      "help": "none"
+    },
+    "body": "<p>Ever wondered what happens when real science meets hands-on tinkering? Bring your family to see the STEM Discovery Center. Whether your child is an aspiring engineer, a budding biologist, or just loves to build and test things, the center is built to spark imagination and critical thinking.</p>\n\n<h3>During your one-hour tour</h3>\n<ul class=\"labrats__list\">\n  <li>A guided walk through our discovery spaces with our scientists and educators</li>\n  <li>Demos of the makerspace tools, build stations, and creative projects</li>\n  <li>Mini experiments, engineering challenges, and hands-on science stations for kids</li>\n  <li>Early access to upcoming class schedules, special event discounts, and Q&amp;A with our leadership team</li>\n</ul>\n\n<h3>Why timed entry?</h3>\n<p>Tours run in one-hour blocks so every family gets real time at the workbenches without crowding. Space in each block is limited. Choose your day and time in the registration form.</p>\n\n<h3>Details</h3>\n<dl class=\"labrats__day\">\n  <dt>Cost</dt><dd>Free for families</dd>\n  <dt>Best for</dt><dd>Kids in grades K-8 and their parents or guardians</dd>\n  <dt>Length</dt><dd>60 minutes, including the guided tour and hands-on time</dd>\n  <dt>Parking</dt><dd>Free on-site parking</dd>\n</dl>"
+  },
+  {
+    "path": "/giving-tuesday/",
+    "template": "default",
+    "title": "Giving Tuesday",
+    "fields": {
+      "heading": "Giving Tuesday: help us raise the STEM stats",
+      "lead": "Help us up the STEM stats today. Every gift supports hands-on STEM education for San Diego kids.",
+      "description": "Support San Diego LabRats on Giving Tuesday. Donations to our 501(c)(3) fund hands-on STEM education. EIN 82-0839046.",
+      "section": "give"
+    },
+    "body": "<div class=\"labrats__split labrats__split--narrow-aside\">\n  <section class=\"labrats__section\" aria-label=\"Donation form\">\n    <div data-labrats-widget=\"donorbox\" data-embed=\"giving-tuesday-462-2\" data-title=\"Giving Tuesday donation form\"></div>\n  </section>\n  <aside class=\"labrats__section\">\n    <p>SD LabRats is a designated 501(c)(3) public charity on the State of California Attorney General's Registry of Charitable Trusts. Contributions are tax deductible. EIN <strong><span data-labrats-org=\"ein\"></span></strong>.</p>\n    <figure class=\"labrats__figure\">\n      <a href=\"/images/projects/sdlabrats/donation-letter.jpg\"><img src=\"/images/projects/sdlabrats/donation-letter.jpg\" alt=\"LabRats donation letter\" loading=\"lazy\"></a>\n    </figure>\n  </aside>\n</div>"
+  },
+  {
+    "path": "/",
+    "template": "home",
+    "title": "Home",
+    "fields": {
+      "description": "Hands-on science for kids in grades K-8, taught by working scientists at the STEM Discovery Center in Carlsbad. Afterschool classes, break camps, and school assemblies."
+    },
+    "body": "<section class=\"labrats__hero\" aria-labelledby=\"home-title\">\n  <div class=\"labrats__wrap labrats__split labrats__split--center\">\n    <div>\n      <h1 id=\"home-title\">Real scientists teaching science.</h1>\n      <p class=\"ocs__lead\">Hands-on labs for kids in grades K-8 at our STEM Discovery Center in Carlsbad. Every class is taught by a working scientist, and every kid gets to be a kid.</p>\n      <div class=\"ocs__links\">\n        <a class=\"ocs__btn signal fill\" href=\"/schedule/\">See the schedule and register</a>\n        <a class=\"ocs__btn accent\" href=\"/programs/\">Browse programs</a>\n      </div>\n      <p class=\"labrats__hero-visit\"><span data-labrats-org=\"address.street\"></span>, <span data-labrats-org=\"address.city\"></span> &middot; <span data-labrats-org=\"hours\"></span> &middot; <a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a></p>\n    </div>\n    <figure class=\"labrats__figure\">\n      <img src=\"/images/projects/sdlabrats/discovery-center-van-de-graaff.jpg\" alt=\"Three students gasp as a classmate holds a wand to a Van de Graaff generator\" width=\"1200\" height=\"800\" fetchpriority=\"high\">\n    </figure>\n  </div>\n</section>\n\n<div class=\"labrats__wrap labrats__body\">\n  <section class=\"labrats__section labrats__split\" aria-labelledby=\"session-title\">\n    <div>\n      <h2 id=\"session-title\">Two hours, two halves</h2>\n      <p>Afterschool sessions at the STEM Discovery Center run in two parts. First a scientist leads a one-hour lab. Then kids get an hour of open maker space to build, test, and dig into whatever caught their interest.</p>\n      <p>Classes meet Tuesday through Saturday in two groups: grades K-3 and grades 4-8. New lessons every week.</p>\n      <p><a class=\"labrats__lede-link\" href=\"/stem-discovery-center-2-3-2/\">How afterschool works</a></p>\n    </div>\n    <dl class=\"labrats__day\">\n      <dt>Hour 1</dt><dd><strong>Teacher-led lab.</strong> A scientist walks the group through a hands-on experiment.</dd>\n      <dt>Hour 2</dt><dd><strong>Open maker space.</strong> Kids choose what to build, test, or explore with our supplies.</dd>\n    </dl>\n  </section>\n\n  <section class=\"labrats__section\" aria-labelledby=\"enroll-title\">\n    <h2 id=\"enroll-title\">Sign up</h2>\n    <div class=\"ocs__table-wrap\">\n      <table class=\"ocs__table\">\n        <caption class=\"labrats__visually-hidden\">Ways to enroll</caption>\n        <thead><tr><th scope=\"col\">Program</th><th scope=\"col\">When</th><th scope=\"col\"><span class=\"labrats__visually-hidden\">Link</span></th></tr></thead>\n        <tbody>\n          <tr><td>Afterschool classes</td><td>Monthly sessions, Tuesday to Saturday</td><td><a href=\"/stem-discovery-center-2-3-2/\">Afterschool sign-up</a></td></tr>\n          <tr><td>Holiday break camps</td><td>Thanksgiving and winter break, half days</td><td><a href=\"/camps/\">Camp dates</a></td></tr>\n          <tr><td>Summer camps</td><td>Weekly half-day camps through the summer</td><td><a href=\"/summer-stem-camps/\">Summer camps</a></td></tr>\n        </tbody>\n      </table>\n    </div>\n  </section>\n\n  <section class=\"labrats__section\" aria-labelledby=\"programs-title\">\n    <h2 id=\"programs-title\">Programs</h2>\n    <div data-labrats-widget=\"program-list\"></div>\n  </section>\n\n  <div data-labrats-block=\"help_paying_families\"></div>\n\n  <section class=\"labrats__section labrats__split labrats__split--center\" aria-labelledby=\"philosophy-title\">\n    <div>\n      <h2 id=\"philosophy-title\" class=\"labrats__visually-hidden\">Our philosophy</h2>\n      <p class=\"labrats__motto\">Investigate. Do the experiment!</p>\n      <p>Kids need a place where they can explore, ask questions, and get their hands dirty, with a mentor who knows the material. Our teachers are scientists who love their field and love teaching it. Every lab ties an idea from the textbook to something real.</p>\n      <p><a class=\"labrats__lede-link\" href=\"/about-us/#philosophy\">Read our education philosophy</a></p>\n    </div>\n    <figure class=\"labrats__figure\">\n      <img src=\"/images/projects/sdlabrats/camp-celebration.jpg\" alt=\"A student throws an arm up in celebration while classmates laugh at a lab table\" width=\"1200\" height=\"774\" loading=\"lazy\">\n    </figure>\n  </section>\n\n  <section class=\"labrats__section labrats__split\" aria-labelledby=\"voices-title\">\n    <div>\n      <h2 id=\"voices-title\">From parents and the press</h2>\n      <blockquote class=\"labrats__pullquote\">\n        <p>My daughter was so excited to go to spring break camp each morning and couldn't wait to tell me about what she learned. She's a \"wait and see\" kind of kid, and I had no problems dropping her off each morning.</p>\n        <footer>South Bay parent, in our <a data-labrats-org-href=\"{impact_report}\">2023-24 impact report</a></footer>\n      </blockquote>\n      <p>Watch one LabRats mom's video, and read what local papers have written about us.</p>\n      <ul class=\"labrats__outlets\" aria-label=\"News outlets that have covered LabRats\">\n        <li><img src=\"/images/projects/sdlabrats/press-union-tribune.png\" alt=\"San Diego Union-Tribune\" width=\"150\" height=\"52\" loading=\"lazy\"></li>\n        <li><img src=\"/images/projects/sdlabrats/press-coast-news.png\" alt=\"The Coast News\" width=\"173\" height=\"30\" loading=\"lazy\"></li>\n        <li><img src=\"/images/projects/sdlabrats/press-del-mar-times.png\" alt=\"Del Mar Times\" width=\"149\" height=\"30\" loading=\"lazy\"></li>\n        <li><img src=\"/images/projects/sdlabrats/press-encinitas-advocate.png\" alt=\"Encinitas Advocate\" width=\"230\" height=\"30\" loading=\"lazy\"></li>\n        <li><img src=\"/images/projects/sdlabrats/press-92024.png\" alt=\"92024 magazine\" width=\"60\" height=\"60\" loading=\"lazy\"></li>\n      </ul>\n      <p><a class=\"labrats__lede-link\" href=\"/about-us/#press\">Read the press clippings</a></p>\n    </div>\n    <div class=\"labrats__embed\">\n      <iframe src=\"https://www.youtube-nocookie.com/embed/YquvPfrx9_Q\" title=\"A proud LabRats mom's testimonial\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n    </div>\n  </section>\n\n  <section class=\"labrats__section labrats__cta\" aria-labelledby=\"donate-title\">\n    <h2 id=\"donate-title\">Help more kids get into the lab</h2>\n    <p>We're a small local nonprofit, and our goal is to bring this program to underserved kids across San Diego County. Donations fund scholarships, supplies, and more class times at the STEM Discovery Center.</p>\n    <div class=\"ocs__links\">\n      <a class=\"ocs__btn signal fill\" href=\"/contact/#donate\">Donate</a>\n      <a data-labrats-org-href=\"{impact_report}\">See our impact report (PDF)</a>\n    </div>\n  </section>\n</div>"
+  },
+  {
+    "path": "/k-3-stem-center-registration-2-2/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: February 2026",
+    "fields": {
+      "heading": "Afterschool for grades K-3: February 2026",
+      "description": "Register for February 2026 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>\n\n<p>Scholarships for this session were provided by TING.</p>"
+  },
+  {
+    "path": "/k-3-stem-center-registration-2/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: January 2026",
+    "fields": {
+      "heading": "Afterschool for grades K-3: January 2026",
+      "description": "Register for January 2026 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>\n\n<p>Scholarships for this session were provided by TING.</p>"
+  },
+  {
+    "path": "/k-3-stem-center-registration-3/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: March 2025",
+    "fields": {
+      "heading": "Afterschool for grades K-3: March 2025",
+      "description": "Register for March 2025 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>\n\n<p>Full scholarships for this session were provided by TING Internet.</p>"
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3-2-2-2-2/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: December 2025",
+    "fields": {
+      "heading": "Afterschool for grades K-3: December 2025",
+      "description": "Register for December 2025 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3-2-2-2/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: November 2025",
+    "fields": {
+      "heading": "Afterschool for grades K-3: November 2025",
+      "description": "Register for November 2025 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3-2-2/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: October 2026",
+    "fields": {
+      "heading": "Afterschool for grades K-3: October 2026",
+      "description": "Register for October 2026 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3-2/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: September 2026",
+    "fields": {
+      "heading": "Afterschool for grades K-3: September 2026",
+      "description": "Register for September 2026 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: August 2026",
+    "fields": {
+      "heading": "Afterschool for grades K-3: August 2026",
+      "description": "Register for August 2026 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/k-3-stem-center-registration-5/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: May 2025",
+    "fields": {
+      "heading": "Afterschool for grades K-3: May 2025",
+      "description": "Register for May 2025 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/k-3-stem-center-registration/",
+    "template": "registration",
+    "title": "Afterschool, grades K-3: April 2025",
+    "fields": {
+      "heading": "Afterschool for grades K-3: April 2025",
+      "description": "Register for April 2025 afterschool STEM classes for grades K-3 at the LabRats STEM Discovery Center in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/"
+    },
+    "body": "<div data-labrats-block=\"afterschool_session\"></div>"
+  },
+  {
+    "path": "/labrats-team/",
+    "template": "redirect",
+    "title": "LabRats team",
+    "fields": {
+      "redirect_to": "/about-us/#team",
+      "redirect_title": "Team, on About and support"
+    },
+    "body": ""
+  },
+  {
+    "path": "/my-account/",
+    "template": "archive",
+    "title": "My account",
+    "fields": {
+      "lead": "Accounts for the former LabRats online store.",
+      "description": "My account - San Diego LabRats. Class and camp registration now happens on each program's registration page.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "noindex": true,
+      "archive_note": "Class registration no longer uses this online store. Register and pay on each class or camp's registration page.",
+      "current_url": "/schedule/",
+      "current_title": "See what's open and register"
+    },
+    "body": ""
+  },
+  {
+    "path": "/404.html",
+    "template": "default",
+    "title": "Page not found",
+    "fields": {
+      "heading": "We couldn't find that page",
+      "lead": "The page may have moved when we rebuilt the site, or the link may have a typo.",
+      "description": "Page not found on the San Diego LabRats website.",
+      "noindex": true
+    },
+    "body": "<div data-labrats-widget=\"lost\"></div>"
+  },
+  {
+    "path": "/our-teaching-methods/",
+    "template": "default",
+    "title": "Our teaching methods",
+    "fields": {
+      "lead": "We aim to inspire kids to love learning science, and to motivate them to do the work it takes to become truly competent in STEM.",
+      "description": "How San Diego LabRats teaches - self, social, and custodial engagement, learner-centered courses, and scientists as role models.",
+      "section": "about"
+    },
+    "body": "<section class=\"labrats__section labrats__split\" aria-labelledby=\"approach-title\">\n  <div>\n    <h2 id=\"approach-title\">Three kinds of engagement</h2>\n    <p>Our teaching develops self, social, and custodial engagement. It helps kids discover their passions, build strong friendships and sportsmanship, and meet role models from the scientific community.</p>\n    <p>Our learner-centered courses and camps deepen each student's interest in science and technology, with a curriculum as flexible and varied as our students' interests and talents.</p>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/teaching-methods-1.jpg\" alt=\"\" loading=\"lazy\">\n  </figure>\n</section>\n\n<section class=\"labrats__section labrats__split labrats__split--reverse\" aria-labelledby=\"self-title\">\n  <div>\n    <h2 id=\"self-title\">Self engagement</h2>\n    <p>Education research suggests the most effective way to improve academic performance is to meet the intellectual and emotional needs of students as individuals, rather than chase higher average test scores across large groups.</p>\n    <p>Overcoming life's obstacles takes grit. We work to build in each student a lasting commitment to becoming literate in STEM, using proven practices from cognitive psychology to help kids truly master STEM content and develop scientific habits of mind.</p>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/teaching-methods-2.jpg\" alt=\"\" loading=\"lazy\">\n  </figure>\n</section>\n\n<section class=\"labrats__section labrats__split\" aria-labelledby=\"social-title\">\n  <div>\n    <h2 id=\"social-title\">Social engagement</h2>\n    <p>People tend to succeed when family and close friends support them. So we build friendship and sportsmanship into the program, and students support each other while working toward a shared goal.</p>\n    <h2 id=\"custodial-title\">Custodial engagement</h2>\n    <p>We give students the best role models the scientific community has: scientists teaching science from the ground up, not starting in college. Our mentors know from experience what it takes to earn a science degree and what it means to be a scientist. They teach the commitment it takes to succeed in science, and the ethical standards the scientific community depends on.</p>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/teaching-methods-3.jpg\" alt=\"\" loading=\"lazy\">\n  </figure>\n</section>"
+  },
+  {
+    "path": "/pac-bio-5k-fundraiser/",
+    "template": "archive",
+    "title": "PacBio 5K fundraiser",
+    "fields": {
+      "heading": "Running toward a brighter future: the PacBio 5K",
+      "lead": "A 5K and fun run hosted by PacBio, a leader in genomic sequencing, benefiting San Diego LabRats.",
+      "description": "The PacBio \"Sequence it forward\" 5K and fun run on March 22, 2025 in Crown Point, benefiting San Diego LabRats STEM education.",
+      "section": "give",
+      "parent": "/contact/",
+      "archive_note": "This event took place on March 22, 2025.",
+      "current_url": "/contact/#donate",
+      "current_title": "Donate to LabRats today"
+    },
+    "body": "<div class=\"labrats__split\">\n  <div>\n    <p>LabRats and PacBio invited runners to lace up for a morning supporting STEM education in San Diego, benefiting San Diego LabRats, a local nonprofit that nurtures the young problem solvers of tomorrow.</p>\n    <p>The 5K and fun run was held on March 22, 2025 at 8 am in Crown Point. Supporters who couldn't attend helped \"sequence it forward\" by donating.</p>\n    <p><a href=\"https://events.pacb.com/seq-it-forward-run\" rel=\"noopener\">PacBio's event page</a></p>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/pacbio-5k-flyer.jpg\" alt=\"PacBio 5K fundraiser flyer\" loading=\"lazy\">\n  </figure>\n</div>"
+  },
+  {
+    "path": "/philosophy/",
+    "template": "redirect",
+    "title": "Philosophy",
+    "fields": {
+      "redirect_to": "/about-us/#philosophy",
+      "redirect_title": "How we teach, on About and support"
+    },
+    "body": ""
+  },
+  {
+    "path": "/press/",
+    "template": "redirect",
+    "title": "Press",
+    "fields": {
+      "redirect_to": "/about-us/#press",
+      "redirect_title": "Press, on About and support"
+    },
+    "body": ""
+  },
+  {
+    "path": "/programs/",
+    "template": "default",
+    "title": "Programs",
+    "fields": {
+      "heading": "Science programs for grades K-8",
+      "lead": "Every LabRats program is hands-on and taught by working scientists. Families come to us in Carlsbad; for schools and groups, we bring the lab to you.",
+      "description": "All San Diego LabRats programs - afterschool classes, break camps, free STEM at Home labs, school assemblies, and Mobile Lab courses and workshops.",
+      "section": "programs"
+    },
+    "body": "<section class=\"labrats__section\" aria-labelledby=\"families-title\">\n  <h2 id=\"families-title\">For families</h2>\n  <div data-labrats-widget=\"program-list\" data-audience=\"families\"></div>\n</section>\n\n<section class=\"labrats__section\" aria-labelledby=\"schools-title\">\n  <h2 id=\"schools-title\">For schools and groups</h2>\n  <div data-labrats-widget=\"program-list\" data-audience=\"schools\"></div>\n</section>\n\n<section class=\"labrats__section\" aria-labelledby=\"compare-title\">\n  <h2 id=\"compare-title\">Not sure where to start?</h2>\n  <p>Families can sign up for a month of afterschool classes or a single break camp. Teachers and PTAs can book an assembly or a workshop at school. <a href=\"/schedule/\">See what's open now</a>, or call <a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a>.</p>\n</section>"
+  },
+  {
+    "path": "/fall-stem-camp/",
+    "template": "redirect",
+    "title": "Fall STEM camp",
+    "fields": {
+      "redirect_to": "/camps/",
+      "redirect_title": "Camps"
+    },
+    "body": ""
+  },
+  {
+    "path": "/register/",
+    "template": "redirect",
+    "title": "Register",
+    "fields": {
+      "redirect_to": "/schedule/",
+      "redirect_title": "Schedule and pricing"
+    },
+    "body": ""
+  },
+  {
+    "path": "/request-a-class-form/",
+    "template": "redirect",
+    "title": "Request a class",
+    "fields": {
+      "redirect_to": "/contact/",
+      "redirect_title": "Contact"
+    },
+    "body": ""
+  },
+  {
+    "path": "/summer-camps/",
+    "template": "redirect",
+    "title": "Summer camps",
+    "fields": {
+      "redirect_to": "/summer-stem-camps/",
+      "redirect_title": "Summer STEM camps"
+    },
+    "body": ""
+  },
+  {
+    "path": "/product/steam-discovery-camp-winter-grades-4-8/",
+    "template": "redirect",
+    "title": "STEAM Discovery Camp, grades 4-8",
+    "fields": {
+      "redirect_to": "/winter-steam-discover-camp-2021/",
+      "redirect_title": "Winter STEAM Discovery Camp 2021"
+    },
+    "body": ""
+  },
+  {
+    "path": "/product/steam-discovery-camp-winter-grades-k-3/",
+    "template": "redirect",
+    "title": "STEAM Discovery Camp, grades K-3",
+    "fields": {
+      "redirect_to": "/winter-steam-discover-camp-2021/",
+      "redirect_title": "Winter STEAM Discovery Camp 2021"
+    },
+    "body": ""
+  },
+  {
+    "path": "/winter-stem-camp/",
+    "template": "redirect",
+    "title": "Winter STEM camp",
+    "fields": {
+      "redirect_to": "/camps/",
+      "redirect_title": "Camps"
+    },
+    "body": ""
+  },
+  {
+    "path": "/register-today-for-thrive-classes/",
+    "template": "default",
+    "title": "Thrive classes",
+    "fields": {
+      "lead": "LabRats classes offered through Thrive.",
+      "description": "How to register and pay for San Diego LabRats classes offered through Thrive.",
+      "section": "schedule",
+      "parent": "/thrive-payment-processing-only/"
+    },
+    "body": "<section class=\"labrats__section\">\n  <p>Registration for Thrive classes happens through Thrive. After you register there, pay on our <a href=\"/thrive-payment-processing-only/\">Thrive payment form</a>.</p>\n  <p>Need help finding the Thrive registration page? Call <a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a> or <a href=\"/contact/\">send us a message</a>.</p>\n</section>"
+  },
+  {
+    "path": "/schedule/",
+    "template": "default",
+    "title": "Schedule and pricing",
+    "fields": {
+      "heading": "Schedule and pricing",
+      "lead": "Everything open for registration right now, with days, times, dates, and prices.",
+      "description": "Current San Diego LabRats afterschool sessions and holiday camps in Carlsbad, with days, times, dates, pricing details, and registration links.",
+      "section": "schedule",
+      "contents": [
+        {
+          "id": "afterschool",
+          "title": "Afterschool"
+        },
+        {
+          "id": "camps",
+          "title": "Holiday camps"
+        },
+        {
+          "id": "pricing",
+          "title": "Pricing"
+        },
+        {
+          "id": "events",
+          "title": "Open house and Thrive"
+        },
+        {
+          "id": "seasons",
+          "title": "Spring and summer"
+        },
+        {
+          "id": "earlier",
+          "title": "Earlier sessions"
+        }
+      ]
+    },
+    "body": "<section class=\"labrats__section\" id=\"afterschool\" aria-labelledby=\"afterschool-title\">\n  <h2 id=\"afterschool-title\">Afterschool classes</h2>\n  <p>Two-hour sessions at the STEM Discovery Center: a one-hour lab with a scientist, then an hour of open maker space. Pick one weekly day and time for the month. <a href=\"/stem-discovery-center-2-3-2/\">About afterschool</a></p>\n  <div data-labrats-widget=\"session-list\" data-program=\"afterschool\"></div>\n</section>\n\n<section class=\"labrats__section\" id=\"camps\" aria-labelledby=\"camps-title\">\n  <h2 id=\"camps-title\">Holiday break camps</h2>\n  <p>Half-day camps: mornings 8:00 am–12:00 pm or afternoons 1:00–5:00 pm. Both groups run the same camp. <a href=\"/camps/\">About camps</a></p>\n  <div data-labrats-widget=\"session-list\" data-program=\"camps\" data-compact=\"true\"></div>\n</section>\n\n<section class=\"labrats__section labrats__band\" id=\"pricing\" aria-labelledby=\"pricing-title\">\n  <h2 id=\"pricing-title\">Pricing and payment</h2>\n  <div class=\"labrats__split\">\n    <div class=\"labrats__price\">\n      <div class=\"ocs__table-wrap\">\n        <table class=\"ocs__table\">\n          <caption class=\"labrats__visually-hidden\">Published prices</caption>\n          <thead><tr><th scope=\"col\">Program</th><th scope=\"col\">Price</th></tr></thead>\n          <tbody>\n            <tr><td>Afterschool, October 2026</td><td>$160 for the month (4 sessions), or $45 for a single day</td></tr>\n            <tr><td>Holiday break camps</td><td>Shown on the registration form</td></tr>\n            <tr><td>Summer camps, 2026</td><td>$375 per week (5 days)</td></tr>\n            <tr><td>Assemblies, courses, workshops</td><td><a href=\"/contact/\">Contact us</a></td></tr>\n          </tbody>\n        </table>\n      </div>\n      <p>You register and pay in one step on each session's Donorbox form, which shows the final price. Scholarships take up to 75% off afterschool and up to 50% off camps (<a href=\"/scholarships/\">apply</a>), and many California charter schools cover LabRats with educational funds (<a href=\"/about-us/#charter\">check yours</a>).</p>\n      <p><a href=\"/images/projects/sdlabrats/afterschool-schedule-fall-2026.jpg\">October 2026 afterschool flyer (image)</a></p>\n    </div>\n    <div>\n      <h3>Need a different day or time?</h3>\n      <p>If our current times don't work for your family, tell us when would.</p>\n      <p><a class=\"labrats__lede-link\" href=\"/contact/\">Request a class time</a> or call <a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a></p>\n    </div>\n  </div>\n</section>\n\n<section class=\"labrats__section\" id=\"events\" aria-labelledby=\"events-title\">\n  <h2 id=\"events-title\">Open house and Thrive payments</h2>\n  <ul class=\"labrats__downloads\">\n    <li><a href=\"/free-open-house-register-today/\">Free open house</a> <small>A free, timed family tour of the STEM Discovery Center. Registration required.</small></li>\n    <li><a href=\"/thrive-payment-processing-only/\">Thrive payment form</a> <small>Only for families who have already registered for a class through Thrive.</small></li>\n  </ul>\n</section>\n\n<section class=\"labrats__section\" id=\"seasons\" aria-labelledby=\"seasons-title\">\n  <h2 id=\"seasons-title\">Spring and summer camps</h2>\n  <p>Spring break camps run for three weeks to cover different districts' breaks. Summer camps run for eight weeks. The pages below show the 2026 camps.</p>\n  <ul class=\"labrats__downloads\">\n    <li><a href=\"/spring-break-camps/\">Spring break camps</a> <small>Grades K-3 and 3-6</small></li>\n    <li><a href=\"/summer-stem-camps/\">Summer STEM camps</a> <small>Grades K-3 and 3-6</small></li>\n    <li><a href=\"/summer-camps-5/\">Forensic Science Camp</a> <small>Summer theme camp</small></li>\n    <li><a href=\"/summer-camps-2/\">Sensational Science Camp</a> <small>Summer theme camp</small></li>\n  </ul>\n</section>\n\n<section class=\"labrats__section\" id=\"earlier\" aria-labelledby=\"earlier-title\">\n  <h2 id=\"earlier-title\">Earlier sessions</h2>\n  <p>Past registration pages, kept for reference. Registration for these dates is closed.</p>\n  <div data-labrats-widget=\"past-sessions\" data-program=\"afterschool\"></div>\n  <ul class=\"labrats__list\">\n    <li><a href=\"/stem-discovery-center-2-2/\">STEM Discovery Saturdays, September 2023</a></li>\n    <li><a href=\"/stem-discovery-center/\">STEAM Discovery Center at the Encinitas Community Center, fall 2021</a></li>\n    <li><a href=\"/winter-steam-discover-camp-2021/\">Winter STEAM Discovery Camp at the San Diego Botanic Garden, 2021</a></li>\n    <li><a href=\"/calendar/\">Summer 2022 partner camps</a></li>\n  </ul>\n</section>"
+  },
+  {
+    "path": "/scholarships/",
+    "template": "default",
+    "title": "Scholarships",
+    "fields": {
+      "heading": "Apply for a scholarship",
+      "lead": "Up to 75% off afterschool classes and up to 50% off camps, funded by our community. We aim to award a scholarship for every paid student.",
+      "description": "Apply for a San Diego LabRats scholarship. Families earning under $89,000 a year and military families can get up to 75% off afterschool classes and 50% off camps.",
+      "section": "about"
+    },
+    "body": "<div class=\"labrats__split labrats__split--narrow-aside\">\n  <section class=\"labrats__section\" aria-labelledby=\"apply-title\">\n    <h2 id=\"apply-title\">Application</h2>\n    <p>Fill out the form and we'll email you about using your scholarship for upcoming classes and camps. If you don't hear back within 2 days, please call <a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a>.</p>\n    <div data-labrats-form-slot=\"scholarship\"></div>\n  </section>\n  <aside class=\"labrats__section\" aria-labelledby=\"eligibility-title\">\n    <h2 id=\"eligibility-title\">Who qualifies</h2>\n    <p>Families whose household income is under $89,000 a year, a figure based on San Diego median income data, or military families.</p>\n    <h3>How much</h3>\n    <dl class=\"labrats__day\">\n      <dt>Afterschool</dt><dd>Up to 75% off</dd>\n      <dt>Camps</dt><dd>Up to 50% off</dd>\n    </dl>\n    <p>We believe every student should have access to high-quality STEM education. <a href=\"/contact/#donate\">Donate to the scholarship fund</a>.</p>\n  </aside>\n</div>\n\n<section class=\"labrats__section labrats__band\" id=\"grants\" aria-labelledby=\"grants-title\">\n  <h2 id=\"grants-title\">Grants for schools and groups</h2>\n  <div class=\"labrats__split\">\n    <div>\n      <p>Is the Mobile STEAM Lab outside your budget? These organizations may help schools and nonprofits bring STEAM education to underserved kids.</p>\n      <h3>San Diego County Neighborhood Reinvestment Program</h3>\n      <p>Offered through each county supervisor's district. It may support schools or nonprofits that want to bring the LabRats Mobile STEAM Lab to underserved youth.</p>\n      <ul class=\"labrats__list\">\n        <li><a href=\"http://www.supervisorkristingaspar.com/content/d3/home/grant_programs/nrp.html\" rel=\"noopener\">District 3 (Encinitas)</a></li>\n        <li><a href=\"http://www.gregcox.com/content/d1/en/grants/neighborhood_reinvestment.html\" rel=\"noopener\">District 1 (downtown San Diego to the southwest)</a></li>\n        <li><a href=\"https://www.sandiegocounty.gov/auditor/nrp.html\" rel=\"noopener\">District 2 (Campo, southeast), District 4 (Del Mar, central west), and District 5 (Riverside, north)</a></li>\n      </ul>\n    </div>\n    <figure class=\"labrats__figure\">\n      <img src=\"/images/projects/sdlabrats/mobile-steam-lab.jpg\" alt=\"The LabRats Mobile STEAM Lab, a blue van painted with the word STEAM\" width=\"1000\" height=\"750\" loading=\"lazy\">\n      <figcaption>The Mobile STEAM Lab. <a href=\"/courses-workshops/\">What it brings to your school</a></figcaption>\n    </figure>\n  </div>\n\n  <h3>Foundations</h3>\n  <ul class=\"labrats__downloads\">\n    <li><a href=\"http://www.cushenterprises.com/application.html\" rel=\"noopener\">The Cushman Foundation</a><br><small>Supports community and humanitarian work in the communities where the Cushman family has done business.</small></li>\n    <li><a href=\"https://beckmancoulterfoundation.org/grant/\" rel=\"noopener\">The Beckman Coulter Foundation</a><br><small>Funds healthcare, scientific education and discovery, and philanthropy.</small></li>\n    <li><a href=\"http://www.sci-ed-ga.org/funding-guidelines-for-non-profits\" rel=\"noopener\">General Atomics Sciences Education Foundation</a><br><small>Has funded K-12 science and engineering education and STEM nonprofits since 1992.</small></li>\n    <li><a href=\"https://www.sdfoundation.org/grantseekers/\" rel=\"noopener\">The San Diego Foundation</a><br><small>Grants for nonprofit programs that serve disadvantaged San Diegans and expand equity and opportunity.</small></li>\n  </ul>\n</section>"
+  },
+  {
+    "path": "/shop/",
+    "template": "archive",
+    "title": "Shop",
+    "fields": {
+      "lead": "The former online store for LabRats classes and camps.",
+      "description": "Shop - San Diego LabRats. Class and camp registration now happens on each program's registration page.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "noindex": true,
+      "archive_note": "Class registration no longer uses this online store. Register and pay on each class or camp's registration page.",
+      "current_url": "/schedule/",
+      "current_title": "See what's open and register"
+    },
+    "body": ""
+  },
+  {
+    "path": "/sign-in/",
+    "template": "default",
+    "title": "Sign in",
+    "fields": {
+      "heading": "Sign in",
+      "lead": "For LabRats students and staff. Accounts are set up by LabRats; ask us if you need one.",
+      "description": "Sign in to your San Diego LabRats account to see and turn in assignments.",
+      "noindex": true
+    },
+    "body": ""
+  },
+  {
+    "path": "/sorry/",
+    "template": "default",
+    "title": "Expired link",
+    "fields": {
+      "heading": "Sorry, this link has expired",
+      "lead": "It looks like you followed an expired page or link.",
+      "description": "This San Diego LabRats link has expired.",
+      "noindex": true
+    },
+    "body": "<div data-labrats-widget=\"lost\"></div>"
+  },
+  {
+    "path": "/spring-break-camp-2-2-2/",
+    "template": "registration",
+    "title": "Summer camp, grades 3-6 (part 2)",
+    "fields": {
+      "heading": "Summer STEM camp, grades 3-6: July 13 to August 7",
+      "description": "Summer STEM camp, grades 3-6: July 13 to August 7 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "afternoon-engineering"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Eight weeks of summer camps, sold one week at a time, or buy four weeks at once and save. Each week is different. Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>"
+  },
+  {
+    "path": "/spring-break-camp-2-2/",
+    "template": "registration",
+    "title": "Summer camp, grades 3-6 (part 1)",
+    "fields": {
+      "heading": "Summer STEM camp, grades 3-6: part 1",
+      "description": "Summer STEM camp, grades 3-6: part 1 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "afternoon-engineering"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Eight weeks of summer camps, sold one week at a time, or buy four weeks at once and save. Each week is different. Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>"
+  },
+  {
+    "path": "/spring-break-camp-2/",
+    "template": "registration",
+    "title": "Spring break camp, grades 3-6",
+    "fields": {
+      "heading": "Spring break STEM camp, grades 3-6",
+      "description": "Spring break STEM camp, grades 3-6 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "afternoon-engineering"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Three weeks of spring break camps, so families from different school districts can each find their break. Each week is different. Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>"
+  },
+  {
+    "path": "/spring-break-camps-1-2-2/",
+    "template": "registration",
+    "title": "Summer camp, grades K-3 (part 2)",
+    "fields": {
+      "heading": "Summer STEM camp, grades K-3: July 13 to August 7",
+      "description": "Summer STEM camp, grades K-3: July 13 to August 7 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "morning-stem"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Eight weeks of summer camps, sold one week at a time, or buy four weeks at once and save. Each week is different. Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>"
+  },
+  {
+    "path": "/spring-break-camps-1-2/",
+    "template": "registration",
+    "title": "Summer camp, grades K-3 (part 1)",
+    "fields": {
+      "heading": "Summer STEM camp, grades K-3: June 15 to July 10",
+      "description": "Summer STEM camp, grades K-3: June 15 to July 10 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "morning-stem"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Eight weeks of summer camps, sold one week at a time, or buy four weeks at once and save. Each week is different. Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>"
+  },
+  {
+    "path": "/spring-break-camps-1/",
+    "template": "registration",
+    "title": "Spring break camp, grades K-3",
+    "fields": {
+      "heading": "Spring break STEM camp, grades K-3",
+      "description": "Spring break STEM camp, grades K-3 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "morning-stem"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Three weeks of spring break camps, so families from different school districts can each find their break. Each week is different. Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>"
+  },
+  {
+    "path": "/spring-break-camps/",
+    "template": "default",
+    "title": "Spring break STEM camps",
+    "fields": {
+      "lead": "Three weeks of half-day camps, timed so families in different school districts can each find their spring break.",
+      "description": "LabRats spring break STEM camps in Carlsbad for grades K-3 and 3-6. Half-day camps with hands-on labs and maker space time.",
+      "section": "schedule"
+    },
+    "body": "<div class=\"labrats__notice\" role=\"note\">\n  <p><strong>These are the spring 2026 camps, and those dates have passed.</strong> Upcoming camps are on the <a href=\"/schedule/\">schedule</a>.</p>\n</div>\n\n<section class=\"labrats__section\" aria-labelledby=\"spring-groups\">\n  <h2 id=\"spring-groups\">Two age groups</h2>\n  <div class=\"ocs__table-wrap\">\n    <table class=\"ocs__table\">\n      <thead><tr><th scope=\"col\">Grades</th><th scope=\"col\">Time</th><th scope=\"col\">Focus</th><th scope=\"col\">Details</th></tr></thead>\n      <tbody>\n        <tr><td>K-3</td><td>8:00 am–12:00 pm</td><td>Hands-on STEM labs</td><td><a href=\"/spring-break-camps-1/\">K-3 camp</a></td></tr>\n        <tr><td>3-6</td><td>1:00–5:00 pm</td><td>Hands-on engineering labs</td><td><a href=\"/spring-break-camp-2/\">3-6 camp</a></td></tr>\n      </tbody>\n    </table>\n  </div>\n</section>"
+  },
+  {
+    "path": "/stem-discovery-center-2-2/",
+    "template": "archive",
+    "title": "STEM Discovery Saturdays, September 2023",
+    "fields": {
+      "heading": "STEM Discovery Saturdays, September 2023",
+      "lead": "In fall 2023 the STEM Discovery Center opened on Saturdays, with a new course every month.",
+      "description": "San Diego LabRats STEM Discovery Saturdays in September 2023 for grades K-3 and 4-8 in Carlsbad.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "archive_note": "These September 2023 sessions have ended.",
+      "current_url": "/schedule/",
+      "current_title": "See this month's sessions"
+    },
+    "body": "<div class=\"labrats__split\">\n  <div>\n    <p>Sessions met Saturdays at 6353 Corte Del Abeto, Suite B100, Carlsbad, CA 92011. Each day a real scientist led a one-hour course, followed by an hour of open maker space. Full scholarships were provided by TING Internet.</p>\n    <p>Fall 2023 pricing: $45 for a single day, or $160 for four weeks. Families could try it in August for free.</p>\n  </div>\n  <div class=\"labrats__embed\"><iframe src=\"https://www.youtube-nocookie.com/embed/elfu9iMTmfs\" title=\"Discovery Center opening soon: Robo-Masters courses\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>\n</div>\n\n<div class=\"labrats__day-plans\">\n  <section>\n    <h2>Grades K-3</h2>\n    <p>Saturdays, 9:00–11:00 am: September 9, 16, 23, and 30.</p>\n    <p><a href=\"/k-3-stem-center-registration/\">K-3 registration page</a></p>\n  </section>\n  <section>\n    <h2>Grades 4-8</h2>\n    <p>Saturdays, 12:00–2:00 pm: September 9, 16, 23, and 30.</p>\n    <p><a href=\"/4-8-stem-center-registration/\">4-8 registration page</a></p>\n  </section>\n</div>"
+  },
+  {
+    "path": "/stem-discovery-center-2-3-2/",
+    "template": "program",
+    "title": "Afterschool at the STEM Discovery Center",
+    "fields": {
+      "program": "afterschool",
+      "lead": "A scientist-led lab, then an hour of open maker space. Monthly sessions for grades K-3 and 4-8 in Carlsbad.",
+      "description": "Afterschool STEM classes for grades K-3 and 4-8 in Carlsbad. Each two-hour session pairs a scientist-led lab with open maker space time. Register by the month.",
+      "section": "programs",
+      "facts": [
+        {
+          "label": "Grades",
+          "value": "K-3 and 4-8, in separate groups"
+        },
+        {
+          "label": "Where",
+          "value": "STEM Discovery Center, 6351 Corte Del Abeto, Suite A112, Carlsbad"
+        },
+        {
+          "label": "When",
+          "value": "Tuesday to Saturday; two-hour sessions, four weeks a month"
+        },
+        {
+          "label": "Cost",
+          "value": "$160 a month (4 sessions) or $45 a single day, October 2026 rates"
+        },
+        {
+          "label": "How to sign up",
+          "value": "Register online for the month and grade group"
+        }
+      ],
+      "sessions": true,
+      "signup": {
+        "heading": "This month's sessions",
+        "text": "Register for one grade group and month. Each session meets once a week at the day and time you pick.",
+        "link_text": "See the full schedule and pricing",
+        "url": "/schedule/"
+      }
+    },
+    "body": "<section class=\"labrats__section\" aria-labelledby=\"afterschool-how\">\n  <h2 id=\"afterschool-how\">What happens in a session</h2>\n  <div class=\"labrats__split\">\n    <div>\n      <p>The STEM Discovery Center is a place to discover, create, build, and dive into science, with the freedom to follow your own curiosity.</p>\n      <p>Each two-hour session starts with a one-hour course led by a real scientist. Then comes an hour of open maker space, set up by our staff, where kids build, test, and explore the topics that interest them most. There's a new lesson every week.</p>\n      <p>The program uses Engagement Education: kids commit to their own learning, support each other as a group, and learn from scientists who care about character as much as content. <a href=\"/our-teaching-methods/\">How we teach</a></p>\n    </div>\n    <dl class=\"labrats__day\">\n      <dt>Hour 1</dt><dd><strong>Teacher-led lab</strong> with a working scientist</dd>\n      <dt>Hour 2</dt><dd><strong>Open maker space</strong> to build, create, and explore</dd>\n    </dl>\n  </div>\n</section>\n\n<section class=\"labrats__section labrats__split\" aria-labelledby=\"afterschool-center\">\n  <div>\n    <h2 id=\"afterschool-center\">Inside the Discovery Center</h2>\n    <p>Each lab starts with a short classroom lecture by one of our scientists on a specific topic, followed by a hands-on experiment. We rotate labs regularly from our library of curriculum.</p>\n    <p>In open maker space, kids explore whatever they're curious about: games, experiments, and engineering challenges, using everything in the center.</p>\n  </div>\n  <div>\n    <h3>What's in the center</h3>\n    <ul class=\"labrats__list\">\n      <li>Compound and stereo microscopes</li>\n      <li>A slime station for building any kind of slime</li>\n      <li>Lego robots to build and code</li>\n      <li>A magnetic marble run to build your own track</li>\n      <li>Messy labs: two creative labs, rotated regularly</li>\n      <li>A maker space tower with materials for engineering projects, like a balloon-powered car</li>\n    </ul>\n  </div>\n</section>\n\n<section class=\"labrats__section\" aria-labelledby=\"afterschool-labs\">\n  <h2 id=\"afterschool-labs\">In the lab</h2>\n  <ul class=\"labrats__videos labrats__videos--compact\">\n    <li><figure class=\"labrats__figure\"><img src=\"/images/projects/sdlabrats/lab-bubbles.jpg\" alt=\"White bubbles foam out of a plastic bottle and a pink straw\" loading=\"lazy\" width=\"400\" height=\"300\"><figcaption>Bubble science</figcaption></figure></li>\n    <li><figure class=\"labrats__figure\"><img src=\"/images/projects/sdlabrats/lab-dry-ice-cauldron.jpg\" alt=\"Dry ice fog fills a cauldron next to lit candles\" loading=\"lazy\" width=\"400\" height=\"225\"><figcaption>Dry ice cauldron</figcaption></figure></li>\n    <li><figure class=\"labrats__figure\"><img src=\"/images/projects/sdlabrats/lab-lava-lamp.jpg\" alt=\"Orange blobs rise through a homemade lava lamp\" loading=\"lazy\" width=\"900\" height=\"506\"><figcaption>Homemade lava lamp</figcaption></figure></li>\n    <li><figure class=\"labrats__figure\"><img src=\"/images/projects/sdlabrats/lab-secret-message.jpg\" alt=\"A brush reveals the hidden word Reveal on a sheet of paper\" loading=\"lazy\" width=\"400\" height=\"225\"><figcaption>Secret messages</figcaption></figure></li>\n  </ul>\n</section>"
+  },
+  {
+    "path": "/stem-discovery-center-2/",
+    "template": "redirect",
+    "title": "STEM Discovery Center",
+    "fields": {
+      "redirect_to": "/stem-discovery-center-2-2/",
+      "redirect_title": "STEM Discovery Saturdays, September 2023"
+    },
+    "body": ""
+  },
+  {
+    "path": "/stem-discovery-center/",
+    "template": "archive",
+    "title": "STEAM Discovery Center, fall 2021",
+    "fields": {
+      "heading": "STEAM Discovery Center at the Encinitas Community Center",
+      "lead": "Our first Discovery Center sessions ran on Friday afternoons at the Encinitas Community Center in fall 2021.",
+      "description": "The fall 2021 San Diego LabRats STEAM Discovery Center at the Encinitas Community Center - robotics, forensics, and maker space on Fridays.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "archive_note": "These fall 2021 sessions have ended. The STEM Discovery Center is now in Carlsbad.",
+      "current_url": "/stem-discovery-center-2-3-2/",
+      "current_title": "Afterschool at the STEM Discovery Center today"
+    },
+    "body": "<div class=\"labrats__split\">\n  <div>\n    <p>The STEAM Discovery Center was open Fridays from 1 to 4 pm at the Encinitas Community Center, 1140 Oakcrest Park Dr, Encinitas, CA 92024. Each day a real scientist led a one-hour course, with open maker space time before and after. Full scholarships were provided by TING Internet. One day cost $50; all four weeks cost $185.</p>\n    <p>The program used three forms of Engagement Education: self, social, and custodial engagement.</p>\n  </div>\n  <div class=\"labrats__embed\"><iframe src=\"https://www.youtube-nocookie.com/embed/wAS8expmu3k\" title=\"SD LabRats STEM Discovery Center promo\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>\n</div>\n\n<div class=\"labrats__day-plans\">\n  <section>\n    <h2>Grades K-3: Robotics and maker space</h2>\n    <dl class=\"labrats__day\">\n      <dt>1:00–2:00 pm</dt><dd>Open maker space</dd>\n      <dt>2:00–3:00 pm</dt><dd>Teacher-led course: Robotics, Animal Style (room 120)</dd>\n      <dt>3:00–4:00 pm</dt><dd>Open maker space</dd>\n    </dl>\n    <p>Robots in Space taught students to build and code robots that solve challenges from space travel. Maker space topics changed daily: magnetism, engineering, catapults, airplanes, and rockets.</p>\n  </section>\n  <section>\n    <h2>Grades 4-8: Forensics and maker space</h2>\n    <dl class=\"labrats__day\">\n      <dt>1:00–2:00 pm</dt><dd>Teacher-led course: Forensic Science (room 140)</dd>\n      <dt>2:00–4:00 pm</dt><dd>Open maker space</dd>\n    </dl>\n    <p>Secret Agent Science used chemistry, physics, and computer science to solve spy challenges. Maker space topics included building and coding robots and building launchers like catapults and air cannons.</p>\n  </section>\n</div>"
+  },
+  {
+    "path": "/stemathome/",
+    "template": "program",
+    "title": "STEM at Home",
+    "fields": {
+      "program": "stem-at-home",
+      "lead": "Free video labs, printable procedures, and BrainSTEMtv lessons for doing real science at home with cheap materials you probably already have.",
+      "description": "Free at-home science labs from San Diego LabRats. Watch video labs and download procedures for experiments using household materials.",
+      "section": "programs",
+      "facts": [
+        {
+          "label": "Grades",
+          "value": "K-8; each video lists its age range"
+        },
+        {
+          "label": "Where",
+          "value": "Your kitchen table"
+        },
+        {
+          "label": "When",
+          "value": "Any time"
+        },
+        {
+          "label": "Cost",
+          "value": "Free"
+        },
+        {
+          "label": "How to sign up",
+          "value": "No sign-up. Pick a lab below"
+        }
+      ],
+      "signup": {
+        "heading": "More videos",
+        "text": "Follow our YouTube channel for new labs.",
+        "link_text": "LabRats on YouTube",
+        "url": "https://www.youtube.com/channel/UCDyefuVZoO5ahiwpvJQhUIw"
+      },
+      "help": "none"
+    },
+    "body": "<section class=\"labrats__section\" aria-labelledby=\"home-science\">\n  <h2 id=\"home-science\">You don't need a million-dollar lab</h2>\n  <p>Science is the process we use to study the world around us and make sure we aren't fooling ourselves. It happens everywhere, and you can do it with simple, cheap materials. These labs are designed for friends and families to do together at home.</p>\n  <div class=\"labrats__notice\" role=\"note\">\n    <p><strong>Safety first:</strong> some labs are dangerous and need a parent to supervise or take part.</p>\n  </div>\n</section>\n\n<section class=\"labrats__section\" id=\"videos\" aria-labelledby=\"home-videos\">\n  <h2 id=\"home-videos\">Video labs</h2>\n  <ul class=\"labrats__videos\">\n    <li><div class=\"labrats__embed\"><iframe src=\"https://www.youtube-nocookie.com/embed/TEuxbtrvtdI\" title=\"Bernoulli's Principle and the Science of Flight\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div><h3>Science of flight: Bernoulli's principle</h3></li>\n    <li><div class=\"labrats__embed\"><iframe src=\"https://www.youtube-nocookie.com/embed/tJrxRSWJnS8\" title=\"What is Light? Build Your Own Spectroscope\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div><h3>Science of light: build your own spectroscope</h3></li>\n    <li><div class=\"labrats__embed\"><iframe src=\"https://www.youtube-nocookie.com/embed/ptRdWgKRuBY\" title=\"Light and the Electromagnetic Spectrum\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div><h3>Light and the electromagnetic spectrum</h3></li>\n    <li><div class=\"labrats__embed\"><iframe src=\"https://www.youtube-nocookie.com/embed/9lcfB0vmwrg\" title=\"Seed Dispersal: Nature's Ingenious Strategy\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div><h3>How plants cover the Earth: seed dispersal</h3></li>\n    <li><div class=\"labrats__embed\"><iframe src=\"https://www.youtube-nocookie.com/embed/-fnrXCS07vs\" title=\"5 DIY Science Experiments\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div><h3>5 science experiments for grades K-3</h3></li>\n    <li><div class=\"labrats__embed\"><iframe src=\"https://www.youtube-nocookie.com/embed/cjeF5ePiV0k\" title=\"Spooky Halloween Science Experiments\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div><h3>Spooky Halloween science</h3></li>\n    <li><div class=\"labrats__embed\"><iframe src=\"https://www.youtube-nocookie.com/embed/V0toepUadMs\" title=\"6 at Home Science Experiments\" loading=\"lazy\" allow=\"accelerometer; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div><h3>6 at-home experiments for grades 4-8</h3></li>\n  </ul>\n  <p class=\"labrats__hint\">Thanks to Brainstem Creative for helping us produce these videos.</p>\n</section>\n\n<section class=\"labrats__section labrats__band labrats__split labrats__split--center\" id=\"brainstemtv\" aria-labelledby=\"brainstemtv-title\">\n  <div>\n    <h2 id=\"brainstemtv-title\">More free labs on BrainSTEMtv</h2>\n    <p>BrainSTEMtv offers free at-home lessons whenever your schedule allows, from SDLabRats, the San Diego Botanic Garden, Studio Ace Art, and more.</p>\n    <dl class=\"labrats__day\">\n      <dt>New Explorers</dt><dd>Grades K-2</dd>\n      <dt>Young Explorers</dt><dd>Grades 3-5</dd>\n      <dt>Explorers</dt><dd>Grades 6-8</dd>\n    </dl>\n    <div class=\"ocs__links\">\n      <a class=\"ocs__btn signal fill\" href=\"https://brainstemtv.org/\" rel=\"noopener\">Visit BrainSTEMtv.org</a>\n    </div>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/brainstemtv.png\" alt=\"BrainSTEMtv logo\" width=\"500\" height=\"287\" loading=\"lazy\">\n  </figure>\n</section>\n\n<section class=\"labrats__section\" id=\"procedures\" aria-labelledby=\"home-procedures\">\n  <h2 id=\"home-procedures\">Printable procedures</h2>\n  <p>Step-by-step instructions for the experiments in \"6 at-home experiments,\" for grades 4-8.</p>\n  <ul class=\"labrats__downloads\">\n    <li><a href=\"/assets/pdfs/sdlabrats/bouncy-eggs.pdf\">Bouncy egg</a> <small>PDF</small></li>\n    <li><a href=\"/assets/pdfs/sdlabrats/diy-lava-lamp.pdf\">Lava lamp</a> <small>PDF</small></li>\n    <li><a href=\"/assets/pdfs/sdlabrats/dry-ice-bubbles.pdf\">Dry ice bubbles</a> <small>PDF</small></li>\n    <li><a href=\"/assets/pdfs/sdlabrats/catastrophic-can.pdf\">Catastrophic can</a> <small>PDF</small></li>\n    <li><a href=\"/assets/pdfs/sdlabrats/carbon-sugar-snake.pdf\">Fire snake</a> <small>PDF</small></li>\n    <li><a href=\"/assets/pdfs/sdlabrats/electromagnet-car.pdf\">Magnetic motor</a> <small>PDF</small></li>\n    <li><a href=\"/assets/pdfs/sdlabrats/build-your-own-crystals.pdf\" download>Build your own crystal</a> <small>PDF, plus the <a href=\"/images/projects/sdlabrats/crystal-flyer.jpg\">flyer</a></small></li>\n  </ul>\n</section>\n\n<section class=\"labrats__section\" id=\"request\" aria-labelledby=\"home-request\">\n  <h2 id=\"home-request\">What should we film next?</h2>\n  <p>We designed every online lab so you can do it with materials from around the house or a local market, because not every family has special equipment or kits. Tell us which subjects or topics you'd like to see here or on BrainSTEMtv.</p>\n  <div data-labrats-form-slot=\"video-topic\"></div>\n</section>"
+  },
+  {
+    "path": "/summer-camps-2/",
+    "template": "registration",
+    "title": "Sensational Science Camp",
+    "fields": {
+      "heading": "Sensational Science Camp: explore the world through your senses",
+      "description": "LabRats Sensational Science summer camp in Carlsbad. Kids explore how their senses detect the world, and the science of balance.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "morning-science"
+      ]
+    },
+    "body": "<p>A summer camp about the science of the human senses. Your senses are like built-in scientific instruments, and campers explore how their bodies detect and interpret the world around them.</p>\n<p>Kids also dig into the science of balance: not just how we stay upright, but how balance matters in engineering everything from medicine coolers to chemical processes.</p>\n<p>See <a href=\"/summer-stem-camps/\">other summer STEM camps</a>.</p>"
+  },
+  {
+    "path": "/summer-camps-5/",
+    "template": "registration",
+    "title": "Forensic Science Camp",
+    "fields": {
+      "heading": "Forensic Science Camp: the science behind solving crimes",
+      "description": "LabRats Forensic Science summer camp in Carlsbad. Kids collect fingerprints, test mystery substances, and crack cases with real forensic techniques.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "afternoon-forensics"
+      ]
+    },
+    "body": "<p>It's like a crime show, but without the crime. At Forensic Science Camp, kids become scientific sleuths and learn how real forensic scientists use evidence to solve mysteries. Your child will:</p>\n<ul class=\"labrats__list\">\n  <li>Collect and analyze fingerprints using professional techniques</li>\n  <li>Examine mysterious substances with chemical analysis</li>\n  <li>Decipher secret messages with forensic tools</li>\n  <li>Work with teammates to solve mysteries</li>\n</ul>\n<p>The curriculum is written by real scientists who know how to make forensic concepts engaging and age-appropriate. Along the way, kids build critical thinking, scientific reasoning, and attention to detail that help them in school and beyond.</p>\n<p>See <a href=\"/summer-stem-camps/\">other summer STEM camps</a>.</p>"
+  },
+  {
+    "path": "/summer-stem-camps/",
+    "template": "default",
+    "title": "Summer STEM camps",
+    "fields": {
+      "lead": "Eight weeks of half-day summer camps. Sign up one week at a time, or buy four weeks at once and save.",
+      "description": "LabRats summer STEM camps in Carlsbad for grades K-3 and 3-6. Weekly half-day camps with hands-on labs and maker space time.",
+      "section": "schedule"
+    },
+    "body": "<div class=\"labrats__notice\" role=\"note\">\n  <p><strong>These are the summer 2026 camps, and those dates have passed.</strong> Upcoming camps are on the <a href=\"/schedule/\">schedule</a>.</p>\n</div>\n\n<section class=\"labrats__section\" aria-labelledby=\"summer-blocks\">\n  <h2 id=\"summer-blocks\">Two four-week blocks</h2>\n  <div class=\"ocs__table-wrap\">\n    <table class=\"ocs__table\">\n      <thead><tr><th scope=\"col\">Dates</th><th scope=\"col\">Grades K-3 (mornings)</th><th scope=\"col\">Grades 3-6 (afternoons)</th></tr></thead>\n      <tbody>\n        <tr><td>June 15–July 10</td><td><a href=\"/spring-break-camps-1-2/\">K-3, part 1</a></td><td><a href=\"/spring-break-camp-2-2/\">3-6, part 1</a></td></tr>\n        <tr><td>July 13–Aug 7</td><td><a href=\"/spring-break-camps-1-2-2/\">K-3, part 2</a></td><td><a href=\"/spring-break-camp-2-2-2/\">3-6, part 2</a></td></tr>\n      </tbody>\n    </table>\n  </div>\n  <p>Earlier summers also had theme camps: <a href=\"/summer-camps-5/\">Forensic Science Camp</a> and <a href=\"/summer-camps-2/\">Sensational Science Camp</a>.</p>\n  <h3>Part 2 camps, 2026</h3>\n  <p>Each camp ran one week (5 days) and cost $375 per week.</p>\n  <div class=\"ocs__table-wrap\">\n    <table class=\"ocs__table\">\n      <thead><tr><th scope=\"col\">Week</th><th scope=\"col\">Grades K-3, 8:00 am–12:00 pm</th><th scope=\"col\">Grades 3-6, 1:00–5:00 pm</th></tr></thead>\n      <tbody>\n        <tr><td>July 13–17</td><td>Wacky Science Camp</td><td>Atomic Adventures Camp</td></tr>\n        <tr><td>July 20–24</td><td>Creative Chaos STEM Camp</td><td>RoboMasters Camp</td></tr>\n        <tr><td>July 27–31</td><td>Wonderlab Wizards Camp</td><td>Mad Genius Inventors Camp</td></tr>\n        <tr><td>Aug 3–7</td><td>Little Engineers Camp</td><td>Future Engineers Camp</td></tr>\n      </tbody>\n    </table>\n  </div>\n  <p><a href=\"/images/projects/sdlabrats/summer-camp-schedule.jpg\">Summer 2026 part 2 flyer (image)</a></p>\n</section>"
+  },
+  {
+    "path": "/support/",
+    "template": "redirect",
+    "title": "Paying for programs",
+    "fields": {
+      "redirect_to": "/about-us/#help-paying",
+      "redirect_title": "Help paying, on About and support"
+    },
+    "body": ""
+  },
+  {
+    "path": "/test/",
+    "template": "redirect",
+    "title": "Test page",
+    "fields": {
+      "redirect_to": "/",
+      "redirect_title": "the San Diego LabRats home page"
+    },
+    "body": ""
+  },
+  {
+    "path": "/thank-you-newsletter-response/",
+    "template": "default",
+    "title": "Thanks for subscribing",
+    "fields": {
+      "heading": "Thanks for joining our newsletter",
+      "lead": "Our newsletter is the fastest way to hear about upcoming events and classes.",
+      "description": "Thanks for joining the San Diego LabRats newsletter.",
+      "section": "give",
+      "noindex": true
+    },
+    "body": "<div class=\"ocs__links\">\n  <a class=\"ocs__btn signal fill\" href=\"/schedule/\">See what's open now</a>\n  <a class=\"ocs__btn accent\" href=\"/\">Back to home</a>\n</div>"
+  },
+  {
+    "path": "/thank-you/",
+    "template": "archive",
+    "title": "Order received",
+    "fields": {
+      "heading": "Thank you. Your order has been received.",
+      "description": "Order confirmation page from the former San Diego LabRats online store.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "noindex": true,
+      "archive_note": "This confirmation page belonged to the former online store. Registrations now confirm by email from Donorbox.",
+      "current_url": "/schedule/",
+      "current_title": "See what's open and register"
+    },
+    "body": ""
+  },
+  {
+    "path": "/thrive-payment-processing-only/",
+    "template": "registration",
+    "title": "Thrive payment form",
+    "fields": {
+      "heading": "Thrive class payments",
+      "lead": "Only for families who have already registered for a class through Thrive.",
+      "description": "Payment form for families who have already registered for a San Diego LabRats class through Thrive.",
+      "section": "schedule",
+      "register_heading": "Pay for your Thrive class",
+      "help": "none"
+    },
+    "body": "<div class=\"labrats__notice\" role=\"note\">\n  <p><strong>Register through Thrive first.</strong> This form doesn't sign you up for a Thrive class. It only processes payment after you've registered with Thrive.</p>\n</div>\n<p>The payment form has four pages, and the last page takes payment. When you finish, you'll see a confirmation message and get a confirmation email.</p>\n<p>See also: <a href=\"/register-today-for-thrive-classes/\">Thrive classes</a>.</p>"
+  },
+  {
+    "path": "/video-link/",
+    "template": "redirect",
+    "title": "LabRats video",
+    "fields": {
+      "redirect_to": "/about-us/#video",
+      "redirect_title": "LabRats video, on About and support"
+    },
+    "body": ""
+  },
+  {
+    "path": "/ways-to-donate-2/",
+    "template": "redirect",
+    "title": "Charter school funding",
+    "fields": {
+      "redirect_to": "/about-us/#charter",
+      "redirect_title": "Charter school funding, on About and support"
+    },
+    "body": ""
+  },
+  {
+    "path": "/ways-to-donate/",
+    "template": "redirect",
+    "title": "Donate",
+    "fields": {
+      "redirect_to": "/contact/#donate",
+      "redirect_title": "Donate, on Donate and contact"
+    },
+    "body": ""
+  },
+  {
+    "path": "/why-learn-science/",
+    "template": "default",
+    "title": "Why learn science?",
+    "fields": {
+      "lead": "The power of science comes from understanding both the facts and the process people use to discover them.",
+      "description": "Why San Diego LabRats teaches science - what science is, what doing science is about, and what makes a scientist a scientist.",
+      "section": "about"
+    },
+    "body": "<section class=\"labrats__section labrats__split\" aria-labelledby=\"what-title\">\n  <div>\n    <h2 id=\"what-title\">What is science?</h2>\n    <p class=\"labrats__motto\">Science is everything we know about the physical universe, and how we know it.</p>\n    <p>That restates the \"systemized body of knowledge\" definition usually taught in school, and it makes clear that science is both the facts and the process used to discover them.</p>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/why-learn-science-1.jpg\" alt=\"\" loading=\"lazy\">\n  </figure>\n</section>\n\n<section class=\"labrats__section labrats__split labrats__split--reverse\" aria-labelledby=\"doing-title\">\n  <div>\n    <h2 id=\"doing-title\">What is doing science about?</h2>\n    <p class=\"labrats__motto\">Making sure you're not fooling yourself.</p>\n    <p>That is the heart of the scientific enterprise: each scientist working painstakingly to avoid fooling themselves. If you don't know how to check whether you're fooling yourself, you're more likely to be fooled. We teach students that reasoned self-skepticism gives them a big advantage in every part of life.</p>\n    <p>Science isn't just one way to understand nature. It's the best approach we have to understanding the physical universe.</p>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/why-learn-science-2.jpg\" alt=\"\" loading=\"lazy\">\n  </figure>\n</section>\n\n<section class=\"labrats__section labrats__split\" aria-labelledby=\"scientist-title\">\n  <div>\n    <h2 id=\"scientist-title\">What makes a scientist a scientist?</h2>\n    <p class=\"labrats__motto\">Always fit theories to facts, never facts to theories.</p>\n    <p>We all have beliefs. Many people, faced with facts that contradict a belief, bend their reading of the facts to fit what they want to believe. A scientist makes a personal commitment to a worldview where the truth matters more than any belief they hold right now.</p>\n    <p>A scientist stays skeptical of their own ideas and is willing to change them when credible evidence shows they're wrong.</p>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/why-learn-science-3.jpg\" alt=\"\" loading=\"lazy\">\n  </figure>\n</section>"
+  },
+  {
+    "path": "/wine-festival-fundraiser/",
+    "template": "archive",
+    "title": "Wine festival fundraiser",
+    "fields": {
+      "heading": "Encinitas Wine and Food Festival",
+      "lead": "A festival fundraiser where ticket buyers could direct their proceeds to San Diego LabRats.",
+      "description": "The June 8, 2024 Encinitas Wine and Food Festival, a fundraiser where attendees could choose San Diego LabRats as their beneficiary.",
+      "section": "give",
+      "parent": "/contact/",
+      "archive_note": "This event took place on June 8, 2024.",
+      "current_url": "/contact/#donate",
+      "current_title": "Donate to LabRats today"
+    },
+    "body": "<div class=\"labrats__split\">\n  <div>\n    <dl class=\"labrats__day\">\n      <dt>When</dt><dd>June 8, 2024, 4 to 7 pm</dd>\n      <dt>Where</dt><dd>1275 Quail Gardens Drive, Encinitas, CA 92024</dd>\n    </dl>\n    <p>The festival reports more than 1,000 attendees, $1.2 million raised since it began, and 60 food and wine vendors.</p>\n    <p>All proceeds were divided among nonprofits in the children's and community categories. Attendees had to be 21 or older. All beneficiaries were 501(c)(3) charities or 501(c)(6) nonprofits, and buyers could deduct their ticket price minus $25. Choosing SDLabRats at checkout sent ticket funds to future STEM education.</p>\n  </div>\n  <div>\n    <figure class=\"labrats__figure\">\n      <img src=\"/images/projects/sdlabrats/wine-festival-logo.png\" alt=\"Encinitas Wine and Food Festival logo\" loading=\"lazy\">\n    </figure>\n    <figure class=\"labrats__figure\">\n      <img src=\"/images/projects/sdlabrats/wine-festival-flyer.jpg\" alt=\"Wine festival fundraiser flyer\" loading=\"lazy\">\n    </figure>\n  </div>\n</div>"
+  },
+  {
+    "path": "/winter-camps-3-6/",
+    "template": "registration",
+    "title": "Winter break camp, grades 3-6",
+    "fields": {
+      "heading": "Winter break camp: Future Engineers, grades 3-6",
+      "description": "Winter break camp: Future Engineers, grades 3-6 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "morning-maker",
+        "afternoon-engineering"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>\n<p>Please register for either the morning or the afternoon group. Both run the same camp, so pick the time that fits your schedule. These are half-day camps only; we don't offer full-day camps.</p>"
+  },
+  {
+    "path": "/winter-camps-k3/",
+    "template": "registration",
+    "title": "Winter break camp, grades K-3",
+    "fields": {
+      "heading": "Winter break camp: Future Engineers, grades K-3",
+      "description": "Winter break camp: Future Engineers, grades K-3 at the LabRats STEM Discovery Center in Carlsbad: hands-on labs and maker space time.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "day_plans": [
+        "morning-maker",
+        "afternoon-engineering"
+      ],
+      "camp_why": true
+    },
+    "body": "<p>Every day is full of hands-on labs and independent maker space time. Camps build on the NGSS topics kids cover in public and charter schools, then challenge them to use that knowledge to solve fun problems.</p>\n<p>Please register for either the morning or the afternoon group. Both run the same camp, so pick the time that fits your schedule. These are half-day camps only; we don't offer full-day camps.</p>"
+  },
+  {
+    "path": "/winter-steam-discover-camp-2021/",
+    "template": "archive",
+    "title": "Winter STEAM Discovery Camp 2021",
+    "fields": {
+      "heading": "TING presents: Winter STEAM Discovery Camp",
+      "lead": "An in-person winter break camp at the San Diego Botanic Garden in Encinitas, with two sessions over the 2021 holidays.",
+      "description": "The 2021 TING Winter STEAM Discovery Camp at the San Diego Botanic Garden - Life of Plants, Creative Chemistry, Forensic Science, and Secret Agent Science.",
+      "section": "schedule",
+      "parent": "/schedule/",
+      "archive_note": "This camp ran from December 27, 2021 to January 7, 2022.",
+      "current_url": "/camps/",
+      "current_title": "See this year's break camps"
+    },
+    "body": "<div class=\"labrats__split\">\n  <div>\n    <dl class=\"labrats__day\">\n      <dt>Session 1</dt><dd>December 27–31, 2021</dd>\n      <dt>Session 2</dt><dd>January 3–7, 2022</dd>\n      <dt>Hours</dt><dd>9:00 am–12:00 pm (drop-off 8:30–9:00, pick-up 12:00–12:30)</dd>\n      <dt>Where</dt><dd>San Diego Botanic Garden, Junior Quail Trail, 300 Quail Gardens Dr., Encinitas, CA 92024</dd>\n      <dt>Registration donation</dt><dd>$275</dd>\n    </dl>\n    <p>Both weeks offered the same camp. Camp was held outdoors under tents; campers wore closed-toe shoes and jackets and brought their own snacks and water. Thanks to TING, extra scholarships were available for the rest of 2021.</p>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/flyer-winter-camp-2021.jpg\" alt=\"Winter STEAM Discovery Camp 2021 flyer\" width=\"500\" height=\"647\" loading=\"lazy\">\n  </figure>\n</div>\n\n<div class=\"labrats__day-plans\">\n  <section>\n    <h2>Grades K-3</h2>\n    <h3>Life of Plants</h3>\n    <p>Young horticulturalists looked at the world from a plant's point of view. By observing the plants and pollinators around them, students got an introduction to the scientific method and learned where plants came from and how they live with their environment. No green thumb required.</p>\n    <h3>Creative Chemistry</h3>\n    <p>From instant chemical reactions to DIY slime, a creative introduction to chemistry, the study of matter. Using safe compounds from around the house and kitchen, students explored chemical reactions and the properties used to describe matter.</p>\n  </section>\n  <section>\n    <h2>Grades 4-8</h2>\n    <h3>Secret Agent Science</h3>\n    <p>Every spy needs a gadget person. Students learned techniques from chemistry to computer science: sending secret messages with chemistry, coding messages only they could read, and using those skills to solve a treasure hunt.</p>\n    <h3>Forensic Science</h3>\n    <p>It's like a crime show, but without the crime. Students learned how scientists examine a \"crime\" scene and find useful evidence with fingerprinting and chemical analysis.</p>\n  </section>\n</div>"
+  }
+]

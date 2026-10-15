@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "afterschool",
+    "name": "Afterschool at the STEM Discovery Center",
+    "short": "Afterschool",
+    "path": "/stem-discovery-center-2-3-2/",
+    "audience": "families",
+    "grades": "K-3 and 4-8",
+    "when": "Tuesday to Saturday, two-hour sessions",
+    "summary": "A one-hour lab led by a scientist, then an hour of open maker space to build, test, and chase whatever caught your kid's interest. New lessons every week.",
+    "image": "/images/projects/sdlabrats/discovery-center-van-de-graaff.jpg",
+    "image_alt": "Three students gasp as a classmate holds a wand to a Van de Graaff generator",
+    "position": 1
+  },
+  {
+    "slug": "camps",
+    "name": "Break and summer camps",
+    "short": "Camps",
+    "path": "/camps/",
+    "audience": "families",
+    "grades": "K-3 and 3-6",
+    "when": "Thanksgiving, winter, spring, and summer breaks",
+    "summary": "Half-day camps with hands-on labs, a snack break, and maker space time. Morning and afternoon groups run the same camp, so pick the time that fits.",
+    "image": "/images/projects/sdlabrats/camp-celebration.jpg",
+    "image_alt": "A student throws an arm up in celebration while classmates laugh at a lab table",
+    "position": 2
+  },
+  {
+    "slug": "assemblies",
+    "name": "Assemblies and demo lab stations",
+    "short": "Assemblies",
+    "path": "/assemblies-demo-lab-stations/",
+    "audience": "schools",
+    "grades": "K-8",
+    "when": "30- or 60-minute shows at your school",
+    "summary": "Two science shows, The Power of Science and Mysteries of Science, brought to your school or event.",
+    "image": "/images/projects/sdlabrats/assembly-class.jpg",
+    "image_alt": "A class strikes silly poses in front of a slide titled Magnetic Fields during a LabRats visit",
+    "position": 3
+  },
+  {
+    "slug": "stem-at-home",
+    "name": "STEM at Home",
+    "short": "STEM at Home",
+    "path": "/stemathome/",
+    "audience": "families",
+    "grades": "K-8",
+    "when": "Any time, free",
+    "summary": "Free video labs and printable procedures that use supplies you probably already have in the kitchen.",
+    "image": "/images/projects/sdlabrats/outdoor-lab-pour.jpg",
+    "image_alt": "Three students in purple gloves pour a liquid into a jar at an outdoor lab table",
+    "position": 4
+  },
+  {
+    "slug": "courses-workshops",
+    "name": "Courses and workshops",
+    "short": "Courses & Workshops",
+    "path": "/courses-workshops/",
+    "audience": "schools",
+    "grades": "K-2, 3-5, 6-8",
+    "when": "Booked with your school, troop, or event",
+    "summary": "Our Mobile Lab brings any of 100+ hands-on lessons to classrooms, scout troops, and events anywhere in San Diego County.",
+    "image": "/images/projects/sdlabrats/mobile-steam-lab.jpg",
+    "image_alt": "The LabRats Mobile STEAM Lab, a blue van painted with the word STEAM",
+    "position": 5
+  }
+]

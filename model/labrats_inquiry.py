@@ -10,7 +10,8 @@ import re
 from datetime import datetime
 
 from __init__ import db
-from model.labrats_programs import PROGRAM_SLUGS
+from model.labrats_programs import program_slugs
+from model.labrats_site import scholarship_program_values
 
 EMAIL_PATTERN = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
 MAX_TEXT_LENGTH = 2000
@@ -50,7 +51,6 @@ OPTIONAL_FIELDS = {
 
 LONG_TEXT_FIELDS = {"message", "subjects"}
 SCHOLARSHIP_GRADES = {"K", "1", "2", "3", "4", "5", "6", "7", "8"}
-SCHOLARSHIP_PROGRAMS = {"afterschool", "thanksgiving-camps", "winter-camps", "spring-camps", "summer-camps"}
 YES_NO = {"yes", "no"}
 
 
@@ -150,7 +150,8 @@ def validate_inquiry(data):
     for field in OPTIONAL_FIELDS[form]:
         if field == "programs":
             programs = data.get("programs") or []
-            cleaned["programs"] = [p for p in programs if p in SCHOLARSHIP_PROGRAMS] if isinstance(programs, list) else []
+            allowed = scholarship_program_values()  # the same choices the website form shows
+            cleaned["programs"] = [p for p in programs if p in allowed] if isinstance(programs, list) else []
         else:
             limit = MAX_TEXT_LENGTH if field in LONG_TEXT_FIELDS else MAX_FIELD_LENGTH
             value = _clean_text(data.get(field), limit)
@@ -160,7 +161,7 @@ def validate_inquiry(data):
     if cleaned.get("email") and not EMAIL_PATTERN.match(cleaned["email"]):
         errors["email"] = "Please enter an email address like name@example.com."
 
-    if form == "contact" and cleaned.get("interest") and cleaned["interest"] not in PROGRAM_SLUGS | {"other"}:
+    if form == "contact" and cleaned.get("interest") and cleaned["interest"] not in program_slugs() | {"other"}:
         errors["interest"] = "Please choose one of the listed options."
 
     if form == "scholarship":
