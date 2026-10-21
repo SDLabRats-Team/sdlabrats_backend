@@ -20,6 +20,10 @@ from api.persona_api import persona_api
 from api.skill_snapshot_api import skill_passport_api
 from api.pfp import pfp_api
 from api.programs_api import programs_api
+from api.labrats_inquiry_api import labrats_inquiry_api
+from api.labrats_users_api import labrats_users_api
+from api.labrats_assignment_api import labrats_assignment_api
+from api.labrats_site_api import labrats_site_api
 from api.analytics import analytics_api
 from api.student import student_api
 from api.groq_api import groq_api
@@ -51,6 +55,9 @@ from model.skill_snapshot import SkillSnapshot
 from model.post import Post, init_posts
 from model.microblog import MicroBlog, Topic, initMicroblogs
 from model.leaderboard import ScoreCounterEvent, ElementaryLeaderboardEvent
+from model.labrats_inquiry import LabRatsInquiry, initLabRatsInquiries, FORM_RULES as LABRATS_FORMS
+from model.labrats_assignment import initLabRatsAssignments
+from model.labrats_site import initLabRatsSite
 from hacks.jokes import initJokes 
 # from model.announcement import Announcement ##temporary revert
 
@@ -77,6 +84,10 @@ app.register_blueprint(persona_api)
 app.register_blueprint(skill_passport_api)
 app.register_blueprint(pfp_api) 
 app.register_blueprint(programs_api)
+app.register_blueprint(labrats_inquiry_api)  # San Diego LabRats website forms
+app.register_blueprint(labrats_users_api)  # San Diego LabRats admin account control
+app.register_blueprint(labrats_assignment_api)  # San Diego LabRats assignments and turn-ins
+app.register_blueprint(labrats_site_api)  # San Diego LabRats website content (pages, sessions, settings)
 app.register_blueprint(groq_api)
 app.register_blueprint(gemini_api)
 app.register_blueprint(ainpc_api)
@@ -149,7 +160,9 @@ def login():
     next_page = request.args.get('next', '') or request.form.get('next', '')
     if request.method == 'POST':
         user = User.query.filter_by(_uid=request.form['username']).first()
-        if user and user.is_password(request.form['password']):
+        if user and user.is_password(request.form['password']) and not user.active:
+            error = 'Account pending verification.'
+        elif user and user.is_password(request.form['password']):
             login_user(user)
             if not is_safe_url(next_page):
                 return abort(400)
@@ -206,6 +219,15 @@ def persona():
     return render_template("persona.html", personas=personas)
 
 # Helper function to extract uploads for a user (ie PFP image)
+# San Diego LabRats website form submissions, for staff
+@app.route('/labrats/inquiries/')
+@login_required
+def labrats_inquiries():
+    if current_user.role != 'Admin':
+        abort(403)
+    inquiries = LabRatsInquiry.query.order_by(LabRatsInquiry.created_at.desc()).all()
+    return render_template("labrats_inquiries.html", inquiries=[i.read() for i in inquiries], forms=LABRATS_FORMS.keys())
+
 @app.route('/uploads/<path:filename>')
 def uploaded_file(filename):
     return send_from_directory(current_app.config['UPLOAD_FOLDER'], filename)
@@ -362,6 +384,9 @@ def generate_data():
     initMicroblogs()
     initPersonas()
     initPersonaUsers()
+    initLabRatsInquiries()
+    initLabRatsAssignments()
+    initLabRatsSite()
 
 # Register the custom command group with the Flask application
 app.cli.add_command(custom_cli)

@@ -1,0 +1,66 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>San Diego LabRats Inquiries</h1>
+    <p>Submissions from the sdlabrats.org forms. Mark an inquiry handled once someone has replied.</p>
+
+    <table class="table table-striped" id="inquiriesTable">
+        <thead>
+            <tr>
+                <th>Received</th>
+                <th>Form</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Details</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for inquiry in inquiries %}
+            <tr>
+                <td data-order="{{ inquiry.created_at }}">{{ inquiry.created_at[:16] | replace("T", " ") }}</td>
+                <td>{{ inquiry.form }}</td>
+                <td>{{ inquiry.first_name }} {{ inquiry.last_name }}</td>
+                <td><a href="mailto:{{ inquiry.email }}">{{ inquiry.email }}</a></td>
+                <td>{{ inquiry.phone or "" }}</td>
+                <td>
+                    {% for key, value in inquiry.details.items() %}
+                    <div><strong>{{ key | replace("_", " ") }}:</strong> {{ value | join(", ") if value is iterable and value is not string else value }}</div>
+                    {% endfor %}
+                </td>
+                <td>
+                    <button class="btn btn-sm {{ 'btn-success' if inquiry.status == 'handled' else 'btn-warning' }} status-btn"
+                            data-id="{{ inquiry.id }}" data-status="{{ inquiry.status }}">{{ inquiry.status }}</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#inquiriesTable").DataTable({ order: [[0, "desc"]] });
+
+        // Toggle between "new" and "handled" through the admin-only API.
+        $("#inquiriesTable").on("click", ".status-btn", function () {
+            const button = $(this);
+            const next = button.data("status") === "handled" ? "new" : "handled";
+            fetch(`/api/labrats/inquiries/${button.data("id")}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ status: next })
+            })
+                .then(response => response.ok ? response.json() : Promise.reject(response.status))
+                .then(inquiry => {
+                    button.data("status", inquiry.status).text(inquiry.status)
+                        .toggleClass("btn-success", inquiry.status === "handled")
+                        .toggleClass("btn-warning", inquiry.status !== "handled");
+                })
+                .catch(status => alert(`Could not update the inquiry (error ${status}).`));
+        });
+    });
+</script>
+{% endblock %}

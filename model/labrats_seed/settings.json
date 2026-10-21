@@ -1,0 +1,344 @@
+{
+  "org": {
+    "name": "San Diego LabRats",
+    "short_name": "LabRats",
+    "tagline": "Real scientists teaching science",
+    "description": "Hands-on science classes, camps, and school assemblies for kids in grades K-8, taught by working scientists at the STEM Discovery Center in Carlsbad, CA.",
+    "url": "https://www.sdlabrats.org",
+    "logo": "/images/projects/sdlabrats/labrats-logo.png",
+    "social_image": "/images/projects/sdlabrats/discovery-center-van-de-graaff.jpg",
+    "phone": "(760) 450-4717",
+    "phone_href": "tel:+17604504717",
+    "charter_email": "jerry@sdlabrats.org",
+    "address": {
+      "name": "STEM Discovery Center",
+      "street": "6351 Corte Del Abeto, Suite A112",
+      "city": "Carlsbad",
+      "region": "CA",
+      "postal": "92011",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=6351+Corte+Del+Abeto+Suite+A112+Carlsbad+CA+92011"
+    },
+    "hours": "Tuesday through Friday after school, and Saturdays",
+    "nonprofit": "501(c)(3) public charity",
+    "ein": "82-0839046",
+    "impact_report": "/assets/pdfs/sdlabrats/impact-report-2023-24.pdf",
+    "donorbox_donate": "https://donorbox.org/donate-to-education-1?default_interval=o"
+  },
+  "social": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/SDLabRats"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/channel/UCDyefuVZoO5ahiwpvJQhUIw"
+    },
+    {
+      "name": "X (Twitter)",
+      "url": "https://twitter.com/SDLabRats"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/labrats-san-diego-8824b6144/"
+    }
+  ],
+  "announcement": {
+    "show": true,
+    "id": "holiday-camps-2026",
+    "text": "Thanksgiving and winter break camps are open for registration.",
+    "link_text": "See camp dates",
+    "url": "/camps/"
+  },
+  "sections": [
+    {
+      "id": "programs",
+      "title": "Programs",
+      "url": "/programs/",
+      "pages": [
+        {
+          "title": "All programs",
+          "url": "/programs/"
+        },
+        {
+          "title": "Afterschool",
+          "url": "/stem-discovery-center-2-3-2/"
+        },
+        {
+          "title": "Camps",
+          "url": "/camps/"
+        },
+        {
+          "title": "Assemblies",
+          "url": "/assemblies-demo-lab-stations/"
+        },
+        {
+          "title": "STEM at Home",
+          "url": "/stemathome/"
+        },
+        {
+          "title": "Courses & Workshops",
+          "url": "/courses-workshops/"
+        }
+      ]
+    },
+    {
+      "id": "schedule",
+      "title": "Schedule & Pricing",
+      "url": "/schedule/",
+      "pages": [
+        {
+          "title": "This season",
+          "url": "/schedule/"
+        },
+        {
+          "title": "Spring break camps",
+          "url": "/spring-break-camps/"
+        },
+        {
+          "title": "Summer camps",
+          "url": "/summer-stem-camps/"
+        },
+        {
+          "title": "Free open house",
+          "url": "/free-open-house-register-today/"
+        },
+        {
+          "title": "Thrive payments",
+          "url": "/thrive-payment-processing-only/"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "About & Support",
+      "url": "/about-us/",
+      "pages": [
+        {
+          "title": "About & support",
+          "url": "/about-us/"
+        },
+        {
+          "title": "Scholarship application",
+          "url": "/scholarships/"
+        },
+        {
+          "title": "Why learn science",
+          "url": "/why-learn-science/"
+        },
+        {
+          "title": "Our teaching methods",
+          "url": "/our-teaching-methods/"
+        }
+      ],
+      "anchors": [
+        {
+          "title": "Team",
+          "url": "/about-us/#team"
+        },
+        {
+          "title": "Help paying",
+          "url": "/about-us/#help-paying"
+        },
+        {
+          "title": "Charter schools",
+          "url": "/about-us/#charter"
+        },
+        {
+          "title": "Press",
+          "url": "/about-us/#press"
+        },
+        {
+          "title": "Flyers to share",
+          "url": "/about-us/#flyers"
+        }
+      ]
+    },
+    {
+      "id": "give",
+      "title": "Donate & Contact",
+      "url": "/contact/",
+      "pages": [
+        {
+          "title": "Donate & contact",
+          "url": "/contact/"
+        },
+        {
+          "title": "Giving Tuesday",
+          "url": "/giving-tuesday/"
+        }
+      ],
+      "anchors": [
+        {
+          "title": "Contact",
+          "url": "/contact/#contact"
+        },
+        {
+          "title": "Donate",
+          "url": "/contact/#donate"
+        },
+        {
+          "title": "Corporate partnerships",
+          "url": "/contact/#partnerships"
+        }
+      ]
+    }
+  ],
+  "camp_days": {
+    "morning-maker": {
+      "title": "Morning camp",
+      "rows": [
+        [
+          "8:00–8:30 am",
+          "Drop-off and open maker space"
+        ],
+        [
+          "8:30–9:30 am",
+          "Hands-on lab"
+        ],
+        [
+          "9:30–10:00 am",
+          "Snack break and maker space"
+        ],
+        [
+          "10:00–11:30 am",
+          "Hands-on lab"
+        ],
+        [
+          "11:30 am–12:00 pm",
+          "Pick-up"
+        ]
+      ]
+    },
+    "afternoon-engineering": {
+      "title": "Afternoon camp",
+      "rows": [
+        [
+          "1:00–1:30 pm",
+          "Drop-off"
+        ],
+        [
+          "1:30–2:30 pm",
+          "Hands-on engineering lab"
+        ],
+        [
+          "2:30–3:00 pm",
+          "Snack break"
+        ],
+        [
+          "3:00–4:30 pm",
+          "Hands-on engineering lab"
+        ],
+        [
+          "4:30–5:00 pm",
+          "Pick-up"
+        ]
+      ]
+    },
+    "morning-stem": {
+      "title": "Morning camp",
+      "rows": [
+        [
+          "8:00–8:30 am",
+          "Drop-off"
+        ],
+        [
+          "8:30–9:30 am",
+          "Hands-on STEM lab"
+        ],
+        [
+          "9:30–10:00 am",
+          "Snack break"
+        ],
+        [
+          "10:00–11:30 am",
+          "Hands-on STEM lab"
+        ],
+        [
+          "11:30 am–12:00 pm",
+          "Pick-up"
+        ]
+      ]
+    },
+    "morning-science": {
+      "title": "Morning camp",
+      "rows": [
+        [
+          "8:00–8:30 am",
+          "Drop-off"
+        ],
+        [
+          "8:30–9:30 am",
+          "Hands-on science lab"
+        ],
+        [
+          "9:30–10:00 am",
+          "Snack break"
+        ],
+        [
+          "10:00–11:30 am",
+          "Hands-on science lab"
+        ],
+        [
+          "11:30 am–12:00 pm",
+          "Pick-up"
+        ]
+      ]
+    },
+    "afternoon-forensics": {
+      "title": "Afternoon camp",
+      "rows": [
+        [
+          "1:00–1:30 pm",
+          "Drop-off"
+        ],
+        [
+          "1:30–2:30 pm",
+          "Hands-on forensics lab"
+        ],
+        [
+          "2:30–3:00 pm",
+          "Snack break"
+        ],
+        [
+          "3:00–4:30 pm",
+          "Hands-on forensics lab"
+        ],
+        [
+          "4:30–5:00 pm",
+          "Pick-up"
+        ]
+      ]
+    }
+  },
+  "blocks": {
+    "afterschool_session": "<p>Each session is two hours. A real scientist leads a one-hour, hands-on science lab, with a new lesson every week. Then kids get an hour of maker space with the freedom to build, create, or explore the topics that interest them most.</p>",
+    "camp_why": "<section class=\"labrats__section\" aria-labelledby=\"camp-why\">\n  <h2 id=\"camp-why\">Why families pick LabRats camps</h2>\n  <div class=\"labrats__split\">\n    <div>\n      <h3>For parents</h3>\n      <p>The curriculum is written by working scientists and engineers who know how to make hard ideas approachable. Camps build on the NGSS topics kids cover in public and charter school. Along the way, kids practice:</p>\n      <ul class=\"labrats__list\">\n        <li>Spatial reasoning and design</li>\n        <li>Sticking with a problem when the first try fails</li>\n        <li>Confidence that they can build a working solution</li>\n      </ul>\n    </div>\n    <div>\n      <h3>For kids</h3>\n      <p>Campers get to design their own solutions and see their ideas come to life. They love:</p>\n      <ul class=\"labrats__list\">\n        <li>Making a mess in hands-on labs</li>\n        <li>Solving challenges in their own way</li>\n        <li>Free time in the maker space to chase their own projects</li>\n      </ul>\n    </div>\n  </div>\n</section>",
+    "help_paying_families": "<section class=\"labrats__section labrats__band\" aria-labelledby=\"help-paying-title\">\n  <h2 id=\"help-paying-title\">Help paying</h2>\n  \n  <div class=\"labrats__split\">\n    <div>\n      <h3>Scholarships</h3>\n      <p>Up to 75% off afterschool classes and up to 50% off camps for households earning under $89,000 a year and military families. Scholarships are funded by our community.</p>\n      <p><a class=\"labrats__lede-link\" href=\"/scholarships/\">Apply for a scholarship</a></p>\n    </div>\n    <div>\n      <h3>Charter school funds</h3>\n      <p>LabRats is an approved vendor for many California charter schools, so homeschool and independent-study families can use their educational funds at the STEM Discovery Center.</p>\n      <p><a class=\"labrats__lede-link\" href=\"/about-us/#charter\">Check your charter school</a></p>\n    </div>\n  </div>\n  \n</section>",
+    "help_paying_schools": "<section class=\"labrats__section labrats__band\" aria-labelledby=\"help-paying-title\">\n  <h2 id=\"help-paying-title\">Help paying</h2>\n  \n  <p>If a program is outside your school's or group's budget, several San Diego foundations and county grant programs fund STEM visits for underserved students.</p>\n  <p><a class=\"labrats__lede-link\" href=\"/scholarships/#grants\">See grants for schools and groups</a></p>\n  \n</section>",
+    "questions": "<section class=\"labrats__section\" aria-labelledby=\"questions-title\">\n  <h2 id=\"questions-title\">Questions?</h2>\n  <p>Call us at <a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a> or <a href=\"/contact/\">send us a message</a>.</p>\n</section>",
+    "footer_about": "<p><span data-labrats-org=\"tagline\"></span> to kids in grades K-8 across San Diego County.</p>\n<p>A <span data-labrats-org=\"nonprofit\"></span>. EIN <span data-labrats-org=\"ein\"></span>.</p>\n<p><a data-labrats-org-href=\"{impact_report}\">Read our 2023-24 impact report (PDF)</a></p>",
+    "footer_signup": "<h2 id=\"footer-signup-title\">Get class and camp updates</h2>\n<p>New sessions, camp dates, and events. A few emails a month at most.</p>"
+  },
+  "scholarship_programs": [
+    {
+      "value": "afterschool",
+      "label": "Afterschool classes (up to 75% off)"
+    },
+    {
+      "value": "thanksgiving-camps",
+      "label": "Thanksgiving break camps (up to 50% off)"
+    },
+    {
+      "value": "winter-camps",
+      "label": "Winter break camps (up to 50% off)"
+    },
+    {
+      "value": "spring-camps",
+      "label": "Spring break camps (up to 50% off)"
+    },
+    {
+      "value": "summer-camps",
+      "label": "Summer camps (up to 50% off)"
+    }
+  ]
+}

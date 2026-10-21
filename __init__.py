@@ -1,3 +1,4 @@
+
 from flask import Flask
 from flask_login import LoginManager
 from flask_cors import CORS
@@ -43,13 +44,18 @@ allowed_origins = [
     # Regex pattern to match any subdomain of opencodingsociety.com
     r'https://.*\.opencodingsociety\.com',
     'https://opencodingsociety.com',
+
+    # San Diego LabRats website (production domain and GitHub Pages preview)
+    'https://www.sdlabrats.org',
+    'https://sdlabrats.org',
+    'https://pkdev0101.github.io',
 ]
 
 cors = CORS(
-   app,
-   supports_credentials=True,
-   origins=allowed_origins,
-   methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+    app,
+    supports_credentials=True,
+    origins=allowed_origins,
+    methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"]
 )
 
 
@@ -58,24 +64,33 @@ app.config['ADMIN_USER'] = os.environ.get('ADMIN_USER') or 'Admin Name'
 app.config['ADMIN_UID'] = os.environ.get('ADMIN_UID') or 'admin'
 app.config['ADMIN_PASSWORD'] = os.environ.get('ADMIN_PASSWORD') or os.environ.get('DEFAULT_PASSWORD') or 'password'
 app.config['ADMIN_PFP'] = os.environ.get('ADMIN_PFP') or 'default.png'
+
 # Teacher Defaults
 app.config['TEACHER_USER'] = os.environ.get('TEACHER_USER') or 'Teacher Name'
 app.config['TEACHER_UID'] = os.environ.get('TEACHER_UID') or 'teacher'
 app.config['TEACHER_PASSWORD'] = os.environ.get('TEACHER_PASSWORD') or os.environ.get('DEFAULT_PASSWORD') or 'password'
 app.config['TEACHER_PFP'] = os.environ.get('TEACHER_PFP') or 'default.png'
+
 # Default User Defaults
 app.config['USER_NAME'] = os.environ.get('USER_NAME') or 'User Name'
 app.config['USER_UID'] = os.environ.get('USER_UID') or 'user'
 app.config['USER_PASSWORD'] = os.environ.get('USER_PASSWORD') or os.environ.get('DEFAULT_PASSWORD') or 'password'
 app.config['USER_PFP'] = os.environ.get('USER_PFP') or 'default.png'
+
 # Defaults
 app.config['DEFAULT_PASSWORD'] = os.environ.get('DEFAULT_PASSWORD') or 'password'
 app.config['DEFAULT_PFP'] = os.environ.get('DEFAULT_PFP') or 'default.png'
+
 # Signing secret for password-reset tokens issued by Spring's ResetCode.java.
 # Must match RESET_TOKEN_SECRET in the spring repo's .env -- Flask verifies these
 # tokens locally (no call back to Spring). No default -- unset means the
 # frontend-driven reset-password endpoint is closed.
 app.config['RESET_TOKEN_SECRET'] = os.environ.get('RESET_TOKEN_SECRET')
+
+# OAuth client ID a student's Google ID token must be issued for.
+# No default: unset means no signup is auto-activated.
+app.config['GOOGLE_CLIENT_ID'] = os.environ.get('GOOGLE_CLIENT_ID')
+
 # Convenience user
 app.config['MY_NAME'] = os.environ.get('MY_NAME') or 'convenience'
 app.config['MY_UID'] = os.environ.get('MY_UID') or 'convenience'
@@ -85,10 +100,11 @@ app.config['MY_ROLE'] = os.environ.get('MY_ROLE') or 'User'
 
 
 # Browser settings
-SECRET_KEY = os.environ.get('SECRET_KEY') or 'SECRET_KEY' # secret key for session management
+SECRET_KEY = os.environ.get('SECRET_KEY') or 'SECRET_KEY'  # secret key for session management
 SESSION_COOKIE_NAME = os.environ.get('SESSION_COOKIE_NAME') or 'sess_python_flask'
 JWT_TOKEN_NAME = os.environ.get('JWT_TOKEN_NAME') or 'jwt_python_flask'
 JWT_TOKEN_MAX_AGE = int(os.environ.get('JWT_TOKEN_MAX_AGE') or 604800)  # Default: 1 week (604800 seconds)
+
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['SESSION_COOKIE_NAME'] = SESSION_COOKIE_NAME
 app.config['JWT_TOKEN_NAME'] = JWT_TOKEN_NAME
@@ -101,18 +117,20 @@ dbName = 'user_management'
 DB_ENDPOINT = os.environ.get('DB_ENDPOINT') or None
 DB_USERNAME = os.environ.get('DB_USERNAME') or None
 DB_PASSWORD = os.environ.get('DB_PASSWORD') or None
+
 if DB_ENDPOINT and DB_USERNAME and DB_PASSWORD:
-   # Production - Use MySQL
-   DB_PORT = '3306'
-   DB_NAME = dbName
-   dbString = f'mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_ENDPOINT}:{DB_PORT}'
-   dbURI =  dbString + '/' + dbName
-   backupURI = None  # MySQL backup would require a different approach
+    # Production - Use MySQL
+    DB_PORT = '3306'
+    DB_NAME = dbName
+    dbString = f'mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_ENDPOINT}:{DB_PORT}'
+    dbURI = dbString + '/' + dbName
+    backupURI = None  # MySQL backup would require a different approach
 else:
-   # Development - Use SQLite
-   dbString = 'sqlite:///volumes/'
-   dbURI = dbString + dbName + '.db'
-   backupURI = dbString + dbName + '_bak.db'
+    # Development - Use SQLite
+    dbString = 'sqlite:///volumes/'
+    dbURI = dbString + dbName + '.db'
+    backupURI = dbString + dbName + '_bak.db'
+
 # Set database configuration in Flask app
 app.config['DB_ENDPOINT'] = DB_ENDPOINT
 app.config['DB_USERNAME'] = DB_USERNAME
@@ -122,8 +140,20 @@ app.config['SQLALCHEMY_DATABASE_STRING'] = dbString
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
 app.config['SQLALCHEMY_BACKUP_URI'] = backupURI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+
+
+# San Diego LabRats website: email staff when a form is submitted (optional).
+# LABRATS_NOTIFY_TO takes a comma-separated list.
+# Leave SMTP_HOST unset to only store submissions.
+app.config['LABRATS_NOTIFY_TO'] = os.environ.get('LABRATS_NOTIFY_TO')
+app.config['SMTP_HOST'] = os.environ.get('SMTP_HOST')
+app.config['SMTP_PORT'] = os.environ.get('SMTP_PORT') or 587
+app.config['SMTP_USER'] = os.environ.get('SMTP_USER')
+app.config['SMTP_PASSWORD'] = os.environ.get('SMTP_PASSWORD')
+app.config['SMTP_FROM'] = os.environ.get('SMTP_FROM')
 
 
 # Image upload settings
@@ -144,7 +174,7 @@ app.config['GITHUB_TARGET_TYPE'] = os.environ.get('GITHUB_TARGET_TYPE') or 'user
 app.config['GITHUB_TARGET_NAME'] = os.environ.get('GITHUB_TARGET_NAME') or 'open-coding-society'
 
 
-# Gemini API settingsa
+# Gemini API settings
 app.config['GEMINI_SERVER'] = os.environ.get('GEMINI_SERVER') or 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent'
 app.config['GEMINI_API_KEY'] = os.environ.get('GEMINI_API_KEY') or None
 

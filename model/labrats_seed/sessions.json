@@ -1,0 +1,790 @@
+[
+  {
+    "path": "/4-8-stem-center-registration-2/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "January 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Jan 6, 13, 20, 27"
+      },
+      {
+        "day": "Thursdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Jan 8, 15, 22, 29"
+      },
+      {
+        "day": "Fridays",
+        "time": "1:15–3:15 pm",
+        "dates": "Jan 9, 16, 23, 30"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "Jan 10, 17, 24, 31"
+      }
+    ],
+    "donorbox_campaign": 875663,
+    "schedule_order": null
+  },
+  {
+    "path": "/4-8-stem-center-registration-3-2/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "February 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Feb 3, 10, 17, 24"
+      },
+      {
+        "day": "Thursdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Feb 5, 12, 19, 26"
+      },
+      {
+        "day": "Fridays",
+        "time": "1:15–3:15 pm",
+        "dates": "Feb 6, 13, 20, 27"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "Feb 7, 14, 21, 28"
+      }
+    ],
+    "donorbox_campaign": 895342,
+    "schedule_order": null
+  },
+  {
+    "path": "/4-8-stem-center-registration-3/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "March 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Feb 3, 10, 17, 24"
+      },
+      {
+        "day": "Thursdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Feb 5, 12, 19, 26"
+      },
+      {
+        "day": "Fridays",
+        "time": "1:15–3:15 pm",
+        "dates": "Feb 6, 13, 20, 27"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "Feb 7, 14, 21, 28"
+      }
+    ],
+    "donorbox_campaign": 898371,
+    "schedule_order": null
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2-2-2-2-2/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "December 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Dec 2, 9, 16"
+      },
+      {
+        "day": "Thursdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Dec 4, 11, 18"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "Dec 6, 13, 20"
+      }
+    ],
+    "donorbox_campaign": 805405,
+    "schedule_order": null
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2-2-2-2/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "November 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Nov 4, 11, 18"
+      },
+      {
+        "day": "Thursdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Nov 6, 13, 20"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "Nov 8, 15, 22"
+      }
+    ],
+    "donorbox_campaign": 805372,
+    "schedule_order": null
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2-2-2/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "October 2026",
+    "status": "open",
+    "summary": "A one-hour lab led by a scientist, then an hour of open maker space.",
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Oct 7, 14, 21, 28"
+      },
+      {
+        "day": "Thursdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Oct 8, 15, 22, 29"
+      },
+      {
+        "day": "Fridays",
+        "time": "1:15–3:15 pm",
+        "dates": "Oct 9, 16, 23, 30"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "Oct 10, 17, 24, 31"
+      }
+    ],
+    "donorbox_campaign": 950104,
+    "schedule_order": 20
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2-2/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "September 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Sep 9, 16, 23, 30"
+      },
+      {
+        "day": "Thursdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Sep 10, 17, 24, Oct 1"
+      },
+      {
+        "day": "Fridays",
+        "time": "1:15–3:15 pm",
+        "dates": "Sep 11, 18, 25, Oct 2"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "Sep 12, 19, 26, Oct 3"
+      }
+    ],
+    "donorbox_campaign": 950098,
+    "schedule_order": null
+  },
+  {
+    "path": "/4-8-stem-center-registration-4-2/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "August 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Aug 26, Sep 2"
+      },
+      {
+        "day": "Thursdays",
+        "time": "1:15–3:15 pm",
+        "dates": "Aug 27, Sep 3"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Aug 28, Sep 4"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "Aug 29, Sep 5"
+      }
+    ],
+    "donorbox_campaign": 950092,
+    "schedule_order": null
+  },
+  {
+    "path": "/4-8-stem-center-registration-4/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "May 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "May 5, 12, 19, 26"
+      },
+      {
+        "day": "Thursdays",
+        "time": "4:00–6:00 pm",
+        "dates": "May 7, 14, 21, 28"
+      },
+      {
+        "day": "Fridays",
+        "time": "1:15–3:15 pm",
+        "dates": "May 8, 15, 22, 29"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "May 9, 16, 23, 30"
+      }
+    ],
+    "donorbox_campaign": 898775,
+    "schedule_order": null
+  },
+  {
+    "path": "/4-8-stem-center-registration/",
+    "program": "afterschool",
+    "grades": "4-8",
+    "term": "April 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Apr 1, 8, 15, 22"
+      },
+      {
+        "day": "Thursdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Apr 3, 10, 17, 24"
+      },
+      {
+        "day": "Saturdays",
+        "time": "12:00–2:00 pm",
+        "dates": "Apr 5, 12, 19, 26"
+      }
+    ],
+    "donorbox_campaign": 898766,
+    "schedule_order": null
+  },
+  {
+    "path": "/fall-camp-k-3/",
+    "program": "camps",
+    "grades": "K-3",
+    "term": "Thanksgiving break",
+    "status": "open",
+    "summary": "Half-day camp. Pick the morning or afternoon group.",
+    "times": [
+      {
+        "day": "Mon–Wed",
+        "time": "8:00 am–12:00 pm or 1:00–5:00 pm",
+        "dates": "Nov 23–25"
+      }
+    ],
+    "donorbox_campaign": 950128,
+    "schedule_order": 30
+  },
+  {
+    "path": "/fall-camps-3-6/",
+    "program": "camps",
+    "grades": "3-6",
+    "term": "Thanksgiving break",
+    "status": "open",
+    "summary": "Half-day camp. Pick the morning or afternoon group.",
+    "times": [
+      {
+        "day": "Mon–Wed",
+        "time": "8:00 am–12:00 pm or 1:00–5:00 pm",
+        "dates": "Nov 23–25"
+      }
+    ],
+    "donorbox_campaign": 950129,
+    "schedule_order": 31
+  },
+  {
+    "path": "/free-open-house-register-today/",
+    "program": "event",
+    "grades": null,
+    "term": "Open house",
+    "status": "open",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 950056,
+    "schedule_order": null
+  },
+  {
+    "path": "/k-3-stem-center-registration-2-2/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "February 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Feb 4, 11, 18, 25"
+      },
+      {
+        "day": "Thursdays",
+        "time": "1:15–3:15 pm",
+        "dates": "Feb 5, 12, 19, 26"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Feb 6, 13, 20, 27"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00–11:00 am",
+        "dates": "Feb 7, 14, 21, 28"
+      }
+    ],
+    "donorbox_campaign": 895343,
+    "schedule_order": null
+  },
+  {
+    "path": "/k-3-stem-center-registration-2/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "January 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Jan 7, 14, 21, 28"
+      },
+      {
+        "day": "Thursdays",
+        "time": "1:15–3:15 pm",
+        "dates": "Jan 8, 15, 22, 29"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Jan 9, 16, 23, 30"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00–11:00 am",
+        "dates": "Jan 10, 17, 24, 31"
+      }
+    ],
+    "donorbox_campaign": 875605,
+    "schedule_order": null
+  },
+  {
+    "path": "/k-3-stem-center-registration-3/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "March 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Mar 5, 12, 19, 26"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Mar 7, 14, 21, 28"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00 am–12:00 pm",
+        "dates": "Mar 8, 15, 29 (closed Mar 22)"
+      }
+    ],
+    "donorbox_campaign": 898581,
+    "schedule_order": null
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3-2-2-2-2/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "December 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Dec 3, 10, 17"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Dec 5, 12, 19"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00–11:00 am",
+        "dates": "Dec 6, 13, 20"
+      }
+    ],
+    "donorbox_campaign": 805406,
+    "schedule_order": null
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3-2-2-2/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "November 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Nov 5, 12, 19"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Nov 7, 14, 21"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00–11:00 am",
+        "dates": "Nov 8, 15, 22"
+      }
+    ],
+    "donorbox_campaign": 805380,
+    "schedule_order": null
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3-2-2/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "October 2026",
+    "status": "open",
+    "summary": "A one-hour lab led by a scientist, then an hour of open maker space.",
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Oct 6, 13, 20, 27"
+      },
+      {
+        "day": "Thursdays",
+        "time": "1:15–3:15 pm",
+        "dates": "Oct 8, 15, 22, 29"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Oct 9, 16, 23, 30"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00–11:00 am",
+        "dates": "Oct 10, 17, 24, 31"
+      }
+    ],
+    "donorbox_campaign": 950103,
+    "schedule_order": 10
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3-2/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "September 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Sep 8, 15, 22, 29"
+      },
+      {
+        "day": "Thursdays",
+        "time": "1:15–3:15 pm",
+        "dates": "Sep 10, 17, 24, Oct 1"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Sep 11, 18, 25, Oct 2"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00–11:00 am",
+        "dates": "Sep 12, 19, 26, Oct 3"
+      }
+    ],
+    "donorbox_campaign": 950100,
+    "schedule_order": null
+  },
+  {
+    "path": "/k-3-stem-center-registration-5-3/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "August 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Tuesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Aug 25, Sep 1"
+      },
+      {
+        "day": "Thursdays",
+        "time": "1:15–3:15 pm",
+        "dates": "Aug 27, Sep 3"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Aug 28, Sep 4"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00–11:00 am",
+        "dates": "Aug 29, Sep 5"
+      }
+    ],
+    "donorbox_campaign": 950082,
+    "schedule_order": null
+  },
+  {
+    "path": "/k-3-stem-center-registration-5/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "May 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Apr 30, May 7, 14, 21, 28"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "May 2, 9, 16, 23, 30"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00–11:00 am",
+        "dates": "May 3, 10, 17, 24, 31"
+      }
+    ],
+    "donorbox_campaign": 899080,
+    "schedule_order": null
+  },
+  {
+    "path": "/k-3-stem-center-registration/",
+    "program": "afterschool",
+    "grades": "K-3",
+    "term": "April 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [
+      {
+        "day": "Wednesdays",
+        "time": "4:00–6:00 pm",
+        "dates": "Apr 2, 9, 16, 23"
+      },
+      {
+        "day": "Fridays",
+        "time": "4:00–6:00 pm",
+        "dates": "Apr 4, 11, 18, 25"
+      },
+      {
+        "day": "Saturdays",
+        "time": "9:00 am–12:00 pm",
+        "dates": "Apr 5, 12, 19, 26"
+      }
+    ],
+    "donorbox_campaign": 898769,
+    "schedule_order": null
+  },
+  {
+    "path": "/spring-break-camp-2-2-2/",
+    "program": "camps",
+    "grades": "3-6",
+    "term": "Summer 2026, part 2",
+    "status": "closed",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 900646,
+    "schedule_order": null
+  },
+  {
+    "path": "/spring-break-camp-2-2/",
+    "program": "camps",
+    "grades": "3-6",
+    "term": "Summer 2026, part 1",
+    "status": "closed",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 900643,
+    "schedule_order": null
+  },
+  {
+    "path": "/spring-break-camp-2/",
+    "program": "camps",
+    "grades": "3-6",
+    "term": "Spring break 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 898719,
+    "schedule_order": null
+  },
+  {
+    "path": "/spring-break-camps-1-2-2/",
+    "program": "camps",
+    "grades": "K-3",
+    "term": "Summer 2026, part 2",
+    "status": "closed",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 900647,
+    "schedule_order": null
+  },
+  {
+    "path": "/spring-break-camps-1-2/",
+    "program": "camps",
+    "grades": "K-3",
+    "term": "Summer 2026, part 1",
+    "status": "closed",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 900644,
+    "schedule_order": null
+  },
+  {
+    "path": "/spring-break-camps-1/",
+    "program": "camps",
+    "grades": "K-3",
+    "term": "Spring break 2026",
+    "status": "closed",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 898721,
+    "schedule_order": null
+  },
+  {
+    "path": "/summer-camps-2/",
+    "program": "camps",
+    "grades": null,
+    "term": "Summer 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 743368,
+    "schedule_order": null
+  },
+  {
+    "path": "/summer-camps-5/",
+    "program": "camps",
+    "grades": null,
+    "term": "Summer 2025",
+    "status": "closed",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 743568,
+    "schedule_order": null
+  },
+  {
+    "path": "/thrive-payment-processing-only/",
+    "program": "payment",
+    "grades": null,
+    "term": "Thrive payments",
+    "status": "open",
+    "summary": null,
+    "times": [],
+    "donorbox_campaign": 955719,
+    "schedule_order": null
+  },
+  {
+    "path": "/winter-camps-3-6/",
+    "program": "camps",
+    "grades": "3-6",
+    "term": "Winter break",
+    "status": "open",
+    "summary": "Half-day camp. Pick the morning or afternoon group.",
+    "times": [
+      {
+        "day": "Mon–Wed",
+        "time": "8:00 am–12:00 pm or 1:00–5:00 pm",
+        "dates": "Dec 21–23"
+      },
+      {
+        "day": "Mon–Wed",
+        "time": "8:00 am–12:00 pm or 1:00–5:00 pm",
+        "dates": "Dec 28–30"
+      }
+    ],
+    "donorbox_campaign": 950137,
+    "schedule_order": 41
+  },
+  {
+    "path": "/winter-camps-k3/",
+    "program": "camps",
+    "grades": "K-3",
+    "term": "Winter break",
+    "status": "open",
+    "summary": "Half-day camp. Pick the morning or afternoon group.",
+    "times": [
+      {
+        "day": "Mon–Wed",
+        "time": "8:00 am–12:00 pm or 1:00–5:00 pm",
+        "dates": "Dec 21–23"
+      },
+      {
+        "day": "Mon–Wed",
+        "time": "8:00 am–12:00 pm or 1:00–5:00 pm",
+        "dates": "Dec 28–30"
+      }
+    ],
+    "donorbox_campaign": 950136,
+    "schedule_order": 40
+  }
+]
