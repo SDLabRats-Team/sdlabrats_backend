@@ -1,5 +1,5 @@
-from flask import Blueprint, jsonify
 
+from flask import Blueprint, jsonify
 from model.labrats_programs import all_programs
 
 programs_api = Blueprint(
@@ -7,6 +7,7 @@ programs_api = Blueprint(
     __name__,
     url_prefix="/api/programs"
 )
+
 
 @programs_api.route("/", methods=["GET"])
 def get_programs():
