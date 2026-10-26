@@ -1,6 +1,6 @@
 """ Submissions from San Diego LabRats website forms.
 
-One table holds every form (contact, scholarship, partnership, video topic, newsletter).
+One table holds every form (contact, scholarship, partnership, video topic, newsletter, survey).
 Fields shared by all forms are columns; form-specific answers are stored as JSON in `details`.
 `validate_inquiry` mirrors the frontend rules in js/labrats-form-data.js so a request that
 skips the browser is held to the same standard.
@@ -25,6 +25,8 @@ FORM_RULES = {
         "interest": "what you're asking about",
     },
     "newsletter": {"first_name": "first name", "last_name": "last name", "email": "email"},
+    # Website survey: every box is optional on its own, but at least one answer is needed.
+    "survey": {},
     "video_topic": {
         "first_name": "first name", "last_name": "last name", "email": "email", "subjects": "subjects",
     },
@@ -46,10 +48,12 @@ OPTIONAL_FIELDS = {
     "newsletter": (),
     "video_topic": ("source_page",),
     "partnership": (),
+    "survey": ("name", "liked", "improvements"),
     "scholarship": ("programs", "income_under_limit", "military_family"),
 }
 
-LONG_TEXT_FIELDS = {"message", "subjects"}
+LONG_TEXT_FIELDS = {"message", "subjects", "liked", "improvements"}
+ANONYMOUS = "Anonymous"
 SCHOLARSHIP_GRADES = {"K", "1", "2", "3", "4", "5", "6", "7", "8"}
 YES_NO = {"yes", "no"}
 
@@ -105,6 +109,12 @@ class LabRatsInquiry(db.Model):
     def from_cleaned(cleaned):
         """Build an inquiry from validate_inquiry output, splitting columns from details."""
         form = cleaned["form"]
+        if form == "survey":
+            # Surveys may be anonymous and have no email; the answers go in details.
+            return LabRatsInquiry(
+                form=form, first_name=cleaned.get("name") or ANONYMOUS, last_name="", email="",
+                details={key: cleaned[key] for key in ("liked", "improvements") if cleaned.get(key)},
+            )
         prefix = "parent_" if form == "scholarship" else ""
         details = {
             key: value for key, value in cleaned.items()
@@ -166,6 +176,9 @@ def validate_inquiry(data):
 
     if form == "scholarship":
         errors.update(_validate_scholarship(cleaned))
+
+    if form == "survey" and not (cleaned.get("liked") or cleaned.get("improvements")):
+        errors["liked"] = "Tell us what you liked or what we could improve."
 
     return cleaned, errors
 

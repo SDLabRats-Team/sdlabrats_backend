@@ -79,6 +79,29 @@ class PageApiTests(unittest.TestCase):
         self.assertEqual(self.bundle("/ways-to-donate/")["page"]["redirect_to"], "/contact/#donate")
         self.assertEqual(self.bundle("/camps")["page"]["path"], "/camps/")
 
+    def test_survey_page_and_home_invite_are_seeded(self):
+        bundle = self.bundle("/survey/")
+        self.assertIn('data-labrats-form-slot="survey"', bundle["page"]["body"])
+        self.assertIn('href="/survey/"', bundle["site"]["blocks"]["survey_invite"])
+
+    def test_reseeding_adds_new_content_without_overwriting_edits(self):
+        with app.app_context():
+            from model.labrats_site import LabRatsSetting
+            blocks = db.session.get(LabRatsSetting, "blocks")
+            original = dict(blocks.value)
+            try:
+                edited = {key: value for key, value in original.items() if key != "survey_invite"}
+                edited["questions"] = "<p>Edited by staff</p>"
+                blocks.value = edited
+                db.session.commit()
+                initLabRatsSite()
+                after = db.session.get(LabRatsSetting, "blocks").value
+                self.assertEqual(after["questions"], "<p>Edited by staff</p>")
+                self.assertIn("survey_invite", after)
+            finally:
+                db.session.get(LabRatsSetting, "blocks").value = original
+                db.session.commit()
+
     def test_unknown_page_is_404(self):
         self.assertEqual(self.client.get("/api/labrats/page", query_string={"path": "/no-such-page/"}).status_code, 404)
 

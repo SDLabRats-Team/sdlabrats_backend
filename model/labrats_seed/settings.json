@@ -317,7 +317,8 @@
     "help_paying_schools": "<section class=\"labrats__section labrats__band\" aria-labelledby=\"help-paying-title\">\n  <h2 id=\"help-paying-title\">Help paying</h2>\n  \n  <p>If a program is outside your school's or group's budget, several San Diego foundations and county grant programs fund STEM visits for underserved students.</p>\n  <p><a class=\"labrats__lede-link\" href=\"/scholarships/#grants\">See grants for schools and groups</a></p>\n  \n</section>",
     "questions": "<section class=\"labrats__section\" aria-labelledby=\"questions-title\">\n  <h2 id=\"questions-title\">Questions?</h2>\n  <p>Call us at <a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a> or <a href=\"/contact/\">send us a message</a>.</p>\n</section>",
     "footer_about": "<p><span data-labrats-org=\"tagline\"></span> to kids in grades K-8 across San Diego County.</p>\n<p>A <span data-labrats-org=\"nonprofit\"></span>. EIN <span data-labrats-org=\"ein\"></span>.</p>\n<p><a data-labrats-org-href=\"{impact_report}\">Read our 2023-24 impact report (PDF)</a></p>",
-    "footer_signup": "<h2 id=\"footer-signup-title\">Get class and camp updates</h2>\n<p>New sessions, camp dates, and events. A few emails a month at most.</p>"
+    "footer_signup": "<h2 id=\"footer-signup-title\">Get class and camp updates</h2>\n<p>New sessions, camp dates, and events. A few emails a month at most.</p>",
+    "survey_invite": "<div class=\"labrats__wrap\">\n  <section class=\"labrats__section\" aria-labelledby=\"survey-invite-title\">\n    <h2 id=\"survey-invite-title\">How was this website?</h2>\n    <p>Three quick boxes: your name (or stay anonymous), what you liked, and what we could improve.</p>\n    <div class=\"ocs__links\"><a class=\"ocs__btn accent\" href=\"/survey/\">Take the three box survey</a></div>\n  </section>\n</div>"
   },
   "scholarship_programs": [
     {

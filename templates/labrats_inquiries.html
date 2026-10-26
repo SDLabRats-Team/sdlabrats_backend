@@ -23,7 +23,7 @@
                 <td data-order="{{ inquiry.created_at }}">{{ inquiry.created_at[:16] | replace("T", " ") }}</td>
                 <td>{{ inquiry.form }}</td>
                 <td>{{ inquiry.first_name }} {{ inquiry.last_name }}</td>
-                <td><a href="mailto:{{ inquiry.email }}">{{ inquiry.email }}</a></td>
+                <td>{% if inquiry.email %}<a href="mailto:{{ inquiry.email }}">{{ inquiry.email }}</a>{% endif %}</td>
                 <td>{{ inquiry.phone or "" }}</td>
                 <td>
                     {% for key, value in inquiry.details.items() %}
