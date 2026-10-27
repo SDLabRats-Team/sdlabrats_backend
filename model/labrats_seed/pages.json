@@ -852,8 +852,8 @@
     "template": "redirect",
     "title": "Register",
     "fields": {
-      "redirect_to": "/schedule/",
-      "redirect_title": "Schedule and pricing"
+      "redirect_to": "/enroll/",
+      "redirect_title": "Enroll"
     },
     "body": ""
   },
@@ -1461,5 +1461,34 @@
       "description": "Tell San Diego LabRats what you liked about the website and what we could improve."
     },
     "body": "<div class=\"labrats__split labrats__split--narrow-aside\">\n  <section class=\"labrats__section\" aria-labelledby=\"survey-form-title\">\n    <h2 id=\"survey-form-title\" class=\"labrats__visually-hidden\">Survey</h2>\n    <div data-labrats-form-slot=\"survey\"></div>\n  </section>\n  <aside class=\"labrats__section\" aria-labelledby=\"survey-about-title\">\n    <h2 id=\"survey-about-title\">Where your answers go</h2>\n    <p>LabRats staff read every response. Leave the name box empty to stay anonymous; we never ask for your email here.</p>\n    <p>Have a question instead? <a href=\"/contact/#contact\">Send us a message</a> or call <a data-labrats-org-href=\"{phone_href}\"><span data-labrats-org=\"phone\"></span></a>.</p>\n  </aside>\n</div>"
+  },
+  {
+    "path": "/enroll/",
+    "template": "default",
+    "title": "Enroll",
+    "fields": {
+      "heading": "Enroll in a class or camp",
+      "lead": "Everything open for registration right now. Pick a session to see its dates and sign up.",
+      "description": "Sign up for San Diego LabRats afterschool classes, break camps, and events that are open for registration now.",
+      "contents": [
+        {
+          "id": "afterschool",
+          "title": "Afterschool"
+        },
+        {
+          "id": "camps",
+          "title": "Camps"
+        },
+        {
+          "id": "events",
+          "title": "Events"
+        },
+        {
+          "id": "schools",
+          "title": "Schools and groups"
+        }
+      ]
+    },
+    "body": "<section class=\"labrats__section\" id=\"afterschool\" aria-labelledby=\"enroll-afterschool-title\">\n  <h2 id=\"enroll-afterschool-title\">Afterschool classes</h2>\n  <p>Monthly sessions at the STEM Discovery Center, in two groups: grades K-3 and grades 4-8. <a href=\"/stem-discovery-center-2-3-2/\">How afterschool works</a></p>\n  <div data-labrats-widget=\"session-list\" data-program=\"afterschool\"></div>\n</section>\n<section class=\"labrats__section\" id=\"camps\" aria-labelledby=\"enroll-camps-title\">\n  <h2 id=\"enroll-camps-title\">Break camps</h2>\n  <p>Half-day camps over school breaks. <a href=\"/camps/\">What a camp day looks like</a></p>\n  <div data-labrats-widget=\"session-list\" data-program=\"camps\" data-compact=\"true\"></div>\n</section>\n<section class=\"labrats__section\" id=\"events\" aria-labelledby=\"enroll-events-title\">\n  <h2 id=\"enroll-events-title\">Events</h2>\n  <div data-labrats-widget=\"session-list\" data-program=\"event\"></div>\n</section>\n<section class=\"labrats__section\" id=\"schools\" aria-labelledby=\"enroll-schools-title\">\n  <h2 id=\"enroll-schools-title\">Schools and groups</h2>\n  <p>Assemblies, demo lab stations, and Mobile Lab workshops are booked directly with us. <a href=\"/contact/#contact\">Send us a message</a> with your school, grades, and dates.</p>\n</section>\n<div data-labrats-block=\"help_paying_families\"></div>\n<div data-labrats-block=\"questions\"></div>"
   }
 ]

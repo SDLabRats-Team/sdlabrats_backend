@@ -102,6 +102,13 @@ class PageApiTests(unittest.TestCase):
                 db.session.get(LabRatsSetting, "blocks").value = original
                 db.session.commit()
 
+    def test_enroll_page_lists_open_sessions(self):
+        bundle = self.bundle("/enroll/")
+        self.assertEqual(bundle["page"]["heading"], "Enroll in a class or camp")
+        for program in ("afterschool", "camps", "event"):
+            self.assertIn(f'data-program="{program}"', bundle["page"]["body"])
+        self.assertTrue(any(session["status"] == "open" for session in bundle["sessions"]))
+
     def test_unknown_page_is_404(self):
         self.assertEqual(self.client.get("/api/labrats/page", query_string={"path": "/no-such-page/"}).status_code, 404)
 
