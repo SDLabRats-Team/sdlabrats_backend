@@ -852,8 +852,8 @@
     "template": "redirect",
     "title": "Register",
     "fields": {
-      "redirect_to": "/schedule/",
-      "redirect_title": "Schedule and pricing"
+      "redirect_to": "/enroll/",
+      "redirect_title": "Enroll"
     },
     "body": ""
   },
@@ -1460,5 +1460,6 @@
       "description": "Help us improve our STEM programs and website."
     },
     "body": "<p>Tell us what you think about SD Lab Rats.</p><div data-labrats-form-slot=\"survey\"></div>"
+
   }
 ]

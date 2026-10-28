@@ -75,7 +75,15 @@ class ValidateInquiryTests(unittest.TestCase):
 
     def test_unknown_form_is_a_client_error(self):
         with self.assertRaises(ValueError):
-            validate_inquiry({"form": "survey"})
+            validate_inquiry({"form": "pottery_class"})
+
+    def test_survey_needs_one_answer_and_the_name_is_optional(self):
+        _, errors = validate_inquiry({"form": "survey", "name": "Ana"})
+        self.assertEqual(set(errors), {"liked"})
+        cleaned, errors = validate_inquiry({"form": "survey", "improvements": "  Bigger buttons  "})
+        self.assertEqual(errors, {})
+        self.assertEqual(cleaned["improvements"], "Bigger buttons")
+        self.assertNotIn("name", cleaned)
 
     def test_long_text_is_truncated(self):
         cleaned, _ = validate_inquiry({**CONTACT, "message": "x" * 5000})
@@ -121,6 +129,26 @@ class InquiryApiTests(unittest.TestCase):
         with app.app_context():
             self.assertEqual(LabRatsInquiry.query.count(), before)
 
+    def test_anonymous_survey_is_stored_and_listed_for_admins(self):
+        response = self.client.post("/api/labrats/inquiries", json={
+            "form": "survey", "name": "", "liked": "Easy to find camps", "improvements": "Add photos of the lab",
+        })
+        self.assertEqual(response.status_code, 201)
+        self.created.append(response.get_json()["id"])
+        admin = app.test_client()
+        signed_in = admin.post("/api/authenticate", json={"uid": app.config["ADMIN_UID"], "password": app.config["ADMIN_PASSWORD"]})
+        if signed_in.status_code != 200:
+            self.skipTest("Default admin account missing; run scripts/db_init.py first")
+        listed = admin.get("/api/labrats/inquiries?form=survey").get_json()
+        mine = next(item for item in listed if item["id"] == self.created[-1])
+        self.assertEqual((mine["first_name"], mine["email"]), ("Anonymous", ""))
+        self.assertEqual(mine["details"], {"liked": "Easy to find camps", "improvements": "Add photos of the lab"})
+
+    def test_empty_survey_is_refused(self):
+        response = self.client.post("/api/labrats/inquiries", json={"form": "survey", "name": "Ana"})
+        self.assertEqual(response.status_code, 400)
+        self.assertIn("liked", response.get_json()["errors"])
+
     def test_listing_requires_authentication(self):
         response = self.client.get("/api/labrats/inquiries")
         self.assertEqual(response.status_code, 401)
@@ -149,6 +177,15 @@ class NotifyStaffTests(unittest.TestCase):
         body = message.get_content()
         self.assertIn("Programs: afterschool, winter-camps", body)
         self.assertIn("Phone: (760) 555-0100", body)
+
+    def test_survey_message_has_no_reply_to(self):
+        survey = {"id": 8, "form": "survey", "first_name": "Anonymous", "last_name": "", "email": "", "phone": None,
+                  "created_at": "2026-10-26T18:00:00", "details": {"liked": "Clear menus"}}
+        message = build_notification(survey, "site@example.org", ["staff@example.org"])
+        self.assertEqual(message["Subject"], "[sdlabrats.org] Website survey from Anonymous")
+        self.assertIsNone(message["Reply-To"])
+        self.assertIn("Liked: Clear menus", message.get_content())
+        self.assertNotIn("Email:", message.get_content())
 
     def test_skips_quietly_when_not_configured(self):
         with mock.patch("smtplib.SMTP") as smtp:

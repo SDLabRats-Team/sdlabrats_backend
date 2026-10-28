@@ -326,7 +326,7 @@ The sdlabrats.org frontend (`sdlabrats_frontend`, project `_projects/nonprofits/
 | PUT | `/api/labrats/sessions/<id>` | Admin | Opens or closes a session (`status`), or changes `term`, `grades`, `summary`, `times`, `donorbox_campaign`, `schedule_order`. |
 | GET / PUT | `/api/labrats/announcement` | Admin | The notice above every page: `show`, `text`, `link_text`, `url` (a page on the site). New wording gets a new `id`. |
 | GET | `/api/programs/` | public | Program catalog (the `labrats_programs` table). Contact forms send these slugs as `interest`. |
-| POST | `/api/labrats/inquiries` | public | Stores a contact, scholarship, partnership, video-topic, or newsletter form. Returns `201`, or `400` with `errors` keyed by field name. |
+| POST | `/api/labrats/inquiries` | public | Stores a contact, scholarship, partnership, video-topic, newsletter, or `survey` form (survey: optional `name`, stored as "Anonymous" when empty, plus `liked` and/or `improvements`; at least one answer). Returns `201`, or `400` with `errors` keyed by field name. |
 | GET | `/api/labrats/inquiries?form=&status=` | Admin | Lists submissions, newest first. |
 | PUT | `/api/labrats/inquiries/<id>` | Admin | Sets `status` to `new` or `handled`. |
 | GET | `/api/labrats/users?q=` | Admin | Lists accounts (no password hashes). |

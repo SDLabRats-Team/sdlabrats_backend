@@ -86,6 +86,7 @@ OPTIONAL_FIELDS = {
 
 
 LONG_TEXT_FIELDS = {"message", "subjects"}
+
 SCHOLARSHIP_GRADES = {"K", "1", "2", "3", "4", "5", "6", "7", "8"}
 YES_NO = {"yes", "no"}
 
@@ -94,6 +95,7 @@ SURVEY_PROGRAMS = {
     "Summer Camps",
     "Workshops",
 }
+
 SURVEY_RATINGS = {"1", "2", "3", "4", "5"}
 
 

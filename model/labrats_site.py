@@ -3,7 +3,7 @@
 The frontend stores no data. Every page shell asks GET /api/labrats/page?path=... and renders what
 comes back, so organization facts, navigation, page text, program facts, and session dates all live
 in these tables. initLabRatsSite() creates the tables and loads model/labrats_seed/*.json the first
-time; after that, staff change sessions and the announcement from the admin console.
+time and adds new seed content later; staff change sessions and the announcement from the admin console.
 
 Page bodies are HTML written by LabRats (seed data and code review), not visitor input. They hold
 placeholders the frontend fills from the same bundle:
@@ -265,18 +265,31 @@ def _seed(name):
 
 
 def initLabRatsSite():
-    """Create the website tables and load the seed data into any that are empty. Safe to rerun."""
+    """Create the website tables and add any seed content they are missing. Safe to rerun.
+
+    New seed rows (a page path, a session path, a program slug, a setting key) and new entries
+    inside a setting (such as a new shared block) are added. Rows that already exist are never
+    changed, so edits staff made in the admin console are kept.
+    """
     db.create_all()
-    if LabRatsSetting.query.count() == 0:
-        for key, value in _seed("settings").items():
+    for key, value in _seed("settings").items():
+        setting = db.session.get(LabRatsSetting, key)
+        if setting is None:
             db.session.add(LabRatsSetting(key, value))
-    if LabRatsProgram.query.count() == 0:
-        for program in _seed("programs"):
+        elif isinstance(value, dict) and isinstance(setting.value, dict):
+            missing = {name: entry for name, entry in value.items() if name not in setting.value}
+            if missing:
+                setting.value = {**setting.value, **missing}
+    known_programs = {slug for (slug,) in db.session.query(LabRatsProgram.slug).all()}
+    for program in _seed("programs"):
+        if program["slug"] not in known_programs:
             db.session.add(LabRatsProgram(**program))
-    if LabRatsPage.query.count() == 0:
-        for page in _seed("pages"):
+    known_pages = {path for (path,) in db.session.query(LabRatsPage.path).all()}
+    for page in _seed("pages"):
+        if page["path"] not in known_pages:
             db.session.add(LabRatsPage(**page))
-    if LabRatsSession.query.count() == 0:
-        for session in _seed("sessions"):
+    known_sessions = {path for (path,) in db.session.query(LabRatsSession.path).all()}
+    for session in _seed("sessions"):
+        if session["path"] not in known_sessions:
             db.session.add(LabRatsSession(**session))
     db.session.commit()
