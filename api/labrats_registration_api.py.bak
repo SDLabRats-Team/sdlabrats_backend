@@ -1,0 +1,132 @@
+"""Public LabRats registration and email verification.
+
+Register blueprint in main.py and create the EmailVerificationToken table with your
+normal migration process before enabling these endpoints.
+"""
+import hashlib
+import os
+import secrets
+import smtplib
+from datetime import datetime, timedelta
+from email.message import EmailMessage
+from urllib.parse import urlencode
+
+from flask import Blueprint, current_app, request
+from flask_restful import Api, Resource
+from sqlalchemy import func
+from sqlalchemy.exc import IntegrityError
+
+from __init__ import db
+from model.user import User
+from model.labrats_accounts import EMAIL_PATTERN, validate_account
+
+labrats_registration_api = Blueprint(
+    "labrats_registration_api", __name__, url_prefix="/api/labrats"
+)
+api = Api(labrats_registration_api)
+
+
+class EmailVerificationToken(db.Model):
+    __tablename__ = "labrats_email_verification_tokens"
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False, index=True)
+    token_hash = db.Column(db.String(64), unique=True, nullable=False, index=True)
+    expires_at = db.Column(db.DateTime, nullable=False)
+    used_at = db.Column(db.DateTime, nullable=True)
+
+
+def _digest(token):
+    return hashlib.sha256(token.encode("utf-8")).hexdigest()
+
+
+def _send_verification(email, token):
+    host = os.environ["LABRATS_SMTP_HOST"]
+    port = int(os.environ.get("LABRATS_SMTP_PORT", "587"))
+    sender = os.environ["LABRATS_SMTP_FROM"]
+    username = os.environ["LABRATS_SMTP_USER"]
+    password = os.environ["LABRATS_SMTP_PASSWORD"]
+    base_url = os.environ["LABRATS_VERIFY_URL"]
+    link = base_url + ("&" if "?" in base_url else "?") + urlencode({"token": token})
+
+    message = EmailMessage()
+    message["From"] = sender
+    message["To"] = email
+    message["Subject"] = "Verify your SD Lab Rats email"
+    message.set_content(
+        "Thanks for registering for SD Lab Rats. Verify your email using this link "
+        f"(valid for 24 hours):\n\n{link}\n\nIf you did not register, ignore this message."
+    )
+    with smtplib.SMTP(host, port, timeout=15) as server:
+        server.starttls()
+        server.login(username, password)
+        server.send_message(message)
+
+
+class Register(Resource):
+    def post(self):
+        data = request.get_json(silent=True)
+        if not isinstance(data, dict):
+            return {"message": "Send a JSON object."}, 400
+        # Reuse admin validation, but NEVER accept role or active from public clients.
+        safe_data = {key: data.get(key) for key in ("name", "uid", "password")}
+        cleaned, errors = validate_account(safe_data, creating=True)
+        email = data.get("email")
+        if not isinstance(email, str) or not EMAIL_PATTERN.fullmatch(email.strip()) or len(email.strip()) > 120:
+            errors["email"] = "A valid email address is required."
+        else:
+            email = email.strip().lower()
+        if errors:
+            return {"message": "Some fields need attention.", "errors": errors}, 400
+
+        uid = cleaned["uid"]
+        if User.query.filter(func.lower(User._uid) == uid.lower()).first():
+            return {"message": "Username is unavailable."}, 409
+        if User.query.filter(func.lower(User._email) == email).first():
+            return {"message": "Email is already registered."}, 409
+
+        raw_token = secrets.token_urlsafe(32)
+        account = User(name=cleaned["name"], uid=uid, password=cleaned["password"], role="User")
+        account.email = email
+        account.active = False
+        try:
+            db.session.add(account)
+            db.session.flush()
+            db.session.add(EmailVerificationToken(
+                user_id=account.id,
+                token_hash=_digest(raw_token),
+                expires_at=datetime.utcnow() + timedelta(hours=24),
+            ))
+            db.session.commit()
+        except IntegrityError:
+            db.session.rollback()
+            return {"message": "Account could not be created; check username and email."}, 409
+
+        try:
+            _send_verification(email, raw_token)
+        except (OSError, KeyError, ValueError, smtplib.SMTPException):
+            current_app.logger.exception("Failed to send LabRats verification email")
+            return {"message": "Account created, but verification email could not be sent. Contact support."}, 503
+        return {"message": "Account created. Check your email to verify before signing in."}, 201
+
+
+class VerifyEmail(Resource):
+    def post(self):
+        data = request.get_json(silent=True)
+        token = data.get("token") if isinstance(data, dict) else None
+        if not isinstance(token, str) or len(token) > 256 or not token:
+            return {"message": "A verification token is required."}, 400
+        entry = EmailVerificationToken.query.filter_by(token_hash=_digest(token)).first()
+        if not entry or entry.used_at or entry.expires_at <= datetime.utcnow():
+            return {"message": "Invalid or expired verification link."}, 400
+        account = db.session.get(User, entry.user_id)
+        if account is None:
+            return {"message": "Invalid verification link."}, 400
+        entry.used_at = datetime.utcnow()
+        account.active = True
+        account.last_verified = datetime.utcnow()
+        db.session.commit()
+        return {"message": "Email verified. You can now sign in."}, 200
+
+
+api.add_resource(Register, "/register")
+api.add_resource(VerifyEmail, "/verify-email")
