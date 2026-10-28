@@ -8,6 +8,7 @@ from flask_restful import Api, Resource # used for REST API building
 from datetime import datetime, timedelta
 from __init__ import app, db
 from api.authorize import token_required
+from model import user
 from model.user import User
 from model.google_token import verified_student_email
 from model.github import GitHubUser
@@ -455,101 +456,79 @@ class UserAPI:
     class _Security(Resource):
         def post(self):
             try:
-                body = request.get_json()
-                if not body:
+                body = request.get_json(silent=True)
+                if not isinstance(body, dict) or not body:
                     return {
                         "message": "Please provide user details",
                         "data": None,
                         "error": "Bad request"
                     }, 400
-                ''' Get Data '''
-                uid = body.get('uid')
-                if uid is None:
-                    return {'message': f'User ID is missing'}, 401
-                password = body.get('password')
+
+                uid = body.get("uid")
+                if not uid:
+                    return {"message": "User ID is missing"}, 400
+
+                password = body.get("password")
                 if not password:
-                    return {'message': f'Password is missing'}, 401
-                            
-                ''' Find user '''
-    
+                    return {"message": "Password is missing"}, 400
+
                 user = User.query.filter_by(_uid=uid).first()
-                
                 if user is None or not user.is_password(password):
-                    
-                    return {'message': f"Invalid user id or password"}, 401
-                            
-                # Check if user is found
-                if user:
-                    try:
-                        # exp ties the token's server-enforced lifetime to the cookie's
-                        # client-side max_age (previously the token never expired by JWT
-                        # semantics at all). token_version is checked on every request in
-                        # auth_required -- see model/user.py's token_version column comment.
-                        token = jwt.encode(
-                            {
-                                "_uid": user._uid,
-                                "token_version": user.token_version,
-                                "exp": datetime.utcnow() + timedelta(seconds=current_app.config["JWT_TOKEN_MAX_AGE"]),
-                            },
-                            current_app.config["SECRET_KEY"],
-                            algorithm="HS256"
-                        )
-                        # Return JSON response with cookie
-                        is_production = os.environ.get('IS_PRODUCTION', 'false').lower() == 'true'
-                        
-                        # Create JSON response
-                        response_data = {
-                            "message": f"Authentication for {user._uid} successful",
-                            "user": {
-                                "uid": user._uid,
-                                "name": user.name,
-                                "role": user.role,
-                                "class": user._class if getattr(user, '_class', None) is not None else []
-                            }
-                        }
-                        resp = jsonify(response_data)
-                        
-                        # Set cookie
-                        if is_production:
-                            resp.set_cookie(
-                                current_app.config["JWT_TOKEN_NAME"],
-                                token,
-                                max_age=current_app.config["JWT_TOKEN_MAX_AGE"],
-                                secure=True,
-                                httponly=True,
-                                path='/',
-                                samesite='None',
-                                domain='.opencodingsociety.com'
-                            )
-                        else:
-                            resp.set_cookie(
-                                current_app.config["JWT_TOKEN_NAME"],
-                                token,
-                                max_age=current_app.config["JWT_TOKEN_MAX_AGE"],
-                                secure=False,
-                                httponly=False,  # Set to True for more security if JS access not needed
-                                path='/',
-                                samesite='Lax'
-                            )
-                        print(f"Token set: {token}")
-                        return resp 
-                    except Exception as e:
-                        return {
-                                        "error": "Something went wrong",
-                                        "message": str(e)
-                                    }, 500
+                    return {"message": "Invalid user id or password"}, 401
+
+                if not user.active:
+                    return {
+                        "message": "Please verify your email before signing in."
+                    }, 403
+
+                token = jwt.encode(
+                    {
+                        "_uid": user._uid,
+                        "token_version": user.token_version,
+                        "exp": datetime.utcnow() + timedelta(
+                            seconds=current_app.config["JWT_TOKEN_MAX_AGE"]
+                        ),
+                    },
+                    current_app.config["SECRET_KEY"],
+                    algorithm="HS256"
+                )
+
+                response_data = {
+                    "message": f"Authentication for {user._uid} successful",
+                    "user": {
+                        "uid": user._uid,
+                        "name": user.name,
+                        "role": user.role,
+                        "class": user._class if getattr(user, "_class", None) is not None else []
+                    }
+                }
+                resp = jsonify(response_data)
+
+                is_production = os.environ.get("IS_PRODUCTION", "false").lower() == "true"
+                cookie_options = {
+                    "max_age": current_app.config["JWT_TOKEN_MAX_AGE"],
+                    "secure": is_production,
+                    "httponly": True,
+                    "path": "/",
+                    "samesite": "None" if is_production else "Lax"
+                }
+                if is_production:
+                    cookie_options["domain"] = ".opencodingsociety.com"
+
+                resp.set_cookie(
+                    current_app.config["JWT_TOKEN_NAME"],
+                    token,
+                    **cookie_options
+                )
+                return resp
+
+            except Exception:
+                current_app.logger.exception("Authentication failed unexpectedly")
                 return {
-                                "message": "Error fetching auth token!",
-                                "data": None,
-                                "error": "Unauthorized"
-                            }, 404
-            except Exception as e:
-                 return {
-                                "message": "Something went wrong!",
-                                "error": str(e),
-                                "data": None
-                            }, 500
-                 
+                    "message": "Something went wrong!",
+                    "data": None
+                }, 500
+
         @token_required()
         def delete(self):
             ''' Invalidate the current user's token by setting its expiry to 0 '''

@@ -852,8 +852,8 @@
     "template": "redirect",
     "title": "Register",
     "fields": {
-      "redirect_to": "/schedule/",
-      "redirect_title": "Schedule and pricing"
+      "redirect_to": "/enroll/",
+      "redirect_title": "Enroll"
     },
     "body": ""
   },
@@ -1450,5 +1450,16 @@
       "current_title": "See this year's break camps"
     },
     "body": "<div class=\"labrats__split\">\n  <div>\n    <dl class=\"labrats__day\">\n      <dt>Session 1</dt><dd>December 27–31, 2021</dd>\n      <dt>Session 2</dt><dd>January 3–7, 2022</dd>\n      <dt>Hours</dt><dd>9:00 am–12:00 pm (drop-off 8:30–9:00, pick-up 12:00–12:30)</dd>\n      <dt>Where</dt><dd>San Diego Botanic Garden, Junior Quail Trail, 300 Quail Gardens Dr., Encinitas, CA 92024</dd>\n      <dt>Registration donation</dt><dd>$275</dd>\n    </dl>\n    <p>Both weeks offered the same camp. Camp was held outdoors under tents; campers wore closed-toe shoes and jackets and brought their own snacks and water. Thanks to TING, extra scholarships were available for the rest of 2021.</p>\n  </div>\n  <figure class=\"labrats__figure\">\n    <img src=\"/images/projects/sdlabrats/flyer-winter-camp-2021.jpg\" alt=\"Winter STEAM Discovery Camp 2021 flyer\" width=\"500\" height=\"647\" loading=\"lazy\">\n  </figure>\n</div>\n\n<div class=\"labrats__day-plans\">\n  <section>\n    <h2>Grades K-3</h2>\n    <h3>Life of Plants</h3>\n    <p>Young horticulturalists looked at the world from a plant's point of view. By observing the plants and pollinators around them, students got an introduction to the scientific method and learned where plants came from and how they live with their environment. No green thumb required.</p>\n    <h3>Creative Chemistry</h3>\n    <p>From instant chemical reactions to DIY slime, a creative introduction to chemistry, the study of matter. Using safe compounds from around the house and kitchen, students explored chemical reactions and the properties used to describe matter.</p>\n  </section>\n  <section>\n    <h2>Grades 4-8</h2>\n    <h3>Secret Agent Science</h3>\n    <p>Every spy needs a gadget person. Students learned techniques from chemistry to computer science: sending secret messages with chemistry, coding messages only they could read, and using those skills to solve a treasure hunt.</p>\n    <h3>Forensic Science</h3>\n    <p>It's like a crime show, but without the crime. Students learned how scientists examine a \"crime\" scene and find useful evidence with fingerprinting and chemical analysis.</p>\n  </section>\n</div>"
+  },
+  {
+    "path": "/survey/",
+    "template": "default",
+    "title": "Program Feedback Survey",
+    "fields": {
+      "heading": "Program Feedback Survey",
+      "description": "Help us improve our STEM programs and website."
+    },
+    "body": "<p>Tell us what you think about SD Lab Rats.</p><div data-labrats-form-slot=\"survey\"></div>"
+
   }
 ]

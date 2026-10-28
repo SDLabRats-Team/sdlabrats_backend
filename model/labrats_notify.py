@@ -13,6 +13,7 @@ FORM_TITLES = {
     "partnership": "Corporate partnership request",
     "video_topic": "Video topic request",
     "newsletter": "Newsletter signup",
+    "survey": "Website survey",
 }
 
 
@@ -20,17 +21,19 @@ def build_notification(inquiry, sender, recipients):
     """Return the EmailMessage for one stored inquiry (a LabRatsInquiry.read() dict)."""
     message = EmailMessage()
     title = FORM_TITLES.get(inquiry["form"], inquiry["form"])
-    message["Subject"] = f"[sdlabrats.org] {title} from {inquiry['first_name']} {inquiry['last_name']}"
+    message["Subject"] = f"[sdlabrats.org] {title} from {inquiry['first_name']} {inquiry['last_name']}".rstrip()
     message["From"] = sender
     message["To"] = ", ".join(recipients)
-    message["Reply-To"] = inquiry["email"]
+    if inquiry["email"]:  # surveys can be anonymous, with no email to reply to
+        message["Reply-To"] = inquiry["email"]
 
     lines = [
         f"{title} received {inquiry['created_at']} (inquiry #{inquiry['id']})",
         "",
-        f"Name: {inquiry['first_name']} {inquiry['last_name']}",
-        f"Email: {inquiry['email']}",
+        f"Name: {inquiry['first_name']} {inquiry['last_name']}".rstrip(),
     ]
+    if inquiry["email"]:
+        lines.append(f"Email: {inquiry['email']}")
     if inquiry.get("phone"):
         lines.append(f"Phone: {inquiry['phone']}")
     for key, value in inquiry["details"].items():
