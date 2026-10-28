@@ -189,6 +189,11 @@ class UserAPI:
             role = 'Mentor' if is_mentor else 'User'
             verified_email = None if is_mentor else verified_student_email(body.get('idToken'))
 
+            if not is_mentor and not verified_email:
+                return {
+                    'message': 'Google school email verification is required. Please use your @stu.powayusd.com account.'
+                }, 403
+
             #1: Setup minimal User object using __init__ method
             password = body.get('password')
             if password is not None:
@@ -204,7 +209,7 @@ class UserAPI:
                 'name': name,
                 'uid': uid,
                 'password': password,
-                'email': body.get('email'),
+                'email': verified_email if verified_email else body.get('email'),
             }
             
             # Add optional fields if they exist
@@ -465,20 +470,23 @@ class UserAPI:
                     }, 400
 
                 uid = body.get("uid")
-                if not uid:
-                    return {"message": "User ID is missing"}, 400
-
                 password = body.get("password")
-                if not password:
-                    return {"message": "Password is missing"}, 400
 
+                # Require a nonempty username and password.
+                if not isinstance(uid, str) or not uid.strip():
+                    return {"message": "Username is required"}, 400
+                if not isinstance(password, str) or not password:
+                    return {"message": "Password is required"}, 400
+
+                uid = uid.strip()
                 user = User.query.filter_by(_uid=uid).first()
                 if user is None or not user.is_password(password):
-                    return {"message": "Invalid user id or password"}, 401
+                    return {"message": "Invalid username or password"}, 401
 
+                # Only active accounts may receive a new login token.
                 if not user.active:
                     return {
-                        "message": "Please verify your email before signing in."
+                        "message": "Your account is inactive. Verify your email or contact an administrator."
                     }, 403
 
                 token = jwt.encode(

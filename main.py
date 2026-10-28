@@ -22,6 +22,7 @@ from api.pfp import pfp_api
 from api.programs_api import programs_api
 from api.labrats_inquiry_api import labrats_inquiry_api
 from api.labrats_users_api import labrats_users_api
+from api.labrats_registration_api import labrats_registration_api
 from api.labrats_assignment_api import labrats_assignment_api
 from api.labrats_site_api import labrats_site_api
 from api.analytics import analytics_api
@@ -86,6 +87,7 @@ app.register_blueprint(pfp_api)
 app.register_blueprint(programs_api)
 app.register_blueprint(labrats_inquiry_api)  # San Diego LabRats website forms
 app.register_blueprint(labrats_users_api)  # San Diego LabRats admin account control
+app.register_blueprint(labrats_registration_api)  # San Diego LabRats public signup and email verification
 app.register_blueprint(labrats_assignment_api)  # San Diego LabRats assignments and turn-ins
 app.register_blueprint(labrats_site_api)  # San Diego LabRats website content (pages, sessions, settings)
 app.register_blueprint(groq_api)
