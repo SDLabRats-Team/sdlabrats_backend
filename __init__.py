@@ -15,8 +15,8 @@ load_dotenv()
 # Setup of key Flask object (app)
 app = Flask(__name__)
 
-# Configure Flask Port, default to 8587 which is same as Docker setup
-app.config['FLASK_PORT'] = int(os.environ.get('FLASK_PORT') or 8587)
+# Configure Flask Port, default to 8429 which is same as Docker setup (our port on the class server)
+app.config['FLASK_PORT'] = int(os.environ.get('FLASK_PORT') or 8429)
 
 # Configure Code Runner port, default 8591
 app.config['RUNNER_PORT'] = int(os.environ.get('RUNNER_PORT') or 8591)
@@ -41,8 +41,9 @@ allowed_origins = [
     'http://localhost:4000',
     'http://127.0.0.1:4000',
     'https://open-coding-society.github.io',
-    # Regex pattern to match any subdomain of opencodingsociety.com
-    r'https://.*\.opencodingsociety\.com',
+    # Regex pattern to match any subdomain of opencodingsociety.com, anchored at both ends
+    # so a look-alike such as x.opencodingsociety.com.example.net is refused
+    r'^https://([a-z0-9-]+\.)*opencodingsociety\.com$',
     'https://opencodingsociety.com',
 
     # San Diego LabRats website (production domain and GitHub Pages preview)

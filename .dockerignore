@@ -1,0 +1,14 @@
+# Keep secrets, local environments and local data out of the image.
+# The server's .env is read by docker-compose (env_file), not copied into the image.
+.env
+.env.*
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.log
+cookies.txt
+.git/
+instance/volumes/*.db
+instance/volumes/*.db-*
+.DS_Store
