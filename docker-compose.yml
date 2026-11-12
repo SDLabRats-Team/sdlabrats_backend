@@ -6,12 +6,12 @@ services:
     env_file:
       - .env # This file is optional; defaults will be used if it does not exist
     environment:
-      # Our port on the class server (8429). Set here so the shared OCS Dockerfile stays unchanged:
+      # Our port on the class server (8629). Set here so the shared OCS Dockerfile stays unchanged:
       # same as the Dockerfile's GUNICORN_CMD_ARGS except --bind.
-      - GUNICORN_CMD_ARGS=--workers=5 --threads=2 --bind=0.0.0.0:8429 --timeout=30 --access-logfile -
-      - FLASK_PORT=8429
+      - GUNICORN_CMD_ARGS=--workers=5 --threads=2 --bind=0.0.0.0:8629 --timeout=30 --access-logfile -
+      - FLASK_PORT=8629
     ports:
-      - "8429:8429"
+      - "8629:8629"
     volumes:
       - ./instance:/app/instance
     restart: unless-stopped
